@@ -1,0 +1,74 @@
+{namespace type}
+
+/**
+ * @param page
+ * @param site
+ */
+{template .render}
+	{call main.render data="all"}
+		{param elementClasses: 'docs' /}
+		{param content kind="html"}
+			{call Sidebar.render data="all"}
+				{param section: $site.index /}
+			{/call}
+			{call .type data="all" /}
+		{/param}
+	{/call}
+{/template}
+
+/**
+ * @param page
+ */
+{template .type}
+	<div class="sidebar-offset">
+		<header class="text-center">
+			<div class="container-fluid">
+				<h1 class="py-3">{$page.title} Migration Guide</h1>
+				<h2 class="py-2">Guide for consistent {$page.title} in Liferay Portal.</h2>
+			</div>
+		</header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 mx-auto">
+          {call ElectricSearchAutocomplete.render}
+            {param maxResults: 3 /}
+            {param path: '/' + $page.id /}
+            {param placeholder: 'Search Guidelines' /}
+          {/call}
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row bg-light">
+        <div class="col-md-8 mx-auto py-5 text-center">
+          <h2>Choose a Section</h2>
+          <h3>Each one contains information to migrate {$page.title}.</h3>
+
+          {foreach $childId in $page.childIds}
+            {let $topic: $page.children[$childId] /}
+
+            {if not $topic.hidden}
+              <div class="card-columns my-5">
+                <div class="card">
+                  <div class="card-header">
+                    <svg aria-hidden="true" class="lexicon-icon lexicon-icon-{$topic.icon}">
+                      <use xlink:href="/vendor/lexicon/icons.svg#{$topic.icon}" />
+                    </svg>
+                  </div>
+                  <div class="card-body">
+                    <h2>
+                      <a href="{$topic.url}">{$topic.title}</a>
+                    </h2>
+                    <small>{$topic.description}</small>
+                  </div>
+                </div>
+              </div>
+            {/if}
+          {/foreach}
+        </div>
+      </div>
+    </div>
+	</div>
+{/template}
