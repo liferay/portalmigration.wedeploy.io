@@ -1,5 +1,5 @@
 ---
-title: "ui:alert"
+title: "liferay-ui:alert"
 description: ""
 layout: "guide"
 weight: 1

@@ -1,5 +1,5 @@
 ---
-title: "aui:icon"
+title: "liferay-aui:icon"
 description: ""
 layout: "guide"
 weight: 1
