@@ -1,11 +1,12 @@
 ---
 title: "liferay-ui:alert"
 description: ""
-layout: "guide"
+layout: "taglibGuide"
 weight: 1
+clayTaglib: "clay:alert"
 ---
 
-<article>
+<article class="my-5">
 
 ## Problems and notes:
 - `animationTime` param is no longer available.
@@ -22,7 +23,7 @@ weight: 1
 
 </article>
 
-<article>
+<article class="my-5">
 
 ## How to migrate:
 
@@ -38,9 +39,8 @@ weight: 1
 
 </article>
 
-<article>
-
 ## Examples:
+
 
 From:
 ```Taglib use
@@ -90,5 +90,3 @@ To:
   My message
 </div>
 ```
-
-</article>

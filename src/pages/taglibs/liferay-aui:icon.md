@@ -1,8 +1,9 @@
 ---
 title: "liferay-aui:icon"
 description: ""
-layout: "guide"
+layout: "taglibGuide"
 weight: 1
+clayTaglib: "clay:icon"
 ---
 
 <article>

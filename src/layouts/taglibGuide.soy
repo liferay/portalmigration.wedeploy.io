@@ -1,0 +1,51 @@
+{namespace taglibGuide}
+
+/**
+ * @param page
+ * @param site
+ */
+{template .render}
+	{call main.render data="all"}
+		{param elementClasses: 'docs' /}
+		{param content kind="html"}
+			{call Sidebar.render data="all"}
+				{param section: $site.index /}
+			{/call}
+			{call .guide data="all" /}
+		{/param}
+	{/call}
+{/template}
+
+/**
+ * @param page
+ * @param content
+ */
+{template .guide}
+	<div class="sidebar-offset">
+		<header class="text-center">
+			<div class="container-fluid">
+				<h1 class="py-3">{$page.title} <small>Migration Guide</small></h1>
+			</div>
+		</header>
+
+    <div class="clay-site-container container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+					<code>&lt;{$page.title} /&gt;</code>
+					to
+					<code>&lt;{$page.clayTaglib} /&gt;</code>
+        </div>
+
+        <div class="col-12">
+					{$content}
+        </div>
+
+				<nav class="col-md-5 col-md-offset-2 col-xs-12">
+					{call ElectricReadingProgress.render}
+						{param elementClasses: 'docs-nav' /}
+					{/call}
+				</nav>
+      </div>
+    </div>
+	</div>
+{/template}
