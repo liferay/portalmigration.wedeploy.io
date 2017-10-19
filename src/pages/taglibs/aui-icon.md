@@ -7,6 +7,8 @@ weight: 1
 
 <article>
 
+# INCOMPLETE: WAITING FOR FINAL ICONS DEFINITION
+
 ## Problems and notes:
 - If url is passed the icon svg is wrapped inside a link (ATag).
 - If url is not passed the icon svg is wrapped inside a span.
