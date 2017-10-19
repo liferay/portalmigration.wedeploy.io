@@ -163,15 +163,17 @@
 		}
 
 		& > li.active > a,
-		& > li > ul > li.active > a,
-		& > li > ul > li.active > a:hover,
-		& > li > ul > li.active > a:focus,
-		& > li > ul > li:hover > a,
-		& > li > a:hover,
-		& > li > a:focus {
+		& > li > ul > li.active > a {
 			background-color: $brand-dark-lighter;
 			border-radius: 6px;
 			font-weight: 600;
+		}
+
+		& > li > ul > li.active > a:focus,
+		& > li > a:focus,
+		& > li > a:hover {
+			background-color: $brand-dark-lighter;
+			border-radius: 6px;
 		}
 
 		& li > ul > li > a {
