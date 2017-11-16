@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([9],{
+webpackJsonppageComponent([12],{
 
 /***/ 11:
 /***/ (function(module, exports, __webpack_require__) {
@@ -25,7 +25,7 @@ var _metalSoy = __webpack_require__(0);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _MainNavigation = __webpack_require__(23);
+var _MainNavigation = __webpack_require__(24);
 
 var _MainNavigation2 = _interopRequireDefault(_MainNavigation);
 
@@ -70,7 +70,7 @@ exports.default = MainNavigation;
 
 /***/ }),
 
-/***/ 23:
+/***/ 24:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

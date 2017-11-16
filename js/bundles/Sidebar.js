@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([8],{
+webpackJsonppageComponent([11],{
 
 /***/ 12:
 /***/ (function(module, exports, __webpack_require__) {
@@ -21,13 +21,13 @@ var _metalSoy = __webpack_require__(0);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _metalToggler = __webpack_require__(22);
+var _metalToggler = __webpack_require__(23);
 
 var _metalToggler2 = _interopRequireDefault(_metalToggler);
 
-var _metalStorage = __webpack_require__(21);
+var _metalStorage = __webpack_require__(22);
 
-var _Sidebar = __webpack_require__(24);
+var _Sidebar = __webpack_require__(25);
 
 var _Sidebar2 = _interopRequireDefault(_Sidebar);
 
@@ -129,7 +129,7 @@ exports.default = Sidebar;
 
 /***/ }),
 
-/***/ 21:
+/***/ 22:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -140,7 +140,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.LocalStorageMechanism = exports.StorageMechanism = exports.Storage = undefined;
 
-var _Storage = __webpack_require__(25);
+var _Storage = __webpack_require__(26);
 
 var _Storage2 = _interopRequireDefault(_Storage);
 
@@ -148,7 +148,7 @@ var _StorageMechanism = __webpack_require__(9);
 
 var _StorageMechanism2 = _interopRequireDefault(_StorageMechanism);
 
-var _LocalStorageMechanism = __webpack_require__(26);
+var _LocalStorageMechanism = __webpack_require__(27);
 
 var _LocalStorageMechanism2 = _interopRequireDefault(_LocalStorageMechanism);
 
@@ -160,7 +160,7 @@ exports.LocalStorageMechanism = _LocalStorageMechanism2.default;
 
 /***/ }),
 
-/***/ 22:
+/***/ 23:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -464,7 +464,7 @@ exports.default = Toggler;
 
 /***/ }),
 
-/***/ 24:
+/***/ 25:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -610,7 +610,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Sidebar, templates);
 
 /***/ }),
 
-/***/ 25:
+/***/ 26:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -786,7 +786,7 @@ exports.default = Storage;
 
 /***/ }),
 
-/***/ 26:
+/***/ 27:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([10,11,12],[
+webpackJsonppageComponent([7,11,12],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
@@ -11367,12 +11367,15 @@ exports.default = parseFromAnchor;
 /* 92 */,
 /* 93 */,
 /* 94 */,
-/* 95 */
+/* 95 */,
+/* 96 */,
+/* 97 */,
+/* 98 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pageIndex", function() { return pageIndex; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YcGvp", function() { return YcGvp; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -11384,15 +11387,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from index.soy.
+// This file was automatically generated from lodash.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace pageIndex.
+ * @fileoverview Templates in namespace YcGvp.
  * @public
  */
 
-goog.module('pageIndex.incrementaldom');
+goog.module('YcGvp.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -11413,7 +11416,9 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('main.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('othersGuide.incrementaldom', 'render');
 
 
 /**
@@ -11424,358 +11429,182 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  opt_data = opt_data || {};
-  var param182 = function() {
-    $header(opt_data, null, opt_ijData);
+  var param253 = function() {
+    ie_open('article', null, null,
+        'class', 'my-5');
+      ie_open('h2');
+        itext('Problems and notes:');
+      ie_close('h2');
+    ie_close('article');
+    ie_open('article', null, null,
+        'class', 'my-5');
+      ie_open('h2');
+        itext('How to migrate:');
+      ie_close('h2');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('p');
+            ie_open('code');
+              itext('_.bind');
+            ie_close('code');
+            itext(' to native ');
+            ie_open('code');
+              itext('.bind');
+            ie_close('code');
+            itext('.');
+          ie_close('p');
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            ie_open('code');
+              itext('_.bindKey');
+            ie_close('code');
+            itext(' there\'s no direct replacement.');
+          ie_close('p');
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            ie_open('code');
+              itext('_.debounce');
+            ie_close('code');
+            itext(' to ');
+            ie_open('code');
+              itext('metal-debounce');
+            ie_close('code');
+            itext('.');
+          ie_close('p');
+          $templateAlias2({code: '<aui:script require="metal-debounce/src/debounce">\n  let debounce = metalDebounceSrcDebounce.default;\n  debounce(fn, time);\n</aui:script>', mode: 'text'}, null, opt_ijData);
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            ie_open('code');
+              itext('_.escape');
+            ie_close('code');
+            itext(' there\'s no direct replacement.');
+          ie_close('p');
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            ie_open('code');
+              itext('_.forEach');
+            ie_close('code');
+            itext(' to ');
+            ie_open('code');
+              itext('.forEach');
+            ie_close('code');
+            itext(' or ');
+            ie_open('code');
+              itext('for in');
+            ie_close('code');
+          ie_close('p');
+          $templateAlias2({code: '[1,2,3].forEach((item) => {\n  console.log(item);\n});\n\nlet obj = {a:1, b:2, c:3};\nfor(key in obj) {\n  console.log(item);\n}', mode: 'text'}, null, opt_ijData);
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            ie_open('code');
+              itext('_.groupBy');
+            ie_close('code');
+            itext(' there\'s no direct replacement.');
+          ie_close('p');
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            ie_open('code');
+              itext('_.isEqual');
+            ie_close('code');
+            itext(' there\'s no direct replacement.');
+          ie_close('p');
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            ie_open('code');
+              itext('_.isFunction');
+            ie_close('code');
+            itext(' to');
+          ie_close('p');
+          $templateAlias2({code: '  function isFunction(fn) {\n    return (!!fn && ("object" == typeof fn || "function" == typeof fn)) && toString.call(fn) == \'[object Function]\'\n  }', mode: 'text'}, null, opt_ijData);
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            ie_open('code');
+              itext('_.map');
+            ie_close('code');
+            itext(' to native ');
+            ie_open('code');
+              itext('Array.map');
+            ie_close('code');
+            itext('.');
+          ie_close('p');
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            ie_open('code');
+              itext('_.reduce');
+            ie_close('code');
+            itext(' to native ');
+            ie_open('code');
+              itext('Array.reduce');
+            ie_close('code');
+            itext('.');
+          ie_close('p');
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            ie_open('code');
+              itext('_.unescape');
+            ie_close('code');
+            itext(' there\'s no direct replacement.');
+          ie_close('p');
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            ie_open('code');
+              itext('_.sub');
+            ie_close('code');
+            itext(' there\'s no direct replacement.');
+          ie_close('p');
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            ie_open('code');
+              itext('_.without');
+            ie_close('code');
+            itext(' there\'s no direct replacement.');
+          ie_close('p');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param182, elementClasses: 'home'}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param253}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'pageIndex.render';
+  $render.soyTemplateName = 'YcGvp.render';
 }
 
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $header(opt_data, opt_ignored, opt_ijData) {
-  ie_open('header', null, null,
-      'class', 'header');
-    ie_open('nav', null, null,
-        'class', 'navbar fixed-top navbar-clay-site navbar-expand-lg navbar-dark');
-      ie_open('div', null, null,
-          'class', 'container-fluid container-fluid-max-lg');
-        ie_open('div', null, null,
-            'class', 'navbar-brand');
-          ie_open('span', null, null,
-              'class', 'title align-middle');
-            var dyn21 = opt_data.site.title;
-            if (typeof dyn21 == 'function') dyn21(); else if (dyn21 != null) itext(dyn21);
-          ie_close('span');
-          ie_open('small', null, null,
-              'class', 'ml-1');
-            var dyn22 = opt_data.site.subtitle;
-            if (typeof dyn22 == 'function') dyn22(); else if (dyn22 != null) itext(dyn22);
-          ie_close('small');
-        ie_close('div');
-        ie_open('ul', null, null,
-            'class', 'navbar-nav ml-auto');
-          ie_open('li', null, null,
-              'class', 'nav-item');
-            ie_open('a', null, null,
-                'class', 'nav-link ml-3',
-                'href', '/styles');
-              itext('Styles');
-            ie_close('a');
-          ie_close('li');
-          ie_open('li', null, null,
-              'class', 'nav-item');
-            ie_open('a', null, null,
-                'class', 'nav-link ml-3',
-                'href', '/taglibs');
-              itext('Taglibs');
-            ie_close('a');
-          ie_close('li');
-        ie_close('ul');
-      ie_close('div');
-    ie_close('nav');
-    ie_open('div', null, null,
-        'class', 'container-fluid');
-      ie_open('div', null, null,
-          'class', 'row');
-        ie_open('div', null, null,
-            'class', 'intro text-center col');
-          ie_open('div', null, null,
-              'class', 'container-fluid container-fluid-max-lg');
-            ie_open('h1', null, null,
-                'class', 'h1 m-1');
-              itext('KEEP');
-            ie_close('h1');
-            ie_open('h1', null, null,
-                'class', 'h1 m-1');
-              itext('CALM');
-            ie_close('h1');
-            ie_open('h3', null, null,
-                'class', 'h3 mb-0');
-              itext('and');
-            ie_close('h3');
-            ie_open('h1', null, null,
-                'class', 'h1 mt-1');
-              itext('MIGRATE');
-            ie_close('h1');
-            ie_open('h2', null, null,
-                'class', 'h3');
-              var dyn23 = opt_data.page.description;
-              if (typeof dyn23 == 'function') dyn23(); else if (dyn23 != null) itext(dyn23);
-            ie_close('h2');
-            ie_open('a', null, null,
-                'class', 'btn btn-lg btn-outline-light font-weight-bold mx-3 mb-4',
-                'href', 'http://lexicondesign.io',
-                'target', '_blank');
-              ie_open('img', null, null,
-                  'class', 'mr-2',
-                  'src', '/images/home/lexicon_symbol.svg',
-                  'alt', '',
-                  'width', '20');
-              ie_close('img');
-              itext('Learn about Lexicon');
-            ie_close('a');
-            ie_open('a', null, null,
-                'class', 'btn btn-lg btn-outline-light font-weight-bold mx-3 mb-4',
-                'href', 'http://claycss.com/',
-                'target', '_blank');
-              ie_open('img', null, null,
-                  'class', 'mr-2',
-                  'src', '/images/home/clay_logo_w.svg',
-                  'alt', '',
-                  'width', '18');
-              ie_close('img');
-              itext('Learn about Clay');
-            ie_close('a');
-          ie_close('div');
-        ie_close('div');
-      ie_close('div');
-    ie_close('div');
-  ie_close('header');
-  $teasers(opt_data, null, opt_ijData);
-  $contactus(opt_data, null, opt_ijData);
-  $footer(opt_data, null, opt_ijData);
-}
-exports.header = $header;
-if (goog.DEBUG) {
-  $header.soyTemplateName = 'pageIndex.header';
-}
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $teasers(opt_data, opt_ignored, opt_ijData) {
-  ie_open('section', null, null,
-      'class', 'teasers',
-      'id', 'teasers');
-    ie_open('div', null, null,
-        'class', 'container-fluid container-fluid-max-lg');
-      ie_open('div', null, null,
-          'class', 'row mb-4');
-        ie_open('div', null, null,
-            'class', 'col-md-5 ml-auto text-center');
-          ie_open('div', null, null,
-              'class', 'card text-center wow fadeInUp');
-            ie_open('div', null, null,
-                'class', 'card-body mx-4 text-center');
-              ie_open('img', null, null,
-                  'class', 'mx-auto',
-                  'src', '/images/home/what.svg',
-                  'alt', '');
-              ie_close('img');
-              ie_open('h2', null, null,
-                  'class', 'font-weight-bold');
-                itext('Migrate Taglibs');
-              ie_close('h2');
-              ie_open('p');
-                itext('Learn how to migrate from the old aui, liferay-ui, etc. taglibs to brand new Clay Taglibs.');
-              ie_close('p');
-              ie_open('a', null, null,
-                  'href', '/taglibs',
-                  'class', 'btn btn-sm text-uppercase font-weight-bold');
-                ie_open('img', null, null,
-                    'class', 'mr-2',
-                    'src', '/images/home/chevron-right.svg',
-                    'alt', '');
-                ie_close('img');
-                itext('Learn More');
-              ie_close('a');
-            ie_close('div');
-          ie_close('div');
-        ie_close('div');
-        ie_open('div', null, null,
-            'class', 'col-md-5 mr-auto text-center mt-4 mt-md-0');
-          ie_open('div', null, null,
-              'class', 'card wow fadeInUp',
-              'data-wow-delay', '0.1s');
-            ie_open('div', null, null,
-                'class', 'card-body mx-4');
-              ie_open('img', null, null,
-                  'class', 'mx-auto',
-                  'src', '/images/home/news.svg',
-                  'alt', '');
-              ie_close('img');
-              ie_open('h2', null, null,
-                  'class', 'font-weight-bold');
-                itext('Migrate Styles');
-              ie_close('h2');
-              ie_open('p');
-                itext('Learn how to migrate from Lexicon 1.1 to new Clay CSS implementation and Bootstrap 4.');
-              ie_close('p');
-              ie_open('a', null, null,
-                  'href', '/styles',
-                  'class', 'btn btn-sm text-uppercase font-weight-bold');
-                ie_open('img', null, null,
-                    'class', 'mr-2',
-                    'src', '/images/home/chevron-right.svg',
-                    'alt', '');
-                ie_close('img');
-                itext('Learn More');
-              ie_close('a');
-            ie_close('div');
-          ie_close('div');
-        ie_close('div');
-      ie_close('div');
-    ie_close('div');
-  ie_close('section');
-}
-exports.teasers = $teasers;
-if (goog.DEBUG) {
-  $teasers.soyTemplateName = 'pageIndex.teasers';
-}
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $contactus(opt_data, opt_ignored, opt_ijData) {
-  ie_open('section', null, null,
-      'class', 'contact-us');
-    ie_open('div', null, null,
-        'class', 'container-fluid container-fluid-max-lg');
-      ie_open('div', null, null,
-          'class', 'row');
-        ie_open('div', null, null,
-            'class', 'col-md-4 ml-auto mr-lg-4 wow zoomIn',
-            'data-wow-duration', '1.2s');
-          ie_open('div', null, null,
-              'class', 'text-center text-lg-right');
-            ie_open('img', null, null,
-                'src', '/images/home/participate02.svg',
-                'alt', '');
-            ie_close('img');
-          ie_close('div');
-        ie_close('div');
-        ie_open('div', null, null,
-            'class', 'col-md-6 mr-auto wow zoomIn',
-            'data-wow-duration', '0.8s');
-          ie_open('div', null, null,
-              'class', 'media-body mt-4 text-center text-lg-left');
-            ie_open('p', null, null,
-                'class', 'h1 font-weight-bold');
-              itext('Want to contribute on this guides? Head on over to the ');
-              ie_open('a', null, null,
-                  'class', 'font-weight-bold',
-                  'href', 'https://github.com/carloslancha/metal-clay-portal-migration',
-                  'target', '_blank');
-                itext('GitHub repo.');
-              ie_close('a');
-            ie_close('p');
-          ie_close('div');
-        ie_close('div');
-      ie_close('div');
-    ie_close('div');
-  ie_close('section');
-}
-exports.contactus = $contactus;
-if (goog.DEBUG) {
-  $contactus.soyTemplateName = 'pageIndex.contactus';
-}
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $footer(opt_data, opt_ignored, opt_ijData) {
-  ie_open('div', null, null,
-      'class', 'footer');
-    ie_open('div', null, null,
-        'class', 'container-fluid container-fluid-max-lg');
-      ie_open('div', null, null,
-          'class', 'row');
-        ie_open('div', null, null,
-            'class', 'col-lg text-center text-lg-left mb-4 mb-lg-0');
-          ie_open('img', null, null,
-              'class', 'logo',
-              'src', '/images/liferayLogo.png');
-          ie_close('img');
-          ie_void('div', null, null,
-              'class', 'clearfix d-lg-none');
-          itext('Brought to you by ');
-          ie_open('a', null, null,
-              'class', 'font-weight-bold',
-              'href', 'http://www.liferay.com',
-              'target', '_blank');
-            itext('Liferay, Inc.');
-          ie_close('a');
-        ie_close('div');
-        ie_open('div', null, null,
-            'class', 'col-lg text-center text-lg-right');
-          ie_open('div');
-            itext('Powered by ');
-            ie_open('a', null, null,
-                'class', 'font-weight-bold',
-                'href', 'https://wedeploy.com/',
-                'target', '_blank');
-              itext('WeDeploy\u2122');
-            ie_close('a');
-          ie_close('div');
-        ie_close('div');
-      ie_close('div');
-    ie_close('div');
-  ie_close('div');
-  ie_void('script', null, null,
-      'src', '/scripts/wow.min.js');
-  ie_void('script', null, null,
-      'src', '/scripts/home.js');
-  ie_open('script');
-    itext('new WOW().init();');
-  ie_close('script');
-}
-exports.footer = $footer;
-if (goog.DEBUG) {
-  $footer.soyTemplateName = 'pageIndex.footer';
-}
-
-exports.render.params = [];
-exports.render.types = {};
-exports.header.params = ["page","site"];
-exports.header.types = {"page":"any","site":"any"};
-exports.teasers.params = [];
-exports.teasers.types = {};
-exports.contactus.params = [];
-exports.contactus.types = {};
-exports.footer.params = [];
-exports.footer.types = {};
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
 templates = exports;
 return exports;
 
 });
 
-class pageIndex extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageIndex, templates);
+class YcGvp extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(YcGvp, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 96 */,
-/* 97 */,
-/* 98 */,
 /* 99 */,
 /* 100 */,
 /* 101 */,
@@ -11814,10 +11643,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageIndex, templates)
 /* 134 */,
 /* 135 */,
 /* 136 */,
-/* 137 */,
-/* 138 */,
-/* 139 */,
-/* 140 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11851,9 +11677,9 @@ __webpack_require__(19);
 
 __webpack_require__(20);
 
-var _indexSoy = __webpack_require__(95);
+var _lodashSoy = __webpack_require__(98);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _lodashSoy2 = _interopRequireDefault(_lodashSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -11863,23 +11689,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var pageIndex = function (_Component) {
-  _inherits(pageIndex, _Component);
+var YcGvp = function (_Component) {
+  _inherits(YcGvp, _Component);
 
-  function pageIndex() {
-    _classCallCheck(this, pageIndex);
+  function YcGvp() {
+    _classCallCheck(this, YcGvp);
 
-    return _possibleConstructorReturn(this, (pageIndex.__proto__ || Object.getPrototypeOf(pageIndex)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (YcGvp.__proto__ || Object.getPrototypeOf(YcGvp)).apply(this, arguments));
   }
 
-  return pageIndex;
+  return YcGvp;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(pageIndex, _indexSoy2.default);
+_metalSoy2.default.register(YcGvp, _lodashSoy2.default);
 
-exports.default = pageIndex;
+exports.default = YcGvp;
 
 /***/ })
-],[140]);
+],[137]);
