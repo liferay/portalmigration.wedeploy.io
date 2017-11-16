@@ -8,12 +8,6 @@ clayTaglib: ""
 
 <article class="my-5">
 
-## Problems and notes:
-
-</article>
-
-<article class="my-5">
-
 ## How to migrate:
 
 - `_.bind` to native `.bind`.

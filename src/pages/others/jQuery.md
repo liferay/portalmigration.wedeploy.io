@@ -1,5 +1,5 @@
 ---
-title: "AUI.$"
+title: "jQuery.$"
 description: ""
 layout: "othersGuide"
 weight: 1
