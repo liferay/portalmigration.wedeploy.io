@@ -13,7 +13,7 @@ clayTaglib: ""
 - `_.bind` to native `.bind`.
 - `_.bindKey` there's no direct replacement.
 - `_.debounce` to `metal-debounce`.
-  ```
+  ```htmlmixed
   <aui:script require="metal-debounce/src/debounce">
     let debounce = metalDebounceSrcDebounce.default;
     debounce(fn, time);
@@ -23,7 +23,7 @@ clayTaglib: ""
 - `_.escape` there's no direct replacement.
 
 - `_.forEach` to `.forEach` or `for in`
-  ```
+  ```javascript
   [1,2,3].forEach((item) => {
     console.log(item);
   });
@@ -37,7 +37,7 @@ clayTaglib: ""
 - `_.groupBy` there's no direct replacement.
 - `_.isEqual` there's no direct replacement.
 - `_.isFunction` to
-  ```
+  ```javascript
     function isFunction(fn) {
       return (!!fn && ("object" == typeof fn || "function" == typeof fn)) && toString.call(fn) == '[object Function]'
     }
@@ -47,6 +47,5 @@ clayTaglib: ""
 - `_.unescape` there's no direct replacement.
 - `_.sub` there's no direct replacement.
 - `_.without` there's no direct replacement.
-
 
 </article>

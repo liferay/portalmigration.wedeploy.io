@@ -24,7 +24,7 @@ clayTaglib: "document.querySelector"
 - Migrate methods:
 
    - Note: Some methods can't be directly replaced with native implementations so we may need to use some utilities from metal like `metal-dom`. To do it we need to import the module in the jsp in the following way:
-      ```
+      ```htmlmixed
       <aui:script require="metal-dom/src/dom">
         let dom = metalDomSrcDom.default;
         ...
@@ -32,7 +32,7 @@ clayTaglib: "document.querySelector"
       ```
       or
 
-      ```
+      ```htmlmixed
       <aui:script require="metal-dom/src/domData">
         let domData = metalDomSrcDomData.default;
         ...
@@ -41,8 +41,8 @@ clayTaglib: "document.querySelector"
 
   - Replace `.addClass()` with `dom.addClasses(element, classes)`.
 
-  - Replace `.ajaxSubmit()` with 
-    ```
+  - Replace `.ajaxSubmit()` with
+    ```javascript
     fetch(url, {
       body: new FormData(form),
       credentials: 'include',
@@ -77,7 +77,7 @@ clayTaglib: "document.querySelector"
   - Replace `.html(value)` with `.innerHTML = value`.
 
   - Replace `.load()` with
-    ```
+    ```javascript
     fetch(url, data)
     .then(response => {
       element.innerHTML = response;
@@ -100,16 +100,16 @@ clayTaglib: "document.querySelector"
 
   - Replace `.remove()` with `dom.exitDocument(element)`.
 
-  - Replace `.serializeArray()` with 
-    ```
+  - Replace `.serializeArray()` with
+    ```javascript
       form
       dom.exitDocument(element)
     ```
 
   - Replace `.sideNavigation()` TODO.
 
-  - Replace `.toggle()` with 
-    ```
+  - Replace `.toggle()` with
+    ```javascript
     if (element.style.display === 'none')
       element.style.display = 'block';
     else
@@ -123,10 +123,5 @@ clayTaglib: "document.querySelector"
   - Replace `.val()` with `.value`.
 
   - Replace `.val(newValue)` with `.value = newValue`.
-
-
-
-
-
 
 </article>

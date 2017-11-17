@@ -25,7 +25,7 @@ module.exports = {
 	frontMatterHook: function(data) {
 		return generateIconData(data);
 	},
-	codeMirrorLanguages: ['xml', 'htmlmixed', 'soy'],
+	codeMirrorLanguages: ['xml', 'htmlmixed', 'soy', 'javascript'],
 	metalComponents: ['electric-quartz-components'],
 	sassOptions: {
 		includePaths: ['node_modules', clayIncludePaths]
