@@ -19,21 +19,23 @@ AUI.$ returns a jQuery nodeList with many methods available. Replacing it with `
 - Replace `AUI.$(selector)` with `document.querySelectorAll(selector)` if expected result is more than one node. In this case you will have to iterate over the array to execute methods on each node if needed.
 
 ### Migrate methods:
-   - Note: Some methods can't be directly replaced with native implementations so we may need to use some utilities from metal like `metal-dom`. To do it we need to import the module in the jsp in the following way:
-      ```htmlmixed
-      <aui:script require="metal-dom/src/dom">
-        let dom = metalDomSrcDom.default;
-        ...
-      </aui:script>
-      ```
-      or
+   <div class="alert alert-info">
+   Some methods can't be directly replaced with native implementations so we may need to use some utilities from metal like `metal-dom`. To do it we need to import the module in the jsp in the following way
+   </div>
 
-      ```htmlmixed
-      <aui:script require="metal-dom/src/domData">
-        let domData = metalDomSrcDomData.default;
-        ...
-      </aui:script>
-      ```
+```htmlmixed
+<aui:script require="metal-dom/src/dom">
+  let dom = metalDomSrcDom.default;
+  ...
+</aui:script>
+```
+
+```htmlmixed
+<aui:script require="metal-dom/src/domData">
+  let domData = metalDomSrcDomData.default;
+  ...
+</aui:script>
+```
 
 
   ### Direct replacements
