@@ -1,16 +1,13 @@
 ---
-title: "jQuery.$"
+title: "jQuery"
 description: ""
 layout: "othersGuide"
 weight: 1
-clayTaglib: "document.querySelector"
+clayTaglib: "Vanilla or Metal.js"
 ---
 
-<article class="my-5">
-
-## Problems and notes:
-- AUI.$ returns a jQuery nodeList with many methods available. Replacing it with `document.querySelector` or `document.querySelectorAll` we lose all that methods.
-
+<article class="my-5 alert alert-warning">
+AUI.$ returns a jQuery nodeList with many methods available. Replacing it with `document.querySelector` or `document.querySelectorAll` we lose all that methods.
 </article>
 
 <article class="my-5">
@@ -21,8 +18,7 @@ clayTaglib: "document.querySelector"
 
 - Replace `AUI.$(selector)` with `document.querySelectorAll(selector)` if expected result is more than one node. In this case you will have to iterate over the array to execute methods on each node if needed.
 
-- Migrate methods:
-
+### Migrate methods:
    - Note: Some methods can't be directly replaced with native implementations so we may need to use some utilities from metal like `metal-dom`. To do it we need to import the module in the jsp in the following way:
       ```htmlmixed
       <aui:script require="metal-dom/src/dom">
@@ -39,7 +35,39 @@ clayTaglib: "document.querySelector"
       </aui:script>
       ```
 
-  - Replace `.addClass()` with `dom.addClasses(element, classes)`.
+
+  ### Direct replacements
+
+  jQuery | replacement
+  --- | ---
+  `.addClass()` | `dom.addClasses(element, classes)`
+  `.append()` | `dom.append(parent, child)`
+  `.attr(attribute)` | `.getAttribute(attribute)`
+  `.attr(attribute, value)` | `.setAttribute(attribute, value)`
+  `.closest()` | TODO
+  `.collapse()` | TODO
+  `.data()` | `domData.get(element, 'propertyName')`
+  `.data(value)` | `domData.set(element, 'propertyName', value)`
+  `.each()` | `.forEach`
+  `.find()` | `.querySelector()` or `querySelectorAll()`
+  `.formToArray()` | TODO
+  `.html()` | `.innerHTML`
+  `.html(value)` | `.innerHTML = value`
+  `.map()` | `[...document.querySelectorAll(selector)].map()`
+  `.on()` | `addEventListener()`
+  `.one()` | `dom.once(element, eventName, fn)`
+  `.prepend()` | TODO
+  `.prop('property')` | `element.property`
+  `.prop('property', value)` | `element.property = value`
+  `.ready(fn)` | `document.addEventListener('DOMContentLoaded', fn, false)` <br> `window.addEventListener('load', fn,false)`
+  `.remove()` | `dom.exitDocument(element)`
+  `toggleClass('class')` | `dom.toggleClasses(element, 'class')`
+  `.tooltip()` | TODO
+  `.val()` | `.value`
+  `.val(newValue)` | `.value = newValue`
+
+
+  ### Code replacements
 
   - Replace `.ajaxSubmit()` with
     ```javascript
@@ -52,30 +80,6 @@ clayTaglib: "document.querySelector"
     .then(response => ...);
     ```
 
-  - Replace `.append()` with `dom.append(parent, child)`.
-
-  - Replace `.attr(attribute)` with `.getAttribute(attribute)`.
-
-  - Replace `.attr(attribute, value)` with `.setAttribute(attribute, value)`.
-
-  - Replace `.closest()` TODO.
-
-  - Replace `.collapse()` TODO.
-
-  - Replace `.data()` with `domData.get(element, 'propertyName')`.
-
-  - Replace `.data(value)` with `domData.set(element, 'propertyName', value)`.
-
-  - Replace `.each()` with `.forEach`.
-
-  - Replace `.find()` with `.querySelector()` or `querySelectorAll()`.
-
-  - Replace `.formToArray()` TODO
-
-  - Replace `.html()` with `.innerHTML`.
-
-  - Replace `.html(value)` with `.innerHTML = value`.
-
   - Replace `.load()` with
     ```javascript
     fetch(url, data)
@@ -83,22 +87,6 @@ clayTaglib: "document.querySelector"
       element.innerHTML = response;
     });
     ```
-
-  - Replace `.map()` with `[...document.querySelectorAll(selector)].map()`
-
-  - Replace `.on()` with `addEventListener()`.
-
-  - Replace `.one()` with `dom.once(element, eventName, fn)`.
-
-  - Replace `.prepend()` TODO.
-
-  - Replace `.prop('property')` with `element.property`.
-
-  - Replace `.prop('property', value)` with `element.property = value`.
-
-  - Replace `.ready(fn)` with `document.addEventListener('DOMContentLoaded', fn, false)` or `window.addEventListener('load', fn, false)`
-
-  - Replace `.remove()` with `dom.exitDocument(element)`.
 
   - Replace `.serializeArray()` with
     ```javascript
@@ -115,13 +103,5 @@ clayTaglib: "document.querySelector"
     else
       element.style.display = 'none';
     ```
-
-  - Replace `toggleClass('class')` with `dom.toggleClasses(element, 'class')`.
-
-  - Replace `.tooltip()` TODO.
-
-  - Replace `.val()` with `.value`.
-
-  - Replace `.val(newValue)` with `.value = newValue`.
 
 </article>
