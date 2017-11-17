@@ -11316,8 +11316,8 @@ function $header(opt_data, opt_ignored, opt_ijData) {
               'class', 'nav-item');
             ie_open('a', null, null,
                 'class', 'nav-link ml-3',
-                'href', '/others');
-              itext('Others');
+                'href', '/javascript');
+              itext('JavaScript');
             ie_close('a');
           ie_close('li');
         ie_close('ul');
