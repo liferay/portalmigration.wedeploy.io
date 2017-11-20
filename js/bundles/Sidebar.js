@@ -531,9 +531,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
           'href', '/');
         ie_open('span', null, null,
             'class', 'title h1 font-weight-bold mb-0 p-1');
-          var dyn1 = opt_data.site.title;
-          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
-          itext(' ');
+          itext('Portal Migration');
         ie_close('span');
       ie_close('a');
       ie_open('button', null, null,
@@ -566,13 +564,10 @@ function $render(opt_data, opt_ignored, opt_ijData) {
                 'href', '/');
               ie_open('span', null, null,
                   'class', 'title');
-                var dyn2 = opt_data.site.title;
-                if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
-                itext(' ');
+                itext('Portal ');
               ie_close('span');
               ie_open('small');
-                var dyn3 = opt_data.site.subtitle;
-                if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+                itext('Migration');
               ie_close('small');
             ie_close('a');
           ie_close('div');
@@ -594,8 +589,8 @@ if (goog.DEBUG) {
   $render.soyTemplateName = 'Sidebar.render';
 }
 
-exports.render.params = ["section","site"];
-exports.render.types = {"section":"any","site":"any"};
+exports.render.params = ["section"];
+exports.render.types = {"section":"any"};
 templates = exports;
 return exports;
 
