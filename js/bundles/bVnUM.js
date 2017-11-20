@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([2,4,5],[
+webpackJsonppageComponent([0,4,5],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
@@ -11210,12 +11210,14 @@ exports.default = parseFromAnchor;
 /* 92 */,
 /* 93 */,
 /* 94 */,
-/* 95 */
+/* 95 */,
+/* 96 */,
+/* 97 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "zsRvN", function() { return zsRvN; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bVnUM", function() { return bVnUM; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -11227,15 +11229,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from index.soy.
+// This file was automatically generated from lodash.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace zsRvN.
+ * @fileoverview Templates in namespace bVnUM.
  * @public
  */
 
-goog.module('zsRvN.incrementaldom');
+goog.module('bVnUM.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -11256,7 +11258,9 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('type.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('othersGuide.incrementaldom', 'render');
 
 
 /**
@@ -11267,7 +11271,185 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param173 = function() {
+  var param220 = function() {
+    ie_open('article', null, null,
+        'class', 'my-5');
+      ie_open('h2');
+        itext('How to migrate:');
+      ie_close('h2');
+      ie_open('h3');
+        itext('Direct replacements');
+      ie_close('h3');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th');
+              itext('lodash');
+            ie_close('th');
+            ie_open('th');
+              itext('replacement');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('_.bind');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('to native ');
+              ie_open('code');
+                itext('.bind');
+              ie_close('code');
+              itext('.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('_.bindKey');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('there\'s no direct replacement.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('_.escape');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('there\'s no direct replacement.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('_.groupBy');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('there\'s no direct replacement.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('_.isEqual');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('there\'s no direct replacement.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('_.map');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('to native ');
+              ie_open('code');
+                itext('Array.map');
+              ie_close('code');
+              itext('.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('_.reduce');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('to native ');
+              ie_open('code');
+                itext('Array.reduce');
+              ie_close('code');
+              itext('.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('_.unescape');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('there\'s no direct replacement.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('_.sub');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('there\'s no direct replacement.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('_.without');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('there\'s no direct replacement.');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      ie_open('h3');
+        itext('Code replacements');
+      ie_close('h3');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('p');
+            ie_open('code');
+              itext('_.debounce');
+            ie_close('code');
+            itext(' to ');
+            ie_open('code');
+              itext('metal-debounce');
+            ie_close('code');
+            itext('.');
+          ie_close('p');
+          $templateAlias2({code: '<aui:script require="metal-debounce/src/debounce">\n  let debounce = metalDebounceSrcDebounce.default;\n  debounce(fn, time);\n</aui:script>', mode: 'htmlmixed'}, null, opt_ijData);
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            ie_open('code');
+              itext('_.forEach');
+            ie_close('code');
+            itext(' to ');
+            ie_open('code');
+              itext('.forEach');
+            ie_close('code');
+            itext(' or ');
+            ie_open('code');
+              itext('for in');
+            ie_close('code');
+          ie_close('p');
+          $templateAlias2({code: '[1,2,3].forEach((item) => {\n  console.log(item);\n});\n\nlet obj = {a:1, b:2, c:3};\nfor(key in obj) {\n  console.log(item);\n}', mode: 'javascript'}, null, opt_ijData);
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            ie_open('code');
+              itext('_.isFunction');
+            ie_close('code');
+            itext(' to');
+          ie_close('p');
+          $templateAlias2({code: '  function isFunction(fn) {\n    return (!!fn && ("object" == typeof fn || "function" == typeof fn)) && toString.call(fn) == \'[object Function]\'\n  }', mode: 'javascript'}, null, opt_ijData);
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -11277,11 +11459,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param173}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param220}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'zsRvN.render';
+  $render.soyTemplateName = 'bVnUM.render';
 }
 
 exports.render.params = ["page","site"];
@@ -11291,16 +11473,14 @@ return exports;
 
 });
 
-class zsRvN extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(zsRvN, templates);
+class bVnUM extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(bVnUM, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 96 */,
-/* 97 */,
 /* 98 */,
 /* 99 */,
 /* 100 */,
@@ -11333,8 +11513,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(zsRvN, templates);
 /* 127 */,
 /* 128 */,
 /* 129 */,
-/* 130 */,
-/* 131 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11366,9 +11545,9 @@ __webpack_require__(18);
 
 __webpack_require__(19);
 
-var _indexSoy = __webpack_require__(95);
+var _lodashSoy = __webpack_require__(97);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _lodashSoy2 = _interopRequireDefault(_lodashSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -11378,23 +11557,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var zsRvN = function (_Component) {
-  _inherits(zsRvN, _Component);
+var bVnUM = function (_Component) {
+  _inherits(bVnUM, _Component);
 
-  function zsRvN() {
-    _classCallCheck(this, zsRvN);
+  function bVnUM() {
+    _classCallCheck(this, bVnUM);
 
-    return _possibleConstructorReturn(this, (zsRvN.__proto__ || Object.getPrototypeOf(zsRvN)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (bVnUM.__proto__ || Object.getPrototypeOf(bVnUM)).apply(this, arguments));
   }
 
-  return zsRvN;
+  return bVnUM;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(zsRvN, _indexSoy2.default);
+_metalSoy2.default.register(bVnUM, _lodashSoy2.default);
 
-exports.default = zsRvN;
+exports.default = bVnUM;
 
 /***/ })
-],[131]);
+],[130]);

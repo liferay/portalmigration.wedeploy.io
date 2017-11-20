@@ -11342,7 +11342,7 @@ function $header(opt_data, opt_ignored, opt_ijData) {
             ie_close('h1');
             ie_open('h2', null, null,
                 'class', 'h3');
-              var dyn14 = opt_data.site.description;
+              var dyn14 = opt_data.site.subtitle;
               if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
             ie_close('h2');
             ie_open('a', null, null,
