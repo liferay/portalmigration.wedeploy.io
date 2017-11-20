@@ -126,21 +126,21 @@ var iattr = IncrementalDom.attr;
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   var $$temp;
-  var localCurrentDepth__soy3 = ($$temp = opt_data.currentDepth) == null ? 0 : $$temp;
+  var localCurrentDepth__soy103 = ($$temp = opt_data.currentDepth) == null ? 0 : $$temp;
   if (opt_data.section.children) {
     ie_open('ul', null, null,
         'class', 'nav nav-nested nav-pills nav-stacked');
-      var childIdList23 = opt_data.section.childIds;
-      var childIdListLen23 = childIdList23.length;
-      for (var childIdIndex23 = 0; childIdIndex23 < childIdListLen23; childIdIndex23++) {
-        var childIdData23 = childIdList23[childIdIndex23];
-        var page__soy7 = opt_data.section.children[childIdData23];
-        if (! page__soy7.hidden) {
+      var childIdList123 = opt_data.section.childIds;
+      var childIdListLen123 = childIdList123.length;
+      for (var childIdIndex123 = 0; childIdIndex123 < childIdListLen123; childIdIndex123++) {
+        var childIdData123 = childIdList123[childIdIndex123];
+        var page__soy107 = opt_data.section.children[childIdData123];
+        if (! page__soy107.hidden) {
           ie_open('li', null, null,
-              'class', (page__soy7.active ? 'active ' : '') + (page__soy7.children ? 'nav-heading' : ''));
-            $anchor(soy.$$assignDefaults({page: page__soy7}, opt_data), null, opt_ijData);
-            if (! opt_data.depth || localCurrentDepth__soy3 + 1 < opt_data.depth) {
-              $render({currentDepth: localCurrentDepth__soy3 + 1, depth: opt_data.depth, section: page__soy7}, null, opt_ijData);
+              'class', (page__soy107.active ? 'active ' : '') + (page__soy107.children ? 'nav-heading' : ''));
+            $anchor(soy.$$assignDefaults({page: page__soy107}, opt_data), null, opt_ijData);
+            if (! opt_data.depth || localCurrentDepth__soy103 + 1 < opt_data.depth) {
+              $render({currentDepth: localCurrentDepth__soy103 + 1, depth: opt_data.depth, section: page__soy107}, null, opt_ijData);
             }
           ie_close('li');
         }
@@ -173,8 +173,8 @@ function $anchor(opt_data, opt_ignored, opt_ijData) {
       ie_close('svg');
     }
     ie_open('span');
-      var dyn0 = opt_data.page.title;
-      if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
+      var dyn13 = opt_data.page.title;
+      if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
     ie_close('span');
     if (opt_data.page.children) {
       ie_open('svg', null, null,

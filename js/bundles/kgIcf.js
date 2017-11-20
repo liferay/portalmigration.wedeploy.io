@@ -2316,11 +2316,11 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param56 = function() {
+  var param4 = function() {
     $templateAlias2(soy.$$assignDefaults({section: opt_data.site.index}, opt_data), null, opt_ijData);
     $guide(opt_data, null, opt_ijData);
   };
-  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param56}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param4}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -2344,8 +2344,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-fluid');
         ie_open('h1', null, null,
             'class', 'py-3');
-          var dyn1 = opt_data.page.title;
-          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
+          var dyn0 = opt_data.page.title;
+          if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
           itext(' ');
           ie_open('small');
             itext('Migration Guide');
@@ -2359,8 +2359,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'row');
         ie_open('div', null, null,
             'class', 'col-12');
-          var dyn2 = opt_data.content;
-          if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+          var dyn1 = opt_data.content;
+          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
         ie_close('div');
         ie_open('nav', null, null,
             'class', 'col-md-5 col-md-offset-2 col-xs-12');
@@ -2454,8 +2454,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
     ie_open('main', null, null,
         'class', 'content');
-      var dyn3 = opt_data.content;
-      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+      var dyn2 = opt_data.content;
+      if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
     ie_close('main');
   ie_close('div');
 }
@@ -2497,8 +2497,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
     ie_open('a', null, null,
         'class', 'navbar-brand',
         'href', '/');
-      var dyn4 = opt_data.site.title;
-      if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+      var dyn3 = opt_data.site.title;
+      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
     ie_close('a');
   ie_close('div');
 }
@@ -2625,11 +2625,11 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param97 = function() {
+  var param45 = function() {
     $templateAlias2(soy.$$assignDefaults({section: opt_data.site.index}, opt_data), null, opt_ijData);
     $guide(opt_data, null, opt_ijData);
   };
-  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param97}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param45}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -2653,8 +2653,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-fluid');
         ie_open('h1', null, null,
             'class', 'py-3');
-          var dyn5 = opt_data.page.title;
-          if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+          var dyn4 = opt_data.page.title;
+          if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
           itext(' ');
           ie_open('small');
             itext('Migration Guide');
@@ -2669,19 +2669,19 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
         ie_open('div', null, null,
             'class', 'col-12 text-center');
           ie_open('code');
-            var dyn6 = opt_data.page.title;
-            if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+            var dyn5 = opt_data.page.title;
+            if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
           ie_close('code');
           itext('to');
           ie_open('code');
-            var dyn7 = opt_data.page.clayTaglib;
-            if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+            var dyn6 = opt_data.page.clayTaglib;
+            if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
           ie_close('code');
         ie_close('div');
         ie_open('div', null, null,
             'class', 'col-12');
-          var dyn8 = opt_data.content;
-          if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+          var dyn7 = opt_data.content;
+          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
         ie_close('div');
         ie_open('nav', null, null,
             'class', 'col-md-5 col-md-offset-2 col-xs-12');
@@ -2774,11 +2774,11 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param118 = function() {
+  var param66 = function() {
     $templateAlias2(soy.$$assignDefaults({section: opt_data.site.index}, opt_data), null, opt_ijData);
     $type(opt_data, null, opt_ijData);
   };
-  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param118}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param66}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -2802,15 +2802,15 @@ function $type(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-fluid');
         ie_open('h1', null, null,
             'class', 'py-3');
-          var dyn9 = opt_data.page.title;
-          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+          var dyn8 = opt_data.page.title;
+          if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
           itext(' Migration Guide');
         ie_close('h1');
         ie_open('h2', null, null,
             'class', 'py-2');
           itext('Guide for consistent ');
-          var dyn10 = opt_data.page.title;
-          if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+          var dyn9 = opt_data.page.title;
+          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
           itext(' in Liferay Portal.');
         ie_close('h2');
       ie_close('div');
@@ -2836,16 +2836,16 @@ function $type(opt_data, opt_ignored, opt_ijData) {
           ie_close('h2');
           ie_open('h3');
             itext('Each one contains information to migrate ');
-            var dyn11 = opt_data.page.title;
-            if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+            var dyn10 = opt_data.page.title;
+            if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
             itext('.');
           ie_close('h3');
-          var childIdList150 = opt_data.page.childIds;
-          var childIdListLen150 = childIdList150.length;
-          for (var childIdIndex150 = 0; childIdIndex150 < childIdListLen150; childIdIndex150++) {
-            var childIdData150 = childIdList150[childIdIndex150];
-            var topic__soy136 = opt_data.page.children[childIdData150];
-            if (! topic__soy136.hidden) {
+          var childIdList98 = opt_data.page.childIds;
+          var childIdListLen98 = childIdList98.length;
+          for (var childIdIndex98 = 0; childIdIndex98 < childIdListLen98; childIdIndex98++) {
+            var childIdData98 = childIdList98[childIdIndex98];
+            var topic__soy84 = opt_data.page.children[childIdData98];
+            if (! topic__soy84.hidden) {
               ie_open('div', null, null,
                   'class', 'card-columns my-5');
                 ie_open('div', null, null,
@@ -2854,23 +2854,23 @@ function $type(opt_data, opt_ignored, opt_ijData) {
                       'class', 'card-header');
                     ie_open('svg', null, null,
                         'aria-hidden', 'true',
-                        'class', 'lexicon-icon lexicon-icon-' + topic__soy136.icon);
+                        'class', 'lexicon-icon lexicon-icon-' + topic__soy84.icon);
                       ie_void('use', null, null,
-                          'xlink:href', '/vendor/lexicon/icons.svg#' + topic__soy136.icon);
+                          'xlink:href', '/vendor/lexicon/icons.svg#' + topic__soy84.icon);
                     ie_close('svg');
                   ie_close('div');
                   ie_open('div', null, null,
                       'class', 'card-body');
                     ie_open('h2');
                       ie_open('a', null, null,
-                          'href', topic__soy136.url);
-                        var dyn12 = topic__soy136.title;
-                        if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+                          'href', topic__soy84.url);
+                        var dyn11 = topic__soy84.title;
+                        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
                       ie_close('a');
                     ie_close('h2');
                     ie_open('small');
-                      var dyn13 = topic__soy136.description;
-                      if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
+                      var dyn12 = topic__soy84.description;
+                      if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
                     ie_close('small');
                   ie_close('div');
                 ie_close('div');
@@ -3339,21 +3339,21 @@ var iattr = IncrementalDom.attr;
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   var $$temp;
-  var localCurrentDepth__soy3 = ($$temp = opt_data.currentDepth) == null ? 0 : $$temp;
+  var localCurrentDepth__soy103 = ($$temp = opt_data.currentDepth) == null ? 0 : $$temp;
   if (opt_data.section.children) {
     ie_open('ul', null, null,
         'class', 'nav nav-nested nav-pills nav-stacked');
-      var childIdList23 = opt_data.section.childIds;
-      var childIdListLen23 = childIdList23.length;
-      for (var childIdIndex23 = 0; childIdIndex23 < childIdListLen23; childIdIndex23++) {
-        var childIdData23 = childIdList23[childIdIndex23];
-        var page__soy7 = opt_data.section.children[childIdData23];
-        if (! page__soy7.hidden) {
+      var childIdList123 = opt_data.section.childIds;
+      var childIdListLen123 = childIdList123.length;
+      for (var childIdIndex123 = 0; childIdIndex123 < childIdListLen123; childIdIndex123++) {
+        var childIdData123 = childIdList123[childIdIndex123];
+        var page__soy107 = opt_data.section.children[childIdData123];
+        if (! page__soy107.hidden) {
           ie_open('li', null, null,
-              'class', (page__soy7.active ? 'active ' : '') + (page__soy7.children ? 'nav-heading' : ''));
-            $anchor(soy.$$assignDefaults({page: page__soy7}, opt_data), null, opt_ijData);
-            if (! opt_data.depth || localCurrentDepth__soy3 + 1 < opt_data.depth) {
-              $render({currentDepth: localCurrentDepth__soy3 + 1, depth: opt_data.depth, section: page__soy7}, null, opt_ijData);
+              'class', (page__soy107.active ? 'active ' : '') + (page__soy107.children ? 'nav-heading' : ''));
+            $anchor(soy.$$assignDefaults({page: page__soy107}, opt_data), null, opt_ijData);
+            if (! opt_data.depth || localCurrentDepth__soy103 + 1 < opt_data.depth) {
+              $render({currentDepth: localCurrentDepth__soy103 + 1, depth: opt_data.depth, section: page__soy107}, null, opt_ijData);
             }
           ie_close('li');
         }
@@ -3386,8 +3386,8 @@ function $anchor(opt_data, opt_ignored, opt_ijData) {
       ie_close('svg');
     }
     ie_open('span');
-      var dyn0 = opt_data.page.title;
-      if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
+      var dyn13 = opt_data.page.title;
+      if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
     ie_close('span');
     if (opt_data.page.children) {
       ie_open('svg', null, null,
@@ -11217,7 +11217,7 @@ exports.default = parseFromAnchor;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bVnUM", function() { return bVnUM; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "kgIcf", function() { return kgIcf; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -11233,11 +11233,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace bVnUM.
+ * @fileoverview Templates in namespace kgIcf.
  * @public
  */
 
-goog.module('bVnUM.incrementaldom');
+goog.module('kgIcf.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -11463,7 +11463,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'bVnUM.render';
+  $render.soyTemplateName = 'kgIcf.render';
 }
 
 exports.render.params = ["page","site"];
@@ -11473,8 +11473,8 @@ return exports;
 
 });
 
-class bVnUM extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(bVnUM, templates);
+class kgIcf extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(kgIcf, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
@@ -11513,7 +11513,8 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(bVnUM, templates);
 /* 127 */,
 /* 128 */,
 /* 129 */,
-/* 130 */
+/* 130 */,
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11557,23 +11558,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var bVnUM = function (_Component) {
-  _inherits(bVnUM, _Component);
+var kgIcf = function (_Component) {
+  _inherits(kgIcf, _Component);
 
-  function bVnUM() {
-    _classCallCheck(this, bVnUM);
+  function kgIcf() {
+    _classCallCheck(this, kgIcf);
 
-    return _possibleConstructorReturn(this, (bVnUM.__proto__ || Object.getPrototypeOf(bVnUM)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (kgIcf.__proto__ || Object.getPrototypeOf(kgIcf)).apply(this, arguments));
   }
 
-  return bVnUM;
+  return kgIcf;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(bVnUM, _lodashSoy2.default);
+_metalSoy2.default.register(kgIcf, _lodashSoy2.default);
 
-exports.default = bVnUM;
+exports.default = kgIcf;
 
 /***/ })
-],[130]);
+],[131]);
