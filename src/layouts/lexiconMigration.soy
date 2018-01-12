@@ -1,0 +1,43 @@
+{namespace lexiconMigration}
+
+/**
+ * @param page
+ * @param site
+ */
+{template .render}
+	{call main.render data="all"}
+		{param elementClasses: 'docs' /}
+		{param content kind="html"}
+			{call Sidebar.render data="all"}
+				{param section: $site.index /}
+			{/call}
+			{call .guide data="all" /}
+		{/param}
+	{/call}
+{/template}
+
+/**
+ * @param page
+ * @param content
+ */
+{template .guide}
+	<div class="sidebar-offset">
+		<header class="text-center">
+			<div class="container-fluid">
+				<h1 class="py-3">{$page.title} <small>Pattern Migration Guide</small></h1>
+			</div>
+		</header>
+
+		<div class="clay-site-container container-fluid">
+			<div class="row">
+				<div class="col-12 text-center">
+					<h3>Apply Lexicon's <a href="{$page.lexiconPatternLink}">{$page.lexiconPattern} Pattern</a> using <a href="{$page.clayComponentLink}">Clay</a></h3>
+				</div>
+
+				<div class="col-12">
+					{$content}
+				</div>
+			</div>
+		</div>
+	</div>
+{/template}
