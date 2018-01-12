@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([4],{
+webpackJsonppageComponent([6],{
 
 /***/ 12:
 /***/ (function(module, exports, __webpack_require__) {
@@ -13,21 +13,21 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _metalComponent = __webpack_require__(0);
+var _metalComponent = __webpack_require__(1);
 
 var _metalComponent2 = _interopRequireDefault(_metalComponent);
 
-var _metalSoy = __webpack_require__(1);
+var _metalSoy = __webpack_require__(0);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _metalToggler = __webpack_require__(22);
+var _metalToggler = __webpack_require__(23);
 
 var _metalToggler2 = _interopRequireDefault(_metalToggler);
 
-var _metalStorage = __webpack_require__(21);
+var _metalStorage = __webpack_require__(22);
 
-var _Sidebar = __webpack_require__(24);
+var _Sidebar = __webpack_require__(25);
 
 var _Sidebar2 = _interopRequireDefault(_Sidebar);
 
@@ -129,7 +129,7 @@ exports.default = Sidebar;
 
 /***/ }),
 
-/***/ 21:
+/***/ 22:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -140,7 +140,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.LocalStorageMechanism = exports.StorageMechanism = exports.Storage = undefined;
 
-var _Storage = __webpack_require__(25);
+var _Storage = __webpack_require__(26);
 
 var _Storage2 = _interopRequireDefault(_Storage);
 
@@ -148,7 +148,7 @@ var _StorageMechanism = __webpack_require__(9);
 
 var _StorageMechanism2 = _interopRequireDefault(_StorageMechanism);
 
-var _LocalStorageMechanism = __webpack_require__(26);
+var _LocalStorageMechanism = __webpack_require__(27);
 
 var _LocalStorageMechanism2 = _interopRequireDefault(_LocalStorageMechanism);
 
@@ -160,7 +160,7 @@ exports.LocalStorageMechanism = _LocalStorageMechanism2.default;
 
 /***/ }),
 
-/***/ 22:
+/***/ 23:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -464,16 +464,16 @@ exports.default = Toggler;
 
 /***/ }),
 
-/***/ 24:
+/***/ 25:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Sidebar", function() { return Sidebar; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
 /* jshint ignore:start */
 
@@ -605,7 +605,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Sidebar, templates);
 
 /***/ }),
 
-/***/ 25:
+/***/ 26:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -781,7 +781,7 @@ exports.default = Storage;
 
 /***/ }),
 
-/***/ 26:
+/***/ 27:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

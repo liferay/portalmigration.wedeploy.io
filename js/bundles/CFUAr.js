@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([5,6,7],[
+webpackJsonppageComponent([3,6,7],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
@@ -11357,12 +11357,14 @@ exports.default = parseFromAnchor;
 /* 92 */,
 /* 93 */,
 /* 94 */,
-/* 95 */
+/* 95 */,
+/* 96 */,
+/* 97 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pageIndex", function() { return pageIndex; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CFUAr", function() { return CFUAr; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -11374,15 +11376,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from index.soy.
+// This file was automatically generated from jQuery.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace pageIndex.
+ * @fileoverview Templates in namespace CFUAr.
  * @public
  */
 
-goog.module('pageIndex.incrementaldom');
+goog.module('CFUAr.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -11403,7 +11405,9 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('main.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('othersGuide.incrementaldom', 'render');
 
 
 /**
@@ -11414,354 +11418,457 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  opt_data = opt_data || {};
-  var param55 = function() {
-    $header(opt_data, null, opt_ijData);
+  var param202 = function() {
+    ie_open('article', null, null,
+        'class', 'my-5 alert alert-warning');
+      itext('AUI.$ returns a jQuery nodeList with many methods available. Replacing it with `document.querySelector` or `document.querySelectorAll` we lose all that methods.');
+    ie_close('article');
+    ie_open('article', null, null,
+        'class', 'my-5');
+      ie_open('h2');
+        itext('How to migrate:');
+      ie_close('h2');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('p');
+            itext('Replace ');
+            ie_open('code');
+              itext('AUI.$(selector)');
+            ie_close('code');
+            itext(' with ');
+            ie_open('code');
+              itext('document.querySelector(selector)');
+            ie_close('code');
+            itext(' if expected result is one node.');
+          ie_close('p');
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            itext('Replace ');
+            ie_open('code');
+              itext('AUI.$(selector)');
+            ie_close('code');
+            itext(' with ');
+            ie_open('code');
+              itext('document.querySelectorAll(selector)');
+            ie_close('code');
+            itext(' if expected result is more than one node. In this case you will have to iterate over the array to execute methods on each node if needed.');
+          ie_close('p');
+        ie_close('li');
+      ie_close('ul');
+      ie_open('h3');
+        itext('Migrate methods:');
+      ie_close('h3');
+      ie_open('div', null, null,
+          'class', 'alert alert-info');
+        itext('Some methods can\'t be directly replaced with native implementations so we may need to use some utilities from metal like `metal-dom`. To do it we need to import the module in the jsp in the following way');
+      ie_close('div');
+      $templateAlias2({code: '<aui:script require="metal-dom/src/dom">\n  let dom = metalDomSrcDom.default;\n  ...\n</aui:script>', mode: 'htmlmixed'}, null, opt_ijData);
+      $templateAlias2({code: '<aui:script require="metal-dom/src/domData">\n  let domData = metalDomSrcDomData.default;\n  ...\n</aui:script>', mode: 'htmlmixed'}, null, opt_ijData);
+      ie_open('h3');
+        itext('Direct replacements');
+      ie_close('h3');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th');
+              itext('jQuery');
+            ie_close('th');
+            ie_open('th');
+              itext('replacement');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.addClass()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('dom.addClasses(element, classes)');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.append()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('dom.append(parent, child)');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.attr(attribute)');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('.getAttribute(attribute)');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.attr(attribute, value)');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('.setAttribute(attribute, value)');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.closest()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('TODO');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.collapse()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('TODO');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.data()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('domData.get(element, \'propertyName\')');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.data(value)');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('domData.set(element, \'propertyName\', value)');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.each()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('.forEach');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.find()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('.querySelector()');
+              ie_close('code');
+              itext(' or ');
+              ie_open('code');
+                itext('querySelectorAll()');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.formToArray()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('TODO');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.html()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('.innerHTML');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.html(value)');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('.innerHTML = value');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.map()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('[...document.querySelectorAll(selector)].map()');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.on()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('addEventListener()');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.one()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('dom.once(element, eventName, fn)');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.prepend()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('TODO');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.prop(\'property\')');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('element.property');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.prop(\'property\', value)');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('element.property = value');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.ready(fn)');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('document.addEventListener(\'DOMContentLoaded\', fn, false)');
+              ie_close('code');
+              itext(' ');
+              ie_open('br');
+              ie_close('br');
+              itext(' ');
+              ie_open('code');
+                itext('window.addEventListener(\'load\', fn,false)');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.remove()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('dom.exitDocument(element)');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('toggleClass(\'class\')');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('dom.toggleClasses(element, \'class\')');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.tooltip()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('TODO');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.val()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('.value');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.val(newValue)');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('.value = newValue');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      ie_open('h3');
+        itext('Code replacements');
+      ie_close('h3');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('p');
+            itext('Replace ');
+            ie_open('code');
+              itext('.ajaxSubmit()');
+            ie_close('code');
+            itext(' with');
+          ie_close('p');
+          $templateAlias2({code: 'fetch(url, {\n  body: new FormData(form),\n  credentials: \'include\',\n  method: \'POST\',\n  ...\n})\n.then(response => ...);', mode: 'javascript'}, null, opt_ijData);
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            itext('Replace ');
+            ie_open('code');
+              itext('.load()');
+            ie_close('code');
+            itext(' with');
+          ie_close('p');
+          $templateAlias2({code: 'fetch(url, data)\n.then(response => {\n  element.innerHTML = response;\n});', mode: 'javascript'}, null, opt_ijData);
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            itext('Replace ');
+            ie_open('code');
+              itext('.serializeArray()');
+            ie_close('code');
+            itext(' with');
+          ie_close('p');
+          $templateAlias2({code: '  form\n  dom.exitDocument(element)', mode: 'javascript'}, null, opt_ijData);
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            itext('Replace ');
+            ie_open('code');
+              itext('.sideNavigation()');
+            ie_close('code');
+            itext(' TODO.');
+          ie_close('p');
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            itext('Replace ');
+            ie_open('code');
+              itext('.toggle()');
+            ie_close('code');
+            itext(' with');
+          ie_close('p');
+          $templateAlias2({code: 'if (element.style.display === \'none\')\n  element.style.display = \'block\';\nelse\n  element.style.display = \'none\';', mode: 'javascript'}, null, opt_ijData);
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param55, elementClasses: 'home'}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param202}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'pageIndex.render';
+  $render.soyTemplateName = 'CFUAr.render';
 }
 
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $header(opt_data, opt_ignored, opt_ijData) {
-  ie_open('header', null, null,
-      'class', 'header');
-    ie_open('nav', null, null,
-        'class', 'navbar fixed-top navbar-clay-site navbar-expand-lg navbar-dark');
-      ie_open('div', null, null,
-          'class', 'container-fluid container-fluid-max-lg');
-        ie_open('div', null, null,
-            'class', 'navbar-brand');
-          ie_open('span', null, null,
-              'class', 'title align-middle');
-            itext('Portal');
-          ie_close('span');
-          ie_open('small', null, null,
-              'class', 'ml-1');
-            itext('Migration');
-          ie_close('small');
-        ie_close('div');
-        ie_open('ul', null, null,
-            'class', 'navbar-nav ml-auto');
-          ie_open('li', null, null,
-              'class', 'nav-item');
-            ie_open('a', null, null,
-                'class', 'nav-link ml-3',
-                'href', '/javascript');
-              itext('JavaScript');
-            ie_close('a');
-          ie_close('li');
-          ie_open('li', null, null,
-              'class', 'nav-item');
-            ie_open('a', null, null,
-                'class', 'nav-link ml-3',
-                'href', '/lexicon');
-              itext('Lexicon 2.0');
-            ie_close('a');
-          ie_close('li');
-        ie_close('ul');
-      ie_close('div');
-    ie_close('nav');
-    ie_open('div', null, null,
-        'class', 'container-fluid');
-      ie_open('div', null, null,
-          'class', 'row');
-        ie_open('div', null, null,
-            'class', 'intro text-center col');
-          ie_open('div', null, null,
-              'class', 'container-fluid container-fluid-max-lg');
-            ie_open('h1', null, null,
-                'class', 'h1 m-1');
-              itext('KEEP');
-            ie_close('h1');
-            ie_open('h1', null, null,
-                'class', 'h1 m-1');
-              itext('CALM');
-            ie_close('h1');
-            ie_open('h3', null, null,
-                'class', 'h3 mb-0');
-              itext('and');
-            ie_close('h3');
-            ie_open('h1', null, null,
-                'class', 'h1 mt-1');
-              itext('MIGRATE');
-            ie_close('h1');
-            ie_open('h2', null, null,
-                'class', 'h3');
-              var dyn1 = opt_data.site.subtitle;
-              if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
-            ie_close('h2');
-            ie_open('a', null, null,
-                'class', 'btn btn-lg btn-outline-light font-weight-bold mx-3 mb-4',
-                'href', 'http://lexicondesign.io',
-                'target', '_blank');
-              ie_open('img', null, null,
-                  'class', 'mr-2',
-                  'src', '/images/home/lexicon_symbol.svg',
-                  'alt', '',
-                  'width', '20');
-              ie_close('img');
-              itext('Learn about Lexicon');
-            ie_close('a');
-            ie_open('a', null, null,
-                'class', 'btn btn-lg btn-outline-light font-weight-bold mx-3 mb-4',
-                'href', 'http://claycss.com/',
-                'target', '_blank');
-              ie_open('img', null, null,
-                  'class', 'mr-2',
-                  'src', '/images/home/clay_logo_w.svg',
-                  'alt', '',
-                  'width', '18');
-              ie_close('img');
-              itext('Learn about Clay');
-            ie_close('a');
-          ie_close('div');
-        ie_close('div');
-      ie_close('div');
-    ie_close('div');
-  ie_close('header');
-  $contactus(opt_data, null, opt_ijData);
-  $footer(opt_data, null, opt_ijData);
-}
-exports.header = $header;
-if (goog.DEBUG) {
-  $header.soyTemplateName = 'pageIndex.header';
-}
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $teasers(opt_data, opt_ignored, opt_ijData) {
-  ie_open('section', null, null,
-      'class', 'teasers',
-      'id', 'teasers');
-    ie_open('div', null, null,
-        'class', 'container-fluid container-fluid-max-lg');
-      ie_open('div', null, null,
-          'class', 'row mb-4');
-        ie_open('div', null, null,
-            'class', 'col-md-5 ml-auto text-center');
-          ie_open('div', null, null,
-              'class', 'card text-center wow fadeInUp');
-            ie_open('div', null, null,
-                'class', 'card-body mx-4 text-center');
-              ie_open('img', null, null,
-                  'class', 'mx-auto',
-                  'src', '/images/home/what.svg',
-                  'alt', '');
-              ie_close('img');
-              ie_open('h2', null, null,
-                  'class', 'font-weight-bold');
-                itext('Migrate Taglibs');
-              ie_close('h2');
-              ie_open('p');
-                itext('Learn how to migrate from the old aui, liferay-ui, etc. taglibs to brand new Clay Taglibs.');
-              ie_close('p');
-              ie_open('a', null, null,
-                  'href', '/taglibs',
-                  'class', 'btn btn-sm text-uppercase font-weight-bold');
-                ie_open('img', null, null,
-                    'class', 'mr-2',
-                    'src', '/images/home/chevron-right.svg',
-                    'alt', '');
-                ie_close('img');
-                itext('Learn More');
-              ie_close('a');
-            ie_close('div');
-          ie_close('div');
-        ie_close('div');
-        ie_open('div', null, null,
-            'class', 'col-md-5 mr-auto text-center mt-4 mt-md-0');
-          ie_open('div', null, null,
-              'class', 'card wow fadeInUp',
-              'data-wow-delay', '0.1s');
-            ie_open('div', null, null,
-                'class', 'card-body mx-4');
-              ie_open('img', null, null,
-                  'class', 'mx-auto',
-                  'src', '/images/home/news.svg',
-                  'alt', '');
-              ie_close('img');
-              ie_open('h2', null, null,
-                  'class', 'font-weight-bold');
-                itext('Migrate Styles');
-              ie_close('h2');
-              ie_open('p');
-                itext('Learn how to migrate from Lexicon 1.1 to new Clay CSS implementation and Bootstrap 4.');
-              ie_close('p');
-              ie_open('a', null, null,
-                  'href', '/styles',
-                  'class', 'btn btn-sm text-uppercase font-weight-bold');
-                ie_open('img', null, null,
-                    'class', 'mr-2',
-                    'src', '/images/home/chevron-right.svg',
-                    'alt', '');
-                ie_close('img');
-                itext('Learn More');
-              ie_close('a');
-            ie_close('div');
-          ie_close('div');
-        ie_close('div');
-      ie_close('div');
-    ie_close('div');
-  ie_close('section');
-}
-exports.teasers = $teasers;
-if (goog.DEBUG) {
-  $teasers.soyTemplateName = 'pageIndex.teasers';
-}
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $contactus(opt_data, opt_ignored, opt_ijData) {
-  ie_open('section', null, null,
-      'class', 'contact-us');
-    ie_open('div', null, null,
-        'class', 'container-fluid container-fluid-max-lg');
-      ie_open('div', null, null,
-          'class', 'row');
-        ie_open('div', null, null,
-            'class', 'col-md-4 ml-auto mr-lg-4 wow zoomIn',
-            'data-wow-duration', '1.2s');
-          ie_open('div', null, null,
-              'class', 'text-center text-lg-right');
-            ie_open('img', null, null,
-                'src', '/images/home/participate02.svg',
-                'alt', '');
-            ie_close('img');
-          ie_close('div');
-        ie_close('div');
-        ie_open('div', null, null,
-            'class', 'col-md-6 mr-auto wow zoomIn',
-            'data-wow-duration', '0.8s');
-          ie_open('div', null, null,
-              'class', 'media-body mt-4 text-center text-lg-left');
-            ie_open('p', null, null,
-                'class', 'h1 font-weight-bold');
-              itext('Want to contribute on this guides? Head on over to the ');
-              ie_open('a', null, null,
-                  'class', 'font-weight-bold',
-                  'href', 'https://github.com/carloslancha/portal-migration',
-                  'target', '_blank');
-                itext('GitHub repo.');
-              ie_close('a');
-            ie_close('p');
-          ie_close('div');
-        ie_close('div');
-      ie_close('div');
-    ie_close('div');
-  ie_close('section');
-}
-exports.contactus = $contactus;
-if (goog.DEBUG) {
-  $contactus.soyTemplateName = 'pageIndex.contactus';
-}
-
-
-/**
- * @param {Object<string, *>=} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $footer(opt_data, opt_ignored, opt_ijData) {
-  ie_open('div', null, null,
-      'class', 'footer');
-    ie_open('div', null, null,
-        'class', 'container-fluid container-fluid-max-lg');
-      ie_open('div', null, null,
-          'class', 'row');
-        ie_open('div', null, null,
-            'class', 'col-lg text-center text-lg-left mb-4 mb-lg-0');
-          ie_open('img', null, null,
-              'class', 'logo',
-              'src', '/images/liferayLogo.png');
-          ie_close('img');
-          ie_void('div', null, null,
-              'class', 'clearfix d-lg-none');
-          itext('Brought to you by ');
-          ie_open('a', null, null,
-              'class', 'font-weight-bold',
-              'href', 'http://www.liferay.com',
-              'target', '_blank');
-            itext('Liferay, Inc.');
-          ie_close('a');
-        ie_close('div');
-        ie_open('div', null, null,
-            'class', 'col-lg text-center text-lg-right');
-          ie_open('div');
-            itext('Powered by ');
-            ie_open('a', null, null,
-                'class', 'font-weight-bold',
-                'href', 'https://wedeploy.com/',
-                'target', '_blank');
-              itext('WeDeploy\u2122');
-            ie_close('a');
-          ie_close('div');
-        ie_close('div');
-      ie_close('div');
-    ie_close('div');
-  ie_close('div');
-  ie_void('script', null, null,
-      'src', '/scripts/wow.min.js');
-  ie_void('script', null, null,
-      'src', '/scripts/home.js');
-  ie_open('script');
-    itext('new WOW().init();');
-  ie_close('script');
-}
-exports.footer = $footer;
-if (goog.DEBUG) {
-  $footer.soyTemplateName = 'pageIndex.footer';
-}
-
-exports.render.params = [];
-exports.render.types = {};
-exports.header.params = ["site"];
-exports.header.types = {"site":"any"};
-exports.teasers.params = [];
-exports.teasers.types = {};
-exports.contactus.params = [];
-exports.contactus.types = {};
-exports.footer.params = [];
-exports.footer.types = {};
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
 templates = exports;
 return exports;
 
 });
 
-class pageIndex extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageIndex, templates);
+class CFUAr extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(CFUAr, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 96 */,
-/* 97 */,
 /* 98 */,
 /* 99 */,
 /* 100 */,
@@ -11796,12 +11903,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageIndex, templates)
 /* 129 */,
 /* 130 */,
 /* 131 */,
-/* 132 */,
-/* 133 */,
-/* 134 */,
-/* 135 */,
-/* 136 */,
-/* 137 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11835,9 +11937,9 @@ __webpack_require__(19);
 
 __webpack_require__(20);
 
-var _indexSoy = __webpack_require__(95);
+var _jQuerySoy = __webpack_require__(97);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _jQuerySoy2 = _interopRequireDefault(_jQuerySoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -11847,23 +11949,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var pageIndex = function (_Component) {
-  _inherits(pageIndex, _Component);
+var CFUAr = function (_Component) {
+  _inherits(CFUAr, _Component);
 
-  function pageIndex() {
-    _classCallCheck(this, pageIndex);
+  function CFUAr() {
+    _classCallCheck(this, CFUAr);
 
-    return _possibleConstructorReturn(this, (pageIndex.__proto__ || Object.getPrototypeOf(pageIndex)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (CFUAr.__proto__ || Object.getPrototypeOf(CFUAr)).apply(this, arguments));
   }
 
-  return pageIndex;
+  return CFUAr;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(pageIndex, _indexSoy2.default);
+_metalSoy2.default.register(CFUAr, _jQuerySoy2.default);
 
-exports.default = pageIndex;
+exports.default = CFUAr;
 
 /***/ })
-],[137]);
+],[132]);

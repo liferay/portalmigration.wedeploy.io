@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([5],{
+webpackJsonppageComponent([7],{
 
 /***/ 11:
 /***/ (function(module, exports, __webpack_require__) {
@@ -13,7 +13,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _metalComponent = __webpack_require__(0);
+var _metalComponent = __webpack_require__(1);
 
 var _metalComponent2 = _interopRequireDefault(_metalComponent);
 
@@ -21,11 +21,11 @@ var _metalDom = __webpack_require__(3);
 
 var _metalDom2 = _interopRequireDefault(_metalDom);
 
-var _metalSoy = __webpack_require__(1);
+var _metalSoy = __webpack_require__(0);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _MainNavigation = __webpack_require__(23);
+var _MainNavigation = __webpack_require__(24);
 
 var _MainNavigation2 = _interopRequireDefault(_MainNavigation);
 
@@ -70,16 +70,16 @@ exports.default = MainNavigation;
 
 /***/ }),
 
-/***/ 23:
+/***/ 24:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainNavigation", function() { return MainNavigation; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
 /* jshint ignore:start */
 
@@ -126,21 +126,21 @@ var iattr = IncrementalDom.attr;
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   var $$temp;
-  var localCurrentDepth__soy103 = ($$temp = opt_data.currentDepth) == null ? 0 : $$temp;
+  var localCurrentDepth__soy3 = ($$temp = opt_data.currentDepth) == null ? 0 : $$temp;
   if (opt_data.section.children) {
     ie_open('ul', null, null,
         'class', 'nav nav-nested nav-pills nav-stacked');
-      var childIdList123 = opt_data.section.childIds;
-      var childIdListLen123 = childIdList123.length;
-      for (var childIdIndex123 = 0; childIdIndex123 < childIdListLen123; childIdIndex123++) {
-        var childIdData123 = childIdList123[childIdIndex123];
-        var page__soy107 = opt_data.section.children[childIdData123];
-        if (! page__soy107.hidden) {
+      var childIdList23 = opt_data.section.childIds;
+      var childIdListLen23 = childIdList23.length;
+      for (var childIdIndex23 = 0; childIdIndex23 < childIdListLen23; childIdIndex23++) {
+        var childIdData23 = childIdList23[childIdIndex23];
+        var page__soy7 = opt_data.section.children[childIdData23];
+        if (! page__soy7.hidden) {
           ie_open('li', null, null,
-              'class', (page__soy107.active ? 'active ' : '') + (page__soy107.children ? 'nav-heading' : ''));
-            $anchor(soy.$$assignDefaults({page: page__soy107}, opt_data), null, opt_ijData);
-            if (! opt_data.depth || localCurrentDepth__soy103 + 1 < opt_data.depth) {
-              $render({currentDepth: localCurrentDepth__soy103 + 1, depth: opt_data.depth, section: page__soy107}, null, opt_ijData);
+              'class', (page__soy7.active ? 'active ' : '') + (page__soy7.children ? 'nav-heading' : ''));
+            $anchor(soy.$$assignDefaults({page: page__soy7}, opt_data), null, opt_ijData);
+            if (! opt_data.depth || localCurrentDepth__soy3 + 1 < opt_data.depth) {
+              $render({currentDepth: localCurrentDepth__soy3 + 1, depth: opt_data.depth, section: page__soy7}, null, opt_ijData);
             }
           ie_close('li');
         }
@@ -173,8 +173,8 @@ function $anchor(opt_data, opt_ignored, opt_ijData) {
       ie_close('svg');
     }
     ie_open('span');
-      var dyn13 = opt_data.page.title;
-      if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
+      var dyn0 = opt_data.page.title;
+      if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
     ie_close('span');
     if (opt_data.page.children) {
       ie_open('svg', null, null,
