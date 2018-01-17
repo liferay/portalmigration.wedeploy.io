@@ -13,7 +13,7 @@
 	}
 
 	article {
-		> h3 {
+		> h2, > h3 {
 			font-size: $base-size * 0.7;
 			font-weight: 700;
 			margin-bottom: $base-size * 1.2;
@@ -23,6 +23,10 @@
 
 		> p {
 			margin-bottom: $base-size * 2;
+
+			+ .alert, + .code-container {
+				margin-top: -2rem;
+			}
 		}
 	}
 
