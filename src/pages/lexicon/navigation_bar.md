@@ -98,7 +98,15 @@ Start by adding the following imports to the imports section of your `init.jsp` 
 <%@ page import="com.liferay.frontend.taglib.clay.servlet.taglib.util.NavigationItem" %>
 ```
 
+Don't forget to add the dependency with to the `frontend-taglib-clay` module in your `build.gradle` file:
+
+```text/html
+provided project(":apps:foundation:frontend-taglib:frontend-taglib-clay")
+```
+
 Model your entries using the `NavigationItem` class and pass it down to the tag instance.
+
+<div class="alert alert-warning">The `inverted` attribute is set to true in all admin portlets. Instances in applications for live  sites only can be left to false (default)</div>
 
 ```text/html
 <%
@@ -117,8 +125,6 @@ navigationItems.add(entriesNavigationItem);
 	inverted="<%= true %>"
 	items="<%= navigationItems %>" />
 ```
-
-<div class="alert alert-warning">The `inverted` attribute is set to true in all admin portlets. Instances in applications for live  sites only can be left to false (default)</div>
 
 ### [4] Extract application sections from the Actions Menu <a id="step-4"></a>
 
@@ -144,5 +150,6 @@ If your application already supports it (or even if it doesn't), consider moving
 
 LPS | Pull Request | Master
 --- | --- | ---
+[LPS-77166](https://issues.liferay.com/browse/LPS-77166) | [https://github.com/brianchandotcom/liferay-portal/pull/54459](https://github.com/brianchandotcom/liferay-portal/pull/54459) | ✘
 
 </article>
