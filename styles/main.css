@@ -12616,7 +12616,7 @@ button.loading > .linear.loading-animation {
     font-size: 36px;
     font-weight: 700; }
 
-.docs article > h3 {
+.docs article > h2, .docs article > h3 {
   font-size: 16.8px;
   font-weight: 700;
   margin-bottom: 28.8px;
@@ -12625,6 +12625,8 @@ button.loading > .linear.loading-animation {
 
 .docs article > p {
   margin-bottom: 48px; }
+  .docs article > p + .alert, .docs article > p + .code-container {
+    margin-top: -2rem; }
 
 .about {
   font-size: 18px;

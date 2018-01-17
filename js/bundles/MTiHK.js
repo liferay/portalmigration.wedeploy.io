@@ -15,27 +15,27 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ElectricUpdates = exports.ElectricSearchBase = exports.ElectricSearchAutocomplete = exports.ElectricSearch = exports.ElectricReadingProgress = exports.ElectricNavigation = exports.ElectricCodeTabs = exports.ElectricCode = undefined;
 
-var _ElectricCode = __webpack_require__(40);
+var _ElectricCode = __webpack_require__(28);
 
 var _ElectricCode2 = _interopRequireDefault(_ElectricCode);
 
-var _ElectricCodeTabs = __webpack_require__(41);
+var _ElectricCodeTabs = __webpack_require__(29);
 
 var _ElectricCodeTabs2 = _interopRequireDefault(_ElectricCodeTabs);
 
-var _ElectricNavigation = __webpack_require__(42);
+var _ElectricNavigation = __webpack_require__(30);
 
 var _ElectricNavigation2 = _interopRequireDefault(_ElectricNavigation);
 
-var _ElectricReadingProgress = __webpack_require__(43);
+var _ElectricReadingProgress = __webpack_require__(31);
 
 var _ElectricReadingProgress2 = _interopRequireDefault(_ElectricReadingProgress);
 
-var _ElectricSearch = __webpack_require__(44);
+var _ElectricSearch = __webpack_require__(32);
 
 var _ElectricSearch2 = _interopRequireDefault(_ElectricSearch);
 
-var _ElectricSearchAutocomplete = __webpack_require__(45);
+var _ElectricSearchAutocomplete = __webpack_require__(33);
 
 var _ElectricSearchAutocomplete2 = _interopRequireDefault(_ElectricSearchAutocomplete);
 
@@ -43,7 +43,7 @@ var _ElectricSearchBase = __webpack_require__(10);
 
 var _ElectricSearchBase2 = _interopRequireDefault(_ElectricSearchBase);
 
-var _ElectricUpdates = __webpack_require__(46);
+var _ElectricUpdates = __webpack_require__(34);
 
 var _ElectricUpdates2 = _interopRequireDefault(_ElectricUpdates);
 
@@ -2316,11 +2316,11 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param74 = function() {
+  var param56 = function() {
     $templateAlias2(soy.$$assignDefaults({section: opt_data.site.index}, opt_data), null, opt_ijData);
     $guide(opt_data, null, opt_ijData);
   };
-  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param74}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param56}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -2344,8 +2344,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-fluid');
         ie_open('h1', null, null,
             'class', 'py-3');
-          var dyn2 = opt_data.page.title;
-          if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+          var dyn1 = opt_data.page.title;
+          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
           itext(' ');
           ie_open('small');
             itext('Migration Guide');
@@ -2359,8 +2359,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'row');
         ie_open('div', null, null,
             'class', 'col-12');
-          var dyn3 = opt_data.content;
-          if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+          var dyn2 = opt_data.content;
+          if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
         ie_close('div');
         ie_open('nav', null, null,
             'class', 'col-md-5 col-md-offset-2 col-xs-12');
@@ -2451,11 +2451,11 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param91 = function() {
+  var param73 = function() {
     $templateAlias2(soy.$$assignDefaults({section: opt_data.site.index}, opt_data), null, opt_ijData);
     $guide(opt_data, null, opt_ijData);
   };
-  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param91}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param73}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -2479,8 +2479,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-fluid');
         ie_open('h1', null, null,
             'class', 'py-3');
-          var dyn4 = opt_data.page.title;
-          if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+          var dyn3 = opt_data.page.title;
+          if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
           itext(' ');
           ie_open('small');
             itext('Pattern Migration Guide');
@@ -2498,8 +2498,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             itext('Apply Lexicon\'s ');
             ie_open('a', null, null,
                 'href', opt_data.page.lexiconPatternLink);
-              var dyn5 = opt_data.page.lexiconPattern;
-              if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+              var dyn4 = opt_data.page.lexiconPattern;
+              if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
               itext(' Pattern');
             ie_close('a');
             itext(' using ');
@@ -2511,8 +2511,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
         ie_close('div');
         ie_open('div', null, null,
             'class', 'col-12');
-          var dyn6 = opt_data.content;
-          if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+          var dyn5 = opt_data.content;
+          if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
         ie_close('div');
       ie_close('div');
     ie_close('div');
@@ -2602,8 +2602,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
     ie_open('main', null, null,
         'class', 'content');
-      var dyn7 = opt_data.content;
-      if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+      var dyn6 = opt_data.content;
+      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
     ie_close('main');
   ie_close('div');
 }
@@ -2645,8 +2645,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
     ie_open('a', null, null,
         'class', 'navbar-brand',
         'href', '/');
-      var dyn8 = opt_data.site.title;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn7 = opt_data.site.title;
+      if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
     ie_close('a');
   ie_close('div');
 }
@@ -2773,11 +2773,11 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param135 = function() {
+  var param117 = function() {
     $templateAlias2(soy.$$assignDefaults({section: opt_data.site.index}, opt_data), null, opt_ijData);
     $guide(opt_data, null, opt_ijData);
   };
-  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param135}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param117}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -2801,8 +2801,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-fluid');
         ie_open('h1', null, null,
             'class', 'py-3');
-          var dyn9 = opt_data.page.title;
-          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+          var dyn8 = opt_data.page.title;
+          if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
           itext(' ');
           ie_open('small');
             itext('Migration Guide');
@@ -2817,19 +2817,19 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
         ie_open('div', null, null,
             'class', 'col-12 text-center');
           ie_open('code');
-            var dyn10 = opt_data.page.title;
-            if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+            var dyn9 = opt_data.page.title;
+            if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
           ie_close('code');
           itext('to');
           ie_open('code');
-            var dyn11 = opt_data.page.clayTaglib;
-            if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+            var dyn10 = opt_data.page.clayTaglib;
+            if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
           ie_close('code');
         ie_close('div');
         ie_open('div', null, null,
             'class', 'col-12');
-          var dyn12 = opt_data.content;
-          if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+          var dyn11 = opt_data.content;
+          if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
         ie_close('div');
         ie_open('nav', null, null,
             'class', 'col-md-5 col-md-offset-2 col-xs-12');
@@ -2922,11 +2922,11 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param156 = function() {
+  var param138 = function() {
     $templateAlias2(soy.$$assignDefaults({section: opt_data.site.index}, opt_data), null, opt_ijData);
     $type(opt_data, null, opt_ijData);
   };
-  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param156}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param138}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -2950,15 +2950,15 @@ function $type(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-fluid');
         ie_open('h1', null, null,
             'class', 'py-3');
-          var dyn13 = opt_data.page.title;
-          if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
+          var dyn12 = opt_data.page.title;
+          if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
           itext(' Migration Guide');
         ie_close('h1');
         ie_open('h2', null, null,
             'class', 'py-2');
           itext('Guide for consistent ');
-          var dyn14 = opt_data.page.title;
-          if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
+          var dyn13 = opt_data.page.title;
+          if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
           itext(' in Liferay Portal.');
         ie_close('h2');
       ie_close('div');
@@ -2984,16 +2984,16 @@ function $type(opt_data, opt_ignored, opt_ijData) {
           ie_close('h2');
           ie_open('h3');
             itext('Each one contains information to migrate ');
-            var dyn15 = opt_data.page.title;
-            if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
+            var dyn14 = opt_data.page.title;
+            if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
             itext('.');
           ie_close('h3');
-          var childIdList188 = opt_data.page.childIds;
-          var childIdListLen188 = childIdList188.length;
-          for (var childIdIndex188 = 0; childIdIndex188 < childIdListLen188; childIdIndex188++) {
-            var childIdData188 = childIdList188[childIdIndex188];
-            var topic__soy174 = opt_data.page.children[childIdData188];
-            if (! topic__soy174.hidden) {
+          var childIdList170 = opt_data.page.childIds;
+          var childIdListLen170 = childIdList170.length;
+          for (var childIdIndex170 = 0; childIdIndex170 < childIdListLen170; childIdIndex170++) {
+            var childIdData170 = childIdList170[childIdIndex170];
+            var topic__soy156 = opt_data.page.children[childIdData170];
+            if (! topic__soy156.hidden) {
               ie_open('div', null, null,
                   'class', 'card-columns my-5');
                 ie_open('div', null, null,
@@ -3002,23 +3002,23 @@ function $type(opt_data, opt_ignored, opt_ijData) {
                       'class', 'card-header');
                     ie_open('svg', null, null,
                         'aria-hidden', 'true',
-                        'class', 'lexicon-icon lexicon-icon-' + topic__soy174.icon);
+                        'class', 'lexicon-icon lexicon-icon-' + topic__soy156.icon);
                       ie_void('use', null, null,
-                          'xlink:href', '/vendor/lexicon/icons.svg#' + topic__soy174.icon);
+                          'xlink:href', '/vendor/lexicon/icons.svg#' + topic__soy156.icon);
                     ie_close('svg');
                   ie_close('div');
                   ie_open('div', null, null,
                       'class', 'card-body');
                     ie_open('h2');
                       ie_open('a', null, null,
-                          'href', topic__soy174.url);
-                        var dyn16 = topic__soy174.title;
-                        if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
+                          'href', topic__soy156.url);
+                        var dyn15 = topic__soy156.title;
+                        if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
                       ie_close('a');
                     ie_close('h2');
                     ie_open('small');
-                      var dyn17 = topic__soy174.description;
-                      if (typeof dyn17 == 'function') dyn17(); else if (dyn17 != null) itext(dyn17);
+                      var dyn16 = topic__soy156.description;
+                      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
                     ie_close('small');
                   ie_close('div');
                 ie_close('div');
@@ -3063,27 +3063,27 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ElectricUpdates = exports.ElectricSearchAutocomplete = exports.ElectricSearch = exports.ElectricReadingProgress = exports.ElectricNavigation = exports.ElectricCode = undefined;
 
-var _ElectricCode = __webpack_require__(28);
+var _ElectricCode = __webpack_require__(35);
 
 var _ElectricCode2 = _interopRequireDefault(_ElectricCode);
 
-var _ElectricNavigation = __webpack_require__(30);
+var _ElectricNavigation = __webpack_require__(37);
 
 var _ElectricNavigation2 = _interopRequireDefault(_ElectricNavigation);
 
-var _ElectricReadingProgress = __webpack_require__(32);
+var _ElectricReadingProgress = __webpack_require__(39);
 
 var _ElectricReadingProgress2 = _interopRequireDefault(_ElectricReadingProgress);
 
-var _ElectricSearch = __webpack_require__(34);
+var _ElectricSearch = __webpack_require__(41);
 
 var _ElectricSearch2 = _interopRequireDefault(_ElectricSearch);
 
-var _ElectricSearchAutocomplete = __webpack_require__(36);
+var _ElectricSearchAutocomplete = __webpack_require__(43);
 
 var _ElectricSearchAutocomplete2 = _interopRequireDefault(_ElectricSearchAutocomplete);
 
-var _ElectricUpdates = __webpack_require__(38);
+var _ElectricUpdates = __webpack_require__(45);
 
 var _ElectricUpdates2 = _interopRequireDefault(_ElectricUpdates);
 
@@ -4022,6 +4022,687 @@ exports.default = LocalStorageMechanism;
 
 
 Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _metalClipboard = __webpack_require__(52);
+
+var _metalClipboard2 = _interopRequireDefault(_metalClipboard);
+
+var _metalComponent = __webpack_require__(1);
+
+var _metalComponent2 = _interopRequireDefault(_metalComponent);
+
+var _metalTooltip = __webpack_require__(69);
+
+var _metalTooltip2 = _interopRequireDefault(_metalTooltip);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ElectricCode = function (_Component) {
+	_inherits(ElectricCode, _Component);
+
+	function ElectricCode() {
+		_classCallCheck(this, ElectricCode);
+
+		return _possibleConstructorReturn(this, (ElectricCode.__proto__ || Object.getPrototypeOf(ElectricCode)).apply(this, arguments));
+	}
+
+	_createClass(ElectricCode, [{
+		key: 'attached',
+		value: function attached() {
+			var selector = '.code-container .btn-copy';
+
+			if (!window.electricClipboardTooltip) {
+				window.electricClipboardTooltip = new _metalTooltip2.default({
+					delay: [300, 150],
+					elementClasses: 'fade',
+					events: {
+						visibleChanged: function visibleChanged(event) {
+							if (event.newVal) {
+								this.title = 'Copy';
+							}
+						}
+					},
+					selector: selector,
+					title: 'Copy',
+					visible: false
+				});
+			}
+
+			if (!window.electricClipboard) {
+				window.electricClipboard = new _metalClipboard2.default({
+					selector: selector,
+					text: function text(delegateTarget) {
+						window.electricClipboardTooltip.title = 'Copied';
+						return delegateTarget.parentNode.querySelector('pre .code').innerText;
+					}
+				});
+			}
+		}
+	}]);
+
+	return ElectricCode;
+}(_metalComponent2.default);
+
+;
+
+exports.default = ElectricCode;
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _metalTabs = __webpack_require__(67);
+
+var _metalTabs2 = _interopRequireDefault(_metalTabs);
+
+var _metalDom = __webpack_require__(3);
+
+var _metalDom2 = _interopRequireDefault(_metalDom);
+
+var _metalState = __webpack_require__(6);
+
+var _metalState2 = _interopRequireDefault(_metalState);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/**
+ * Class the identity sibling rendered "Code Mirror" components on the
+ * page and make them tab navigable.
+ */
+var ElectricCodeTabs = function (_State) {
+  _inherits(ElectricCodeTabs, _State);
+
+  function ElectricCodeTabs(opt) {
+    _classCallCheck(this, ElectricCodeTabs);
+
+    var _this = _possibleConstructorReturn(this, (ElectricCodeTabs.__proto__ || Object.getPrototypeOf(ElectricCodeTabs)).call(this, opt));
+
+    var tabGroupsData = [];
+    document.querySelectorAll('.' + _this.className).forEach(function (element) {
+      tabGroupsData.push({
+        label: _this.getTabLabelFromElement_(element),
+        element: element
+      });
+      if (!element.nextElementSibling || !_metalDom2.default.hasClass(element.nextElementSibling, _this.className)) {
+        if (tabGroupsData.length > 1) {
+          _this.renderTabs_(tabGroupsData);
+        }
+        tabGroupsData = [];
+      }
+    });
+    return _this;
+  }
+
+  /**
+   * Extracts the tab label from a given code mirror element.
+   * @param  {element} element
+   * @return {string} The title from the element or the matched map value.
+   * @private
+   */
+
+
+  _createClass(ElectricCodeTabs, [{
+    key: 'getTabLabelFromElement_',
+    value: function getTabLabelFromElement_(element) {
+      var tabLabel = element.querySelector('.code').dataset.mode;
+      return this.dictionary[tabLabel] || tabLabel;
+    }
+
+    /**
+     * Hides a given element by adding the hide CSS class.
+     * @param  {element} element
+     * @private
+     */
+
+  }, {
+    key: 'hide_',
+    value: function hide_(element) {
+      _metalDom2.default.addClasses(element, 'hide');
+    }
+
+    /**
+     * Hides all code mirror elements related to a tab navigation.
+     * @param  {Array<element>} tabs
+     * @private
+     */
+
+  }, {
+    key: 'hideAll_',
+    value: function hideAll_(tabs) {
+      var _this2 = this;
+
+      tabs.forEach(function (tab) {
+        _this2.hide_(tab.element);
+      });
+    }
+
+    /**
+     * Renders a tab navigations for a given tab content group.
+     * @param  {Array<Object>} data
+     * @private
+     */
+
+  }, {
+    key: 'renderTabs_',
+    value: function renderTabs_(data) {
+      var _this3 = this;
+
+      var container = _metalDom2.default.buildFragment('<div class="tabContainer"></div>');
+      var tabsComponent = new _metalTabs2.default({
+        elementClasses: 'nav-code-tabs',
+        tabs: data
+      }, container);
+
+      tabsComponent.on('changeRequest', function (event) {
+        var currentTab = event.state.tab;
+        _this3.hideAll_(tabsComponent.tabs);
+        _this3.show_(tabsComponent.tabs[currentTab].element);
+      });
+
+      this.hideAll_(tabsComponent.tabs);
+      this.show_(tabsComponent.tabs[0].element);
+
+      data[0].element.parentNode.insertBefore(container, data[0].element);
+    }
+
+    /**
+     * Shows a given code mirror element by removing the hide CSS class.
+     * @param  {Array<Object>} data
+     */
+
+  }, {
+    key: 'show_',
+    value: function show_(element) {
+      _metalDom2.default.removeClasses(element, 'hide');
+    }
+  }]);
+
+  return ElectricCodeTabs;
+}(_metalState2.default);
+
+/**
+ * State definition.
+ * @type {!Object}
+ * @static
+ */
+
+
+ElectricCodeTabs.STATE = {
+  /**
+  * The code mirror container CSS class name used for looking for elements and
+   * group them to build tabs.
+  * @type {string}
+  * @default {string}
+  */
+  className: {
+    value: 'code-container'
+  },
+
+  /**
+  * A dictionary of languages label
+  * @type {Object}
+  * @default {}
+  */
+  dictionary: {
+    value: {
+      'text/html': 'HTML',
+      'text/x-java': 'Java',
+      'application/json': 'JSON'
+    }
+  }
+};
+
+window.ElectricCodeTabs = ElectricCodeTabs;
+
+exports.default = ElectricCodeTabs;
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _metalComponent = __webpack_require__(1);
+
+var _metalComponent2 = _interopRequireDefault(_metalComponent);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ElectricNavigation = function (_Component) {
+	_inherits(ElectricNavigation, _Component);
+
+	function ElectricNavigation() {
+		_classCallCheck(this, ElectricNavigation);
+
+		return _possibleConstructorReturn(this, (ElectricNavigation.__proto__ || Object.getPrototypeOf(ElectricNavigation)).apply(this, arguments));
+	}
+
+	_createClass(ElectricNavigation, [{
+		key: 'attached',
+		value: function attached() {}
+	}]);
+
+	return ElectricNavigation;
+}(_metalComponent2.default);
+
+;
+
+exports.default = ElectricNavigation;
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _metalAffix = __webpack_require__(47);
+
+var _metalAffix2 = _interopRequireDefault(_metalAffix);
+
+var _metalComponent = __webpack_require__(1);
+
+var _metalComponent2 = _interopRequireDefault(_metalComponent);
+
+var _metal = __webpack_require__(2);
+
+var _metal2 = _interopRequireDefault(_metal);
+
+var _metalDom = __webpack_require__(3);
+
+var _metalDom2 = _interopRequireDefault(_metalDom);
+
+var _metalReadingProgress = __webpack_require__(60);
+
+var _metalReadingProgress2 = _interopRequireDefault(_metalReadingProgress);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ElectricReadingProgress = function (_Component) {
+	_inherits(ElectricReadingProgress, _Component);
+
+	function ElectricReadingProgress() {
+		_classCallCheck(this, ElectricReadingProgress);
+
+		return _possibleConstructorReturn(this, (ElectricReadingProgress.__proto__ || Object.getPrototypeOf(ElectricReadingProgress)).apply(this, arguments));
+	}
+
+	_createClass(ElectricReadingProgress, [{
+		key: 'attached',
+		value: function attached() {
+			this.renderReadingProgress_();
+		}
+	}, {
+		key: 'renderReadingProgress_',
+		value: function renderReadingProgress_() {
+			var articleContainer = this.articleContainer,
+			    articleSelector = this.articleSelector,
+			    element = this.element,
+			    offsetBottom = this.offsetBottom,
+			    offsetTop = this.offsetTop,
+			    titleSelector = this.titleSelector;
+
+
+			if (articleContainer) {
+				var articles = articleContainer.querySelectorAll(articleSelector);
+
+				var articleIds = [].map.call(articles, function (article) {
+					return '#' + article.id;
+				});
+
+				this.progress = new _metalReadingProgress2.default({
+					items: articleIds,
+					titleSelector: titleSelector,
+					trackerConfig: {
+						activeClass: 'reading',
+						completedClass: 'read'
+					}
+				}, this.refs.readingContainer);
+
+				this.affix = new _metalAffix2.default({
+					element: element,
+					offsetBottom: offsetBottom,
+					offsetTop: offsetTop
+				});
+			}
+		}
+	}, {
+		key: 'disposed',
+		value: function disposed() {
+			var affix = this.affix,
+			    progress = this.progress;
+
+
+			if (affix) {
+				affix.dispose();
+			}
+
+			if (progress) {
+				progress.dispose();
+			}
+		}
+	}]);
+
+	return ElectricReadingProgress;
+}(_metalComponent2.default);
+
+;
+
+ElectricReadingProgress.STATE = {
+	articleContainer: {
+		setter: _metalDom2.default.toElement,
+		value: '.docs-guide'
+	},
+
+	articleSelector: {
+		validator: _metal2.default.isString,
+		value: 'article'
+	},
+
+	offsetBottom: {
+		validator: _metal2.default.isNumber
+	},
+
+	offsetTop: {
+		validator: _metal2.default.isNumber,
+		value: 230
+	},
+
+	titleSelector: {
+		validator: _metal2.default.isString,
+		value: 'h2'
+	}
+};
+
+exports.default = ElectricReadingProgress;
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _metal = __webpack_require__(2);
+
+var _metal2 = _interopRequireDefault(_metal);
+
+var _ElectricSearchBase2 = __webpack_require__(10);
+
+var _ElectricSearchBase3 = _interopRequireDefault(_ElectricSearchBase2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ElectricSearch = function (_ElectricSearchBase) {
+	_inherits(ElectricSearch, _ElectricSearchBase);
+
+	function ElectricSearch() {
+		_classCallCheck(this, ElectricSearch);
+
+		return _possibleConstructorReturn(this, (ElectricSearch.__proto__ || Object.getPrototypeOf(ElectricSearch)).apply(this, arguments));
+	}
+
+	_createClass(ElectricSearch, [{
+		key: 'attached',
+		value: function attached() {
+			_ElectricSearchBase3.default.prototype.attached.apply(this);
+
+			var queryString = window.location.search;
+			var queryIndex = queryString.indexOf('q=');
+
+			if (queryIndex !== -1) {
+				this.query = queryString.substr(queryIndex + 2);
+			}
+		}
+	}, {
+		key: 'handleInput_',
+		value: function handleInput_(event) {
+			var target = event.target;
+
+
+			this.query = target.value;
+		}
+	}]);
+
+	return ElectricSearch;
+}(_ElectricSearchBase3.default);
+
+;
+
+ElectricSearch.STATE = {
+	maxResults: {
+		value: Infinity
+	}
+};
+
+exports.default = ElectricSearch;
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _metalAutocomplete = __webpack_require__(51);
+
+var _metalAutocomplete2 = _interopRequireDefault(_metalAutocomplete);
+
+var _metal = __webpack_require__(2);
+
+var _metal2 = _interopRequireDefault(_metal);
+
+var _ElectricSearchBase2 = __webpack_require__(10);
+
+var _ElectricSearchBase3 = _interopRequireDefault(_ElectricSearchBase2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ElectricSearchAutocomplete = function (_ElectricSearchBase) {
+	_inherits(ElectricSearchAutocomplete, _ElectricSearchBase);
+
+	function ElectricSearchAutocomplete() {
+		_classCallCheck(this, ElectricSearchAutocomplete);
+
+		return _possibleConstructorReturn(this, (ElectricSearchAutocomplete.__proto__ || Object.getPrototypeOf(ElectricSearchAutocomplete)).apply(this, arguments));
+	}
+
+	_createClass(ElectricSearchAutocomplete, [{
+		key: 'attached',
+		value: function attached() {
+			var element = this.element;
+			var input = this.refs.input;
+
+
+			if (input) {
+				this.autocomplete = new _metalAutocomplete2.default({
+					autoBestAlign: false,
+					data: this.search_.bind(this),
+					format: this.format_.bind(this),
+					inputElement: input,
+					select: function select(_ref) {
+						var url = _ref.url;
+
+						window.location = url;
+					}
+				});
+			}
+		}
+	}, {
+		key: 'format_',
+		value: function format_(data) {
+			var title = data.title,
+			    description = data.description,
+			    url = data.url;
+
+
+			if (description && description.length > 100) {
+				description = description.substr(0, 100) + '...';
+			}
+
+			return {
+				textPrimary: '<a class="autocomplete-link" href="' + url + '">\n\t\t\t\t<div class="autocomplete-result">\n\t\t\t\t\t<p class="autocomplete-title">' + title + '</p>\n\t\t\t\t\t<p class="autocomplete-text">' + description + '</p>\n\t\t\t\t</div>\n\t\t\t</a>',
+				url: url
+			};
+		}
+	}, {
+		key: 'disposed',
+		value: function disposed() {
+			var autocomplete = this.autocomplete;
+
+
+			if (autocomplete) {
+				autocomplete.dispose();
+			}
+		}
+	}]);
+
+	return ElectricSearchAutocomplete;
+}(_ElectricSearchBase3.default);
+
+;
+
+exports.default = ElectricSearchAutocomplete;
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _metalComponent = __webpack_require__(1);
+
+var _metalComponent2 = _interopRequireDefault(_metalComponent);
+
+var _metal = __webpack_require__(2);
+
+var _metal2 = _interopRequireDefault(_metal);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ElectricUpdates = function (_Component) {
+	_inherits(ElectricUpdates, _Component);
+
+	function ElectricUpdates() {
+		_classCallCheck(this, ElectricUpdates);
+
+		return _possibleConstructorReturn(this, (ElectricUpdates.__proto__ || Object.getPrototypeOf(ElectricUpdates)).apply(this, arguments));
+	}
+
+	_createClass(ElectricUpdates, [{
+		key: 'attached',
+		value: function attached() {}
+	}]);
+
+	return ElectricUpdates;
+}(_metalComponent2.default);
+
+;
+
+ElectricUpdates.STATE = {
+	updates: {
+		validator: _metal2.default.isArray,
+		value: []
+	}
+};
+
+exports.default = ElectricUpdates;
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -4031,7 +4712,7 @@ var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
 var _electricBaseComponents = __webpack_require__(4);
 
-var _ElectricCode = __webpack_require__(29);
+var _ElectricCode = __webpack_require__(36);
 
 var _ElectricCode2 = _interopRequireDefault(_ElectricCode);
 
@@ -4042,7 +4723,7 @@ _metalSoy2.default.register(_electricBaseComponents.ElectricCode, _ElectricCode2
 exports.default = _electricBaseComponents.ElectricCode;
 
 /***/ }),
-/* 29 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4156,7 +4837,7 @@ exports.default = templates;
 /* jshint ignore:end */
 
 /***/ }),
-/* 30 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4172,7 +4853,7 @@ var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
 var _electricBaseComponents = __webpack_require__(4);
 
-var _ElectricNavigation = __webpack_require__(31);
+var _ElectricNavigation = __webpack_require__(38);
 
 var _ElectricNavigation2 = _interopRequireDefault(_ElectricNavigation);
 
@@ -4183,7 +4864,7 @@ _metalSoy2.default.register(_electricBaseComponents.ElectricNavigation, _Electri
 exports.default = _electricBaseComponents.ElectricNavigation;
 
 /***/ }),
-/* 31 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4335,7 +5016,7 @@ exports.default = templates;
 /* jshint ignore:end */
 
 /***/ }),
-/* 32 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4351,7 +5032,7 @@ var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
 var _electricBaseComponents = __webpack_require__(4);
 
-var _ElectricReadingProgress = __webpack_require__(33);
+var _ElectricReadingProgress = __webpack_require__(40);
 
 var _ElectricReadingProgress2 = _interopRequireDefault(_ElectricReadingProgress);
 
@@ -4362,7 +5043,7 @@ _metalSoy2.default.register(_electricBaseComponents.ElectricReadingProgress, _El
 exports.default = _electricBaseComponents.ElectricReadingProgress;
 
 /***/ }),
-/* 33 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4465,7 +5146,7 @@ exports.default = templates;
 /* jshint ignore:end */
 
 /***/ }),
-/* 34 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4481,7 +5162,7 @@ var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
 var _electricBaseComponents = __webpack_require__(4);
 
-var _ElectricSearch = __webpack_require__(35);
+var _ElectricSearch = __webpack_require__(42);
 
 var _ElectricSearch2 = _interopRequireDefault(_ElectricSearch);
 
@@ -4492,7 +5173,7 @@ _metalSoy2.default.register(_electricBaseComponents.ElectricSearch, _ElectricSea
 exports.default = _electricBaseComponents.ElectricSearch;
 
 /***/ }),
-/* 35 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4694,7 +5375,7 @@ exports.default = templates;
 /* jshint ignore:end */
 
 /***/ }),
-/* 36 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4710,7 +5391,7 @@ var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
 var _electricBaseComponents = __webpack_require__(4);
 
-var _ElectricSearchAutocomplete = __webpack_require__(37);
+var _ElectricSearchAutocomplete = __webpack_require__(44);
 
 var _ElectricSearchAutocomplete2 = _interopRequireDefault(_ElectricSearchAutocomplete);
 
@@ -4721,7 +5402,7 @@ _metalSoy2.default.register(_electricBaseComponents.ElectricSearchAutocomplete, 
 exports.default = _electricBaseComponents.ElectricSearchAutocomplete;
 
 /***/ }),
-/* 37 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4836,7 +5517,7 @@ exports.default = templates;
 /* jshint ignore:end */
 
 /***/ }),
-/* 38 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4852,7 +5533,7 @@ var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
 var _electricBaseComponents = __webpack_require__(4);
 
-var _ElectricUpdates = __webpack_require__(39);
+var _ElectricUpdates = __webpack_require__(46);
 
 var _ElectricUpdates2 = _interopRequireDefault(_ElectricUpdates);
 
@@ -4863,7 +5544,7 @@ _metalSoy2.default.register(_electricBaseComponents.ElectricUpdates, _ElectricUp
 exports.default = _electricBaseComponents.ElectricUpdates;
 
 /***/ }),
-/* 39 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5072,687 +5753,6 @@ exports.ElectricUpdates = ElectricUpdates;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _metalClipboard = __webpack_require__(52);
-
-var _metalClipboard2 = _interopRequireDefault(_metalClipboard);
-
-var _metalComponent = __webpack_require__(1);
-
-var _metalComponent2 = _interopRequireDefault(_metalComponent);
-
-var _metalTooltip = __webpack_require__(69);
-
-var _metalTooltip2 = _interopRequireDefault(_metalTooltip);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ElectricCode = function (_Component) {
-	_inherits(ElectricCode, _Component);
-
-	function ElectricCode() {
-		_classCallCheck(this, ElectricCode);
-
-		return _possibleConstructorReturn(this, (ElectricCode.__proto__ || Object.getPrototypeOf(ElectricCode)).apply(this, arguments));
-	}
-
-	_createClass(ElectricCode, [{
-		key: 'attached',
-		value: function attached() {
-			var selector = '.code-container .btn-copy';
-
-			if (!window.electricClipboardTooltip) {
-				window.electricClipboardTooltip = new _metalTooltip2.default({
-					delay: [300, 150],
-					elementClasses: 'fade',
-					events: {
-						visibleChanged: function visibleChanged(event) {
-							if (event.newVal) {
-								this.title = 'Copy';
-							}
-						}
-					},
-					selector: selector,
-					title: 'Copy',
-					visible: false
-				});
-			}
-
-			if (!window.electricClipboard) {
-				window.electricClipboard = new _metalClipboard2.default({
-					selector: selector,
-					text: function text(delegateTarget) {
-						window.electricClipboardTooltip.title = 'Copied';
-						return delegateTarget.parentNode.querySelector('pre .code').innerText;
-					}
-				});
-			}
-		}
-	}]);
-
-	return ElectricCode;
-}(_metalComponent2.default);
-
-;
-
-exports.default = ElectricCode;
-
-/***/ }),
-/* 41 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _metalTabs = __webpack_require__(67);
-
-var _metalTabs2 = _interopRequireDefault(_metalTabs);
-
-var _metalDom = __webpack_require__(3);
-
-var _metalDom2 = _interopRequireDefault(_metalDom);
-
-var _metalState = __webpack_require__(6);
-
-var _metalState2 = _interopRequireDefault(_metalState);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-/**
- * Class the identity sibling rendered "Code Mirror" components on the
- * page and make them tab navigable.
- */
-var ElectricCodeTabs = function (_State) {
-  _inherits(ElectricCodeTabs, _State);
-
-  function ElectricCodeTabs(opt) {
-    _classCallCheck(this, ElectricCodeTabs);
-
-    var _this = _possibleConstructorReturn(this, (ElectricCodeTabs.__proto__ || Object.getPrototypeOf(ElectricCodeTabs)).call(this, opt));
-
-    var tabGroupsData = [];
-    document.querySelectorAll('.' + _this.className).forEach(function (element) {
-      tabGroupsData.push({
-        label: _this.getTabLabelFromElement_(element),
-        element: element
-      });
-      if (!element.nextElementSibling || !_metalDom2.default.hasClass(element.nextElementSibling, _this.className)) {
-        if (tabGroupsData.length > 1) {
-          _this.renderTabs_(tabGroupsData);
-        }
-        tabGroupsData = [];
-      }
-    });
-    return _this;
-  }
-
-  /**
-   * Extracts the tab label from a given code mirror element.
-   * @param  {element} element
-   * @return {string} The title from the element or the matched map value.
-   * @private
-   */
-
-
-  _createClass(ElectricCodeTabs, [{
-    key: 'getTabLabelFromElement_',
-    value: function getTabLabelFromElement_(element) {
-      var tabLabel = element.querySelector('.code').dataset.mode;
-      return this.dictionary[tabLabel] || tabLabel;
-    }
-
-    /**
-     * Hides a given element by adding the hide CSS class.
-     * @param  {element} element
-     * @private
-     */
-
-  }, {
-    key: 'hide_',
-    value: function hide_(element) {
-      _metalDom2.default.addClasses(element, 'hide');
-    }
-
-    /**
-     * Hides all code mirror elements related to a tab navigation.
-     * @param  {Array<element>} tabs
-     * @private
-     */
-
-  }, {
-    key: 'hideAll_',
-    value: function hideAll_(tabs) {
-      var _this2 = this;
-
-      tabs.forEach(function (tab) {
-        _this2.hide_(tab.element);
-      });
-    }
-
-    /**
-     * Renders a tab navigations for a given tab content group.
-     * @param  {Array<Object>} data
-     * @private
-     */
-
-  }, {
-    key: 'renderTabs_',
-    value: function renderTabs_(data) {
-      var _this3 = this;
-
-      var container = _metalDom2.default.buildFragment('<div class="tabContainer"></div>');
-      var tabsComponent = new _metalTabs2.default({
-        elementClasses: 'nav-code-tabs',
-        tabs: data
-      }, container);
-
-      tabsComponent.on('changeRequest', function (event) {
-        var currentTab = event.state.tab;
-        _this3.hideAll_(tabsComponent.tabs);
-        _this3.show_(tabsComponent.tabs[currentTab].element);
-      });
-
-      this.hideAll_(tabsComponent.tabs);
-      this.show_(tabsComponent.tabs[0].element);
-
-      data[0].element.parentNode.insertBefore(container, data[0].element);
-    }
-
-    /**
-     * Shows a given code mirror element by removing the hide CSS class.
-     * @param  {Array<Object>} data
-     */
-
-  }, {
-    key: 'show_',
-    value: function show_(element) {
-      _metalDom2.default.removeClasses(element, 'hide');
-    }
-  }]);
-
-  return ElectricCodeTabs;
-}(_metalState2.default);
-
-/**
- * State definition.
- * @type {!Object}
- * @static
- */
-
-
-ElectricCodeTabs.STATE = {
-  /**
-  * The code mirror container CSS class name used for looking for elements and
-   * group them to build tabs.
-  * @type {string}
-  * @default {string}
-  */
-  className: {
-    value: 'code-container'
-  },
-
-  /**
-  * A dictionary of languages label
-  * @type {Object}
-  * @default {}
-  */
-  dictionary: {
-    value: {
-      'text/html': 'HTML',
-      'text/x-java': 'Java',
-      'application/json': 'JSON'
-    }
-  }
-};
-
-window.ElectricCodeTabs = ElectricCodeTabs;
-
-exports.default = ElectricCodeTabs;
-
-/***/ }),
-/* 42 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _metalComponent = __webpack_require__(1);
-
-var _metalComponent2 = _interopRequireDefault(_metalComponent);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ElectricNavigation = function (_Component) {
-	_inherits(ElectricNavigation, _Component);
-
-	function ElectricNavigation() {
-		_classCallCheck(this, ElectricNavigation);
-
-		return _possibleConstructorReturn(this, (ElectricNavigation.__proto__ || Object.getPrototypeOf(ElectricNavigation)).apply(this, arguments));
-	}
-
-	_createClass(ElectricNavigation, [{
-		key: 'attached',
-		value: function attached() {}
-	}]);
-
-	return ElectricNavigation;
-}(_metalComponent2.default);
-
-;
-
-exports.default = ElectricNavigation;
-
-/***/ }),
-/* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _metalAffix = __webpack_require__(47);
-
-var _metalAffix2 = _interopRequireDefault(_metalAffix);
-
-var _metalComponent = __webpack_require__(1);
-
-var _metalComponent2 = _interopRequireDefault(_metalComponent);
-
-var _metal = __webpack_require__(2);
-
-var _metal2 = _interopRequireDefault(_metal);
-
-var _metalDom = __webpack_require__(3);
-
-var _metalDom2 = _interopRequireDefault(_metalDom);
-
-var _metalReadingProgress = __webpack_require__(60);
-
-var _metalReadingProgress2 = _interopRequireDefault(_metalReadingProgress);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ElectricReadingProgress = function (_Component) {
-	_inherits(ElectricReadingProgress, _Component);
-
-	function ElectricReadingProgress() {
-		_classCallCheck(this, ElectricReadingProgress);
-
-		return _possibleConstructorReturn(this, (ElectricReadingProgress.__proto__ || Object.getPrototypeOf(ElectricReadingProgress)).apply(this, arguments));
-	}
-
-	_createClass(ElectricReadingProgress, [{
-		key: 'attached',
-		value: function attached() {
-			this.renderReadingProgress_();
-		}
-	}, {
-		key: 'renderReadingProgress_',
-		value: function renderReadingProgress_() {
-			var articleContainer = this.articleContainer,
-			    articleSelector = this.articleSelector,
-			    element = this.element,
-			    offsetBottom = this.offsetBottom,
-			    offsetTop = this.offsetTop,
-			    titleSelector = this.titleSelector;
-
-
-			if (articleContainer) {
-				var articles = articleContainer.querySelectorAll(articleSelector);
-
-				var articleIds = [].map.call(articles, function (article) {
-					return '#' + article.id;
-				});
-
-				this.progress = new _metalReadingProgress2.default({
-					items: articleIds,
-					titleSelector: titleSelector,
-					trackerConfig: {
-						activeClass: 'reading',
-						completedClass: 'read'
-					}
-				}, this.refs.readingContainer);
-
-				this.affix = new _metalAffix2.default({
-					element: element,
-					offsetBottom: offsetBottom,
-					offsetTop: offsetTop
-				});
-			}
-		}
-	}, {
-		key: 'disposed',
-		value: function disposed() {
-			var affix = this.affix,
-			    progress = this.progress;
-
-
-			if (affix) {
-				affix.dispose();
-			}
-
-			if (progress) {
-				progress.dispose();
-			}
-		}
-	}]);
-
-	return ElectricReadingProgress;
-}(_metalComponent2.default);
-
-;
-
-ElectricReadingProgress.STATE = {
-	articleContainer: {
-		setter: _metalDom2.default.toElement,
-		value: '.docs-guide'
-	},
-
-	articleSelector: {
-		validator: _metal2.default.isString,
-		value: 'article'
-	},
-
-	offsetBottom: {
-		validator: _metal2.default.isNumber
-	},
-
-	offsetTop: {
-		validator: _metal2.default.isNumber,
-		value: 230
-	},
-
-	titleSelector: {
-		validator: _metal2.default.isString,
-		value: 'h2'
-	}
-};
-
-exports.default = ElectricReadingProgress;
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _metal = __webpack_require__(2);
-
-var _metal2 = _interopRequireDefault(_metal);
-
-var _ElectricSearchBase2 = __webpack_require__(10);
-
-var _ElectricSearchBase3 = _interopRequireDefault(_ElectricSearchBase2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ElectricSearch = function (_ElectricSearchBase) {
-	_inherits(ElectricSearch, _ElectricSearchBase);
-
-	function ElectricSearch() {
-		_classCallCheck(this, ElectricSearch);
-
-		return _possibleConstructorReturn(this, (ElectricSearch.__proto__ || Object.getPrototypeOf(ElectricSearch)).apply(this, arguments));
-	}
-
-	_createClass(ElectricSearch, [{
-		key: 'attached',
-		value: function attached() {
-			_ElectricSearchBase3.default.prototype.attached.apply(this);
-
-			var queryString = window.location.search;
-			var queryIndex = queryString.indexOf('q=');
-
-			if (queryIndex !== -1) {
-				this.query = queryString.substr(queryIndex + 2);
-			}
-		}
-	}, {
-		key: 'handleInput_',
-		value: function handleInput_(event) {
-			var target = event.target;
-
-
-			this.query = target.value;
-		}
-	}]);
-
-	return ElectricSearch;
-}(_ElectricSearchBase3.default);
-
-;
-
-ElectricSearch.STATE = {
-	maxResults: {
-		value: Infinity
-	}
-};
-
-exports.default = ElectricSearch;
-
-/***/ }),
-/* 45 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _metalAutocomplete = __webpack_require__(51);
-
-var _metalAutocomplete2 = _interopRequireDefault(_metalAutocomplete);
-
-var _metal = __webpack_require__(2);
-
-var _metal2 = _interopRequireDefault(_metal);
-
-var _ElectricSearchBase2 = __webpack_require__(10);
-
-var _ElectricSearchBase3 = _interopRequireDefault(_ElectricSearchBase2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ElectricSearchAutocomplete = function (_ElectricSearchBase) {
-	_inherits(ElectricSearchAutocomplete, _ElectricSearchBase);
-
-	function ElectricSearchAutocomplete() {
-		_classCallCheck(this, ElectricSearchAutocomplete);
-
-		return _possibleConstructorReturn(this, (ElectricSearchAutocomplete.__proto__ || Object.getPrototypeOf(ElectricSearchAutocomplete)).apply(this, arguments));
-	}
-
-	_createClass(ElectricSearchAutocomplete, [{
-		key: 'attached',
-		value: function attached() {
-			var element = this.element;
-			var input = this.refs.input;
-
-
-			if (input) {
-				this.autocomplete = new _metalAutocomplete2.default({
-					autoBestAlign: false,
-					data: this.search_.bind(this),
-					format: this.format_.bind(this),
-					inputElement: input,
-					select: function select(_ref) {
-						var url = _ref.url;
-
-						window.location = url;
-					}
-				});
-			}
-		}
-	}, {
-		key: 'format_',
-		value: function format_(data) {
-			var title = data.title,
-			    description = data.description,
-			    url = data.url;
-
-
-			if (description && description.length > 100) {
-				description = description.substr(0, 100) + '...';
-			}
-
-			return {
-				textPrimary: '<a class="autocomplete-link" href="' + url + '">\n\t\t\t\t<div class="autocomplete-result">\n\t\t\t\t\t<p class="autocomplete-title">' + title + '</p>\n\t\t\t\t\t<p class="autocomplete-text">' + description + '</p>\n\t\t\t\t</div>\n\t\t\t</a>',
-				url: url
-			};
-		}
-	}, {
-		key: 'disposed',
-		value: function disposed() {
-			var autocomplete = this.autocomplete;
-
-
-			if (autocomplete) {
-				autocomplete.dispose();
-			}
-		}
-	}]);
-
-	return ElectricSearchAutocomplete;
-}(_ElectricSearchBase3.default);
-
-;
-
-exports.default = ElectricSearchAutocomplete;
-
-/***/ }),
-/* 46 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _metalComponent = __webpack_require__(1);
-
-var _metalComponent2 = _interopRequireDefault(_metalComponent);
-
-var _metal = __webpack_require__(2);
-
-var _metal2 = _interopRequireDefault(_metal);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ElectricUpdates = function (_Component) {
-	_inherits(ElectricUpdates, _Component);
-
-	function ElectricUpdates() {
-		_classCallCheck(this, ElectricUpdates);
-
-		return _possibleConstructorReturn(this, (ElectricUpdates.__proto__ || Object.getPrototypeOf(ElectricUpdates)).apply(this, arguments));
-	}
-
-	_createClass(ElectricUpdates, [{
-		key: 'attached',
-		value: function attached() {}
-	}]);
-
-	return ElectricUpdates;
-}(_metalComponent2.default);
-
-;
-
-ElectricUpdates.STATE = {
-	updates: {
-		validator: _metal2.default.isArray,
-		value: []
-	}
-};
-
-exports.default = ElectricUpdates;
 
 /***/ }),
 /* 47 */
@@ -11366,7 +11366,7 @@ exports.default = parseFromAnchor;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AMWtR", function() { return AMWtR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MTiHK", function() { return MTiHK; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -11382,11 +11382,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace AMWtR.
+ * @fileoverview Templates in namespace MTiHK.
  * @public
  */
 
-goog.module('AMWtR.incrementaldom');
+goog.module('MTiHK.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -11432,7 +11432,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'AMWtR.render';
+  $render.soyTemplateName = 'MTiHK.render';
 }
 
 exports.render.params = ["page","site"];
@@ -11442,8 +11442,8 @@ return exports;
 
 });
 
-class AMWtR extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(AMWtR, templates);
+class MTiHK extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(MTiHK, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
@@ -11485,7 +11485,8 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(AMWtR, templates);
 /* 132 */,
 /* 133 */,
 /* 134 */,
-/* 135 */
+/* 135 */,
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11531,23 +11532,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var AMWtR = function (_Component) {
-  _inherits(AMWtR, _Component);
+var MTiHK = function (_Component) {
+  _inherits(MTiHK, _Component);
 
-  function AMWtR() {
-    _classCallCheck(this, AMWtR);
+  function MTiHK() {
+    _classCallCheck(this, MTiHK);
 
-    return _possibleConstructorReturn(this, (AMWtR.__proto__ || Object.getPrototypeOf(AMWtR)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (MTiHK.__proto__ || Object.getPrototypeOf(MTiHK)).apply(this, arguments));
   }
 
-  return AMWtR;
+  return MTiHK;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(AMWtR, _indexSoy2.default);
+_metalSoy2.default.register(MTiHK, _indexSoy2.default);
 
-exports.default = AMWtR;
+exports.default = MTiHK;
 
 /***/ })
-],[135]);
+],[136]);
