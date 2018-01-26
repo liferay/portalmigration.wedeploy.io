@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([0,6,7],[
+webpackJsonppageComponent([0,7,8],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
@@ -11362,12 +11362,13 @@ exports.default = parseFromAnchor;
 /* 97 */,
 /* 98 */,
 /* 99 */,
-/* 100 */
+/* 100 */,
+/* 101 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IZiNd", function() { return IZiNd; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UbXnz", function() { return UbXnz; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -11383,11 +11384,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace IZiNd.
+ * @fileoverview Templates in namespace UbXnz.
  * @public
  */
 
-goog.module('IZiNd.incrementaldom');
+goog.module('UbXnz.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -11421,7 +11422,7 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param273 = function() {
+  var param297 = function() {
     ie_open('article', null, null,
         'class', 'my-5');
       ie_open('h2');
@@ -11457,9 +11458,9 @@ function $render(opt_data, opt_ignored, opt_ijData) {
           ie_open('tr');
             ie_open('td');
               itext('\u2460 The ');
-              ie_open('em');
+              ie_open('strong');
                 itext('Navigation Bar is dark');
-              ie_close('em');
+              ie_close('strong');
               itext(' in admin applications (and light outside of admin contexts)');
             ie_close('td');
             ie_open('td');
@@ -11469,9 +11470,9 @@ function $render(opt_data, opt_ignored, opt_ijData) {
           ie_open('tr');
             ie_open('td');
               itext('\u2461 The ');
-              ie_open('em');
+              ie_open('strong');
                 itext('general search is moved out of the Navigation Bar');
-              ie_close('em');
+              ie_close('strong');
               itext(' and into the Management Toolbar');
             ie_close('td');
             ie_open('td');
@@ -11656,9 +11657,13 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_close('p');
       $templateAlias2({code: '// Import the clay tld file to be able to use the new tag\n<%@ taglib uri="http://liferay.com/tld/clay" prefix="clay" %>\n\n// Import the NavigationItem utility class to create the items model\n<%@ page import="com.liferay.frontend.taglib.clay.servlet.taglib.util.NavigationItem" %>', mode: 'text/html'}, null, opt_ijData);
       ie_open('p');
-        itext('Don\'t forget to add the dependency with to the ');
+        itext('Don\'t forget to add the dependencies with to the ');
         ie_open('code');
           itext('frontend-taglib-clay');
+        ie_close('code');
+        itext(' and ');
+        ie_open('code');
+          itext('fronteng.taglib.soy');
         ie_close('code');
         itext(' module in your ');
         ie_open('code');
@@ -11666,7 +11671,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         ie_close('code');
         itext(' file:');
       ie_close('p');
-      $templateAlias2({code: 'provided project(":apps:foundation:frontend-taglib:frontend-taglib-clay")', mode: 'text/html'}, null, opt_ijData);
+      $templateAlias2({code: 'provided group: "com.liferay", name: "com.liferay.frontend.taglib.soy", version: "1.0.0"\n\nprovided project(":apps:foundation:frontend-taglib:frontend-taglib-clay")', mode: 'text/html'}, null, opt_ijData);
       ie_open('p');
         itext('Model your entries using the ');
         ie_open('code');
@@ -11783,11 +11788,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param273}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param297}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'IZiNd.render';
+  $render.soyTemplateName = 'UbXnz.render';
 }
 
 exports.render.params = ["page","site"];
@@ -11797,15 +11802,14 @@ return exports;
 
 });
 
-class IZiNd extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(IZiNd, templates);
+class UbXnz extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(UbXnz, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 101 */,
 /* 102 */,
 /* 103 */,
 /* 104 */,
@@ -11839,7 +11843,8 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(IZiNd, templates);
 /* 132 */,
 /* 133 */,
 /* 134 */,
-/* 135 */
+/* 135 */,
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11873,7 +11878,7 @@ __webpack_require__(19);
 
 __webpack_require__(20);
 
-var _navigation_barSoy = __webpack_require__(100);
+var _navigation_barSoy = __webpack_require__(101);
 
 var _navigation_barSoy2 = _interopRequireDefault(_navigation_barSoy);
 
@@ -11885,23 +11890,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var IZiNd = function (_Component) {
-  _inherits(IZiNd, _Component);
+var UbXnz = function (_Component) {
+  _inherits(UbXnz, _Component);
 
-  function IZiNd() {
-    _classCallCheck(this, IZiNd);
+  function UbXnz() {
+    _classCallCheck(this, UbXnz);
 
-    return _possibleConstructorReturn(this, (IZiNd.__proto__ || Object.getPrototypeOf(IZiNd)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (UbXnz.__proto__ || Object.getPrototypeOf(UbXnz)).apply(this, arguments));
   }
 
-  return IZiNd;
+  return UbXnz;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(IZiNd, _navigation_barSoy2.default);
+_metalSoy2.default.register(UbXnz, _navigation_barSoy2.default);
 
-exports.default = IZiNd;
+exports.default = UbXnz;
 
 /***/ })
-],[135]);
+],[136]);

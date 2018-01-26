@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([4,6,7],[
+webpackJsonppageComponent([1,7,8],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
@@ -11358,12 +11358,16 @@ exports.default = parseFromAnchor;
 /* 93 */,
 /* 94 */,
 /* 95 */,
-/* 96 */
+/* 96 */,
+/* 97 */,
+/* 98 */,
+/* 99 */,
+/* 100 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RDBOo", function() { return RDBOo; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "XRPIr", function() { return XRPIr; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -11379,11 +11383,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace RDBOo.
+ * @fileoverview Templates in namespace XRPIr.
  * @public
  */
 
-goog.module('RDBOo.incrementaldom');
+goog.module('XRPIr.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -11415,7 +11419,7 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param193 = function() {
+  var param288 = function() {
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -11425,11 +11429,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param193}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param288}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'RDBOo.render';
+  $render.soyTemplateName = 'XRPIr.render';
 }
 
 exports.render.params = ["page","site"];
@@ -11439,18 +11443,14 @@ return exports;
 
 });
 
-class RDBOo extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(RDBOo, templates);
+class XRPIr extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(XRPIr, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 97 */,
-/* 98 */,
-/* 99 */,
-/* 100 */,
 /* 101 */,
 /* 102 */,
 /* 103 */,
@@ -11483,7 +11483,11 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(RDBOo, templates);
 /* 130 */,
 /* 131 */,
 /* 132 */,
-/* 133 */
+/* 133 */,
+/* 134 */,
+/* 135 */,
+/* 136 */,
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11517,7 +11521,7 @@ __webpack_require__(19);
 
 __webpack_require__(20);
 
-var _indexSoy = __webpack_require__(96);
+var _indexSoy = __webpack_require__(100);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -11529,23 +11533,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var RDBOo = function (_Component) {
-  _inherits(RDBOo, _Component);
+var XRPIr = function (_Component) {
+  _inherits(XRPIr, _Component);
 
-  function RDBOo() {
-    _classCallCheck(this, RDBOo);
+  function XRPIr() {
+    _classCallCheck(this, XRPIr);
 
-    return _possibleConstructorReturn(this, (RDBOo.__proto__ || Object.getPrototypeOf(RDBOo)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (XRPIr.__proto__ || Object.getPrototypeOf(XRPIr)).apply(this, arguments));
   }
 
-  return RDBOo;
+  return XRPIr;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(RDBOo, _indexSoy2.default);
+_metalSoy2.default.register(XRPIr, _indexSoy2.default);
 
-exports.default = RDBOo;
+exports.default = XRPIr;
 
 /***/ })
-],[133]);
+],[137]);

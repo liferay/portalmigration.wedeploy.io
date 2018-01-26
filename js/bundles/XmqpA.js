@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([1,6,7],[
+webpackJsonppageComponent([5,7,8],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
@@ -11358,15 +11358,12 @@ exports.default = parseFromAnchor;
 /* 93 */,
 /* 94 */,
 /* 95 */,
-/* 96 */,
-/* 97 */,
-/* 98 */,
-/* 99 */
+/* 96 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MTiHK", function() { return MTiHK; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "XmqpA", function() { return XmqpA; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -11382,11 +11379,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace MTiHK.
+ * @fileoverview Templates in namespace XmqpA.
  * @public
  */
 
-goog.module('MTiHK.incrementaldom');
+goog.module('XmqpA.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -11418,7 +11415,7 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param264 = function() {
+  var param193 = function() {
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -11428,11 +11425,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param264}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param193}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'MTiHK.render';
+  $render.soyTemplateName = 'XmqpA.render';
 }
 
 exports.render.params = ["page","site"];
@@ -11442,14 +11439,17 @@ return exports;
 
 });
 
-class MTiHK extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(MTiHK, templates);
+class XmqpA extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(XmqpA, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 97 */,
+/* 98 */,
+/* 99 */,
 /* 100 */,
 /* 101 */,
 /* 102 */,
@@ -11484,9 +11484,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(MTiHK, templates);
 /* 131 */,
 /* 132 */,
 /* 133 */,
-/* 134 */,
-/* 135 */,
-/* 136 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11520,7 +11518,7 @@ __webpack_require__(19);
 
 __webpack_require__(20);
 
-var _indexSoy = __webpack_require__(99);
+var _indexSoy = __webpack_require__(96);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -11532,23 +11530,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var MTiHK = function (_Component) {
-  _inherits(MTiHK, _Component);
+var XmqpA = function (_Component) {
+  _inherits(XmqpA, _Component);
 
-  function MTiHK() {
-    _classCallCheck(this, MTiHK);
+  function XmqpA() {
+    _classCallCheck(this, XmqpA);
 
-    return _possibleConstructorReturn(this, (MTiHK.__proto__ || Object.getPrototypeOf(MTiHK)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (XmqpA.__proto__ || Object.getPrototypeOf(XmqpA)).apply(this, arguments));
   }
 
-  return MTiHK;
+  return XmqpA;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(MTiHK, _indexSoy2.default);
+_metalSoy2.default.register(XmqpA, _indexSoy2.default);
 
-exports.default = MTiHK;
+exports.default = XmqpA;
 
 /***/ })
-],[136]);
+],[134]);

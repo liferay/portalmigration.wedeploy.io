@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([2,6,7],[
+webpackJsonppageComponent([2,7,8],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
@@ -11360,12 +11360,13 @@ exports.default = parseFromAnchor;
 /* 95 */,
 /* 96 */,
 /* 97 */,
-/* 98 */
+/* 98 */,
+/* 99 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FbKsY", function() { return FbKsY; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YZlIF", function() { return YZlIF; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -11377,15 +11378,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from lodash.soy.
+// This file was automatically generated from add_menu.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace FbKsY.
+ * @fileoverview Templates in namespace YZlIF.
  * @public
  */
 
-goog.module('FbKsY.incrementaldom');
+goog.module('YZlIF.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -11408,7 +11409,7 @@ var iattr = IncrementalDom.attr;
 
 var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('othersGuide.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('lexiconMigration.incrementaldom', 'render');
 
 
 /**
@@ -11419,184 +11420,185 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param240 = function() {
+  var param264 = function() {
     ie_open('article', null, null,
         'class', 'my-5');
       ie_open('h2');
-        itext('How to migrate:');
+        itext('How does it look like now (7.0)');
       ie_close('h2');
-      ie_open('h3');
-        itext('Direct replacements');
-      ie_close('h3');
+      ie_open('p');
+        ie_open('img', null, null,
+            'class', 'img img-thumbnail',
+            'src', '/images/lexiconMigration/add_menu_old.png');
+        ie_close('img');
+      ie_close('p');
+      ie_open('h2');
+        itext('Changes for Lexicon 2.0 (7.1)');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('img', null, null,
+            'class', 'img img-thumbnail',
+            'src', '/images/lexiconMigration/add_menu_new.png');
+        ie_close('img');
+      ie_close('p');
       ie_open('table');
         ie_open('thead');
           ie_open('tr');
             ie_open('th');
-              itext('lodash');
+              itext('Change');
             ie_close('th');
             ie_open('th');
-              itext('replacement');
+              itext('Reason');
             ie_close('th');
           ie_close('tr');
         ie_close('thead');
         ie_open('tbody');
           ie_open('tr');
             ie_open('td');
-              ie_open('code');
-                itext('_.bind');
-              ie_close('code');
+              itext('\u2460 The ');
+              ie_open('strong');
+                itext('add menu is moved into the Management Toolbar');
+              ie_close('strong');
             ie_close('td');
             ie_open('td');
-              itext('to native ');
-              ie_open('code');
-                itext('.bind');
-              ie_close('code');
-              itext('.');
+              itext('as');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      ie_open('h2');
+        itext('How to apply it?');
+      ie_close('h2');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th');
+              itext('_');
+            ie_close('th');
+            ie_open('th');
+              itext('Action');
+            ie_close('th');
+            ie_open('th');
+              itext('Mandatory');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('a', null, null,
+                  'href', '#step-1');
+                itext('1');
+              ie_close('a');
+            ie_close('td');
+            ie_open('td');
+              itext('Locate the code in your application');
+            ie_close('td');
+            ie_open('td');
+              itext('\u2714');
             ie_close('td');
           ie_close('tr');
           ie_open('tr');
             ie_open('td');
-              ie_open('code');
-                itext('_.bindKey');
-              ie_close('code');
+              ie_open('a', null, null,
+                  'href', '#step-2');
+                itext('2');
+              ie_close('a');
             ie_close('td');
             ie_open('td');
-              itext('there\'s no direct replacement.');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('_.escape');
-              ie_close('code');
+              itext('Move the add menu into the management toolbar');
             ie_close('td');
             ie_open('td');
-              itext('there\'s no direct replacement.');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('_.groupBy');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              itext('there\'s no direct replacement.');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('_.isEqual');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              itext('there\'s no direct replacement.');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('_.map');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              itext('to native ');
-              ie_open('code');
-                itext('Array.map');
-              ie_close('code');
-              itext('.');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('_.reduce');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              itext('to native ');
-              ie_open('code');
-                itext('Array.reduce');
-              ie_close('code');
-              itext('.');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('_.unescape');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              itext('there\'s no direct replacement.');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('_.sub');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              itext('there\'s no direct replacement.');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('_.without');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              itext('there\'s no direct replacement.');
+              itext('\u2714');
             ie_close('td');
           ie_close('tr');
         ie_close('tbody');
       ie_close('table');
       ie_open('h3');
-        itext('Code replacements');
+        itext('[1] Locate the code in your application ');
+        ie_void('a', null, null,
+            'id', 'step-1');
       ie_close('h3');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('p');
-            ie_open('code');
-              itext('_.debounce');
-            ie_close('code');
-            itext(' to ');
-            ie_open('code');
-              itext('metal-debounce');
-            ie_close('code');
-            itext('.');
-          ie_close('p');
-          $templateAlias2({code: '<aui:script require="metal-debounce/src/debounce">\n  let debounce = metalDebounceSrcDebounce.default;\n  debounce(fn, time);\n</aui:script>', mode: 'htmlmixed'}, null, opt_ijData);
-        ie_close('li');
-        ie_open('li');
-          ie_open('p');
-            ie_open('code');
-              itext('_.forEach');
-            ie_close('code');
-            itext(' to ');
-            ie_open('code');
-              itext('.forEach');
-            ie_close('code');
-            itext(' or ');
-            ie_open('code');
-              itext('for in');
-            ie_close('code');
-          ie_close('p');
-          $templateAlias2({code: '[1,2,3].forEach((item) => {\n  console.log(item);\n});\n\nlet obj = {a:1, b:2, c:3};\nfor(key in obj) {\n  console.log(item);\n}', mode: 'javascript'}, null, opt_ijData);
-        ie_close('li');
-        ie_open('li');
-          ie_open('p');
-            ie_open('code');
-              itext('_.isFunction');
-            ie_close('code');
-            itext(' to');
-          ie_close('p');
-          $templateAlias2({code: '  function isFunction(fn) {\n    return (!!fn && ("object" == typeof fn || "function" == typeof fn)) && toString.call(fn) == \'[object Function]\'\n  }', mode: 'javascript'}, null, opt_ijData);
-        ie_close('li');
-      ie_close('ul');
+      ie_open('p');
+        itext('Locate the code responsible for rendering the ');
+        ie_open('strong');
+          itext('add menu');
+        ie_close('strong');
+        itext(' in your application. It should resemble something like the following snippet found in ');
+        ie_open('a', null, null,
+            'href', 'https://github.com/liferay/liferay-portal/blob/master/modules/apps/web-experience/fragment/fragment-web/src/main/resources/META-INF/resources/view.jsp#L119-L127');
+          itext('fragment-web/view.jsp');
+        ie_close('a');
+        itext(':');
+      ie_close('p');
+      $templateAlias2({code: '<c:if test="<%= fragmentDisplayContext.isShowAddButton(FragmentActionKeys.ADD_FRAGMENT_COLLECTION) %>">\n    <portlet:renderURL var="addFragmentCollectionURL">\n        <portlet:param name="mvcRenderCommandName" value="/fragment/edit_fragment_collection" />\n    </portlet:renderURL>\n\n    <liferay-frontend:add-menu inline="<%= true %>">\n        <liferay-frontend:add-menu-item title=\'<%= LanguageUtil.get(request, "add-collection") %>\' url="<%= addFragmentCollectionURL.toString() %>" />\n    </liferay-frontend:add-menu>\n</c:if>', mode: 'text/html'}, null, opt_ijData);
+      ie_open('p');
+        itext('Locate the code responsible for rendering the ');
+        ie_open('strong');
+          itext('management toolbar');
+        ie_close('strong');
+        itext(' in your application. It should resemble something like the following snippet found in ');
+        ie_open('a', null, null,
+            'href', 'https://github.com/liferay/liferay-portal/blob/master/modules/apps/web-experience/fragment/fragment-web/src/main/resources/META-INF/resources/view.jsp#L28-L32');
+          itext('fragment-web/view.jsp');
+        ie_close('a');
+        itext(':');
+      ie_close('p');
+      $templateAlias2({code: '<liferay-frontend:management-bar\n    disabled="<%= fragmentDisplayContext.isDisabledFragmentCollectionsManagementBar() %>"\n    includeCheckBox="<%= true %>"\n    searchContainerId="fragmentCollections"\n>\n    ...\n</liferay-frontend:management-bar>', mode: 'text/html'}, null, opt_ijData);
+      ie_open('h3');
+        itext('[2] Move the add menu into the management toolbar ');
+        ie_void('a', null, null,
+            'id', 'step-2');
+      ie_close('h3');
+      ie_open('p');
+        itext('Move the part in charge of the search into the ');
+        ie_open('code');
+          itext('liferay-frontend:management-bar');
+        ie_close('code');
+        itext(' section, right after the last of the ');
+        ie_open('code');
+          itext('liferay-frontend-management-bar-buttons');
+        ie_close('code');
+        itext(' item like it\'s shown in the following snippet.');
+      ie_close('p');
+      $templateAlias2({code: '<liferay-frontend:management-bar-buttons>\n    ...\n\n    <c:if test="<%= fragmentDisplayContext.isShowAddButton(FragmentActionKeys.ADD_FRAGMENT_COLLECTION) %>">\n        <portlet:renderURL var="addFragmentCollectionURL">\n            <portlet:param name="mvcRenderCommandName" value="/fragment/edit_fragment_collection" />\n        </portlet:renderURL>\n\n        <liferay-frontend:add-menu inline="<%= true %>">\n            <liferay-frontend:add-menu-item title=\'<%= LanguageUtil.get(request, "add-collection") %>\' url="<%= addFragmentCollectionURL.toString() %>" />\n        </liferay-frontend:add-menu>\n    </c:if>\n</liferay-frontend:management-bar-buttons>', mode: 'text/html'}, null, opt_ijData);
+      ie_open('h2');
+        itext('Who has done it already?');
+      ie_close('h2');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th');
+              itext('LPS');
+            ie_close('th');
+            ie_open('th');
+              itext('Pull Request');
+            ie_close('th');
+            ie_open('th');
+              itext('Master');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('a', null, null,
+                  'href', 'https://issues.liferay.com/browse/LPS-77502');
+                itext('LPS-77502');
+              ie_close('a');
+            ie_close('td');
+            ie_open('td');
+              ie_open('a', null, null,
+                  'href', 'https://github.com/brianchandotcom/liferay-portal/pull/54812');
+                itext('https://github.com/brianchandotcom/liferay-portal/pull/54812');
+              ie_close('a');
+            ie_close('td');
+            ie_open('td');
+              itext('\u2718');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -11607,11 +11609,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param240}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param264}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'FbKsY.render';
+  $render.soyTemplateName = 'YZlIF.render';
 }
 
 exports.render.params = ["page","site"];
@@ -11621,15 +11623,14 @@ return exports;
 
 });
 
-class FbKsY extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(FbKsY, templates);
+class YZlIF extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(YZlIF, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 99 */,
 /* 100 */,
 /* 101 */,
 /* 102 */,
@@ -11662,7 +11663,13 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(FbKsY, templates);
 /* 129 */,
 /* 130 */,
 /* 131 */,
-/* 132 */
+/* 132 */,
+/* 133 */,
+/* 134 */,
+/* 135 */,
+/* 136 */,
+/* 137 */,
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11696,9 +11703,9 @@ __webpack_require__(19);
 
 __webpack_require__(20);
 
-var _lodashSoy = __webpack_require__(98);
+var _add_menuSoy = __webpack_require__(99);
 
-var _lodashSoy2 = _interopRequireDefault(_lodashSoy);
+var _add_menuSoy2 = _interopRequireDefault(_add_menuSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -11708,23 +11715,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var FbKsY = function (_Component) {
-  _inherits(FbKsY, _Component);
+var YZlIF = function (_Component) {
+  _inherits(YZlIF, _Component);
 
-  function FbKsY() {
-    _classCallCheck(this, FbKsY);
+  function YZlIF() {
+    _classCallCheck(this, YZlIF);
 
-    return _possibleConstructorReturn(this, (FbKsY.__proto__ || Object.getPrototypeOf(FbKsY)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (YZlIF.__proto__ || Object.getPrototypeOf(YZlIF)).apply(this, arguments));
   }
 
-  return FbKsY;
+  return YZlIF;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(FbKsY, _lodashSoy2.default);
+_metalSoy2.default.register(YZlIF, _add_menuSoy2.default);
 
-exports.default = FbKsY;
+exports.default = YZlIF;
 
 /***/ })
-],[132]);
+],[138]);
