@@ -98,9 +98,11 @@ Start by adding the following imports to the imports section of your `init.jsp` 
 <%@ page import="com.liferay.frontend.taglib.clay.servlet.taglib.util.NavigationItem" %>
 ```
 
-Don't forget to add the dependency with to the `frontend-taglib-clay` module in your `build.gradle` file:
+Don't forget to add the dependencies with to the `frontend-taglib-clay` and `fronteng.taglib.soy` module in your `build.gradle` file:
 
 ```text/html
+provided group: "com.liferay", name: "com.liferay.frontend.taglib.soy", version: "1.0.0"
+
 provided project(":apps:foundation:frontend-taglib:frontend-taglib-clay")
 ```
 
