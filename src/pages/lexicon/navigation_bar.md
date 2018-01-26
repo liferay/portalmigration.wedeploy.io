@@ -21,8 +21,8 @@ lexiconPatternLink: "https://lexicondesign.io/docs/patterns/Navigation/horizonta
 
 Change | Reason
 --- | ---
-① The _Navigation Bar is dark_ in admin applications (and light outside of admin contexts) | The Navigation Bar reflects Application Sections and the color helps make this connection
-② The _general search is moved out of the Navigation Bar_ and into the Management Toolbar | Search applies to the current Application data set and not the application itself
+① The **Navigation Bar is dark** in admin applications (and light outside of admin contexts) | The Navigation Bar reflects Application Sections and the color helps make this connection
+② The **general search is moved out of the Navigation Bar** and into the Management Toolbar | Search applies to the current Application data set and not the application itself
 
 ## How to apply it?
 
