@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([2,7,8],[
+webpackJsonppageComponent([0,7,8],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
@@ -11361,12 +11361,14 @@ exports.default = parseFromAnchor;
 /* 96 */,
 /* 97 */,
 /* 98 */,
-/* 99 */
+/* 99 */,
+/* 100 */,
+/* 101 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YZlIF", function() { return YZlIF; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mXqeN", function() { return mXqeN; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -11378,15 +11380,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from add_menu.soy.
+// This file was automatically generated from navigation_bar.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace YZlIF.
+ * @fileoverview Templates in namespace mXqeN.
  * @public
  */
 
-goog.module('YZlIF.incrementaldom');
+goog.module('mXqeN.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -11420,7 +11422,7 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param264 = function() {
+  var param297 = function() {
     ie_open('article', null, null,
         'class', 'my-5');
       ie_open('h2');
@@ -11429,7 +11431,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_open('p');
         ie_open('img', null, null,
             'class', 'img img-thumbnail',
-            'src', '/images/lexiconMigration/add_menu_old.png');
+            'src', '/images/lexiconMigration/navigation_bar_old.png');
         ie_close('img');
       ie_close('p');
       ie_open('h2');
@@ -11438,7 +11440,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_open('p');
         ie_open('img', null, null,
             'class', 'img img-thumbnail',
-            'src', '/images/lexiconMigration/add_menu_new.png');
+            'src', '/images/lexiconMigration/navigation_bar_new.png');
         ie_close('img');
       ie_close('p');
       ie_open('table');
@@ -11457,11 +11459,24 @@ function $render(opt_data, opt_ignored, opt_ijData) {
             ie_open('td');
               itext('\u2460 The ');
               ie_open('strong');
-                itext('add menu is moved into the Management Toolbar');
+                itext('Navigation Bar is dark');
               ie_close('strong');
+              itext(' in admin applications (and light outside of admin contexts)');
             ie_close('td');
             ie_open('td');
-              itext('as');
+              itext('The Navigation Bar reflects Application Sections and the color helps make this connection');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              itext('\u2461 The ');
+              ie_open('strong');
+                itext('general search is moved out of the Navigation Bar');
+              ie_close('strong');
+              itext(' and into the Management Toolbar');
+            ie_close('td');
+            ie_open('td');
+              itext('Search applies to the current Application data set and not the application itself');
             ie_close('td');
           ie_close('tr');
         ie_close('tbody');
@@ -11506,10 +11521,60 @@ function $render(opt_data, opt_ignored, opt_ijData) {
               ie_close('a');
             ie_close('td');
             ie_open('td');
-              itext('Move the add menu into the management toolbar');
+              itext('Move the search into the management toolbar');
             ie_close('td');
             ie_open('td');
               itext('\u2714');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('a', null, null,
+                  'href', '#step-3');
+                itext('3');
+              ie_close('a');
+            ie_close('td');
+            ie_open('td');
+              itext('Use ');
+              ie_open('code');
+                itext('clay:navigation-bar');
+              ie_close('code');
+              itext(' instead of the old ');
+              ie_open('code');
+                itext('aui:navbar');
+              ie_close('code');
+              itext(' tag');
+            ie_close('td');
+            ie_open('td');
+              itext('\u2714');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('a', null, null,
+                  'href', '#step-4');
+                itext('4');
+              ie_close('a');
+            ie_close('td');
+            ie_open('td');
+              itext('Extract application sections from the Actions Menu');
+            ie_close('td');
+            ie_open('td');
+              itext('\u2718');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('a', null, null,
+                  'href', '#step-5');
+                itext('5');
+              ie_close('a');
+            ie_close('td');
+            ie_open('td');
+              itext('Move the navigation items definition into a Display Context');
+            ie_close('td');
+            ie_open('td');
+              itext('\u2718');
             ie_close('td');
           ie_close('tr');
         ie_close('tbody');
@@ -11522,16 +11587,16 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_open('p');
         itext('Locate the code responsible for rendering the ');
         ie_open('strong');
-          itext('add menu');
+          itext('navigation');
         ie_close('strong');
         itext(' in your application. It should resemble something like the following snippet found in ');
         ie_open('a', null, null,
-            'href', 'https://github.com/liferay/liferay-portal/blob/master/modules/apps/web-experience/fragment/fragment-web/src/main/resources/META-INF/resources/view.jsp#L119-L127');
-          itext('fragment-web/view.jsp');
+            'href', 'https://github.com/liferay/liferay-portal/blob/master/modules/apps/collaboration/blogs/blogs-web/src/main/resources/META-INF/resources/blogs_admin/view.jsp#L28-L54');
+          itext('blogs-web/blogs-admin/view.jsp');
         ie_close('a');
         itext(':');
       ie_close('p');
-      $templateAlias2({code: '<c:if test="<%= fragmentDisplayContext.isShowAddButton(FragmentActionKeys.ADD_FRAGMENT_COLLECTION) %>">\n    <portlet:renderURL var="addFragmentCollectionURL">\n        <portlet:param name="mvcRenderCommandName" value="/fragment/edit_fragment_collection" />\n    </portlet:renderURL>\n\n    <liferay-frontend:add-menu inline="<%= true %>">\n        <liferay-frontend:add-menu-item title=\'<%= LanguageUtil.get(request, "add-collection") %>\' url="<%= addFragmentCollectionURL.toString() %>" />\n    </liferay-frontend:add-menu>\n</c:if>', mode: 'text/html'}, null, opt_ijData);
+      $templateAlias2({code: '<aui:nav-bar cssClass="collapse-basic-search" markupView="lexicon">\n    <aui:nav cssClass="navbar-nav">\n        <portlet:renderURL var="viewEntriesURL" />\n\n        <aui:nav-item\n            href="<%= viewEntriesURL %>"\n            label="entries"\n            selected=\'<%= navigation.equals("entries") %>\'\n        />\n    </aui:nav>\n\n    <aui:form action="<%= portletURL.toString() %>" name="searchFm">\n        <aui:nav-bar-search>\n            <liferay-ui:input-search markupView="lexicon" />\n        </aui:nav-bar-search>\n    </aui:form>\n</aui:nav-bar>', mode: 'text/html'}, null, opt_ijData);
       ie_open('p');
         itext('Locate the code responsible for rendering the ');
         ie_open('strong');
@@ -11539,14 +11604,14 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         ie_close('strong');
         itext(' in your application. It should resemble something like the following snippet found in ');
         ie_open('a', null, null,
-            'href', 'https://github.com/liferay/liferay-portal/blob/master/modules/apps/web-experience/fragment/fragment-web/src/main/resources/META-INF/resources/view.jsp#L28-L32');
-          itext('fragment-web/view.jsp');
+            'href', 'https://github.com/liferay/liferay-portal/blob/master/modules/apps/collaboration/blogs/blogs-web/src/main/resources/META-INF/resources/blogs_admin/view_entries.jsp#L149-L153');
+          itext('blogs-web/blogs-admin/view_entries.jsp');
         ie_close('a');
         itext(':');
       ie_close('p');
-      $templateAlias2({code: '<liferay-frontend:management-bar\n    disabled="<%= fragmentDisplayContext.isDisabledFragmentCollectionsManagementBar() %>"\n    includeCheckBox="<%= true %>"\n    searchContainerId="fragmentCollections"\n>\n    ...\n</liferay-frontend:management-bar>', mode: 'text/html'}, null, opt_ijData);
+      $templateAlias2({code: '<liferay-frontend:management-bar\n    disabled="<%= entriesSearchContainer.getTotal() <= 0 %>"\n    includeCheckBox="<%= true %>"\n    searchContainerId="blogEntries"\n>\n    ...\n</liferay-frontend:management-bar>', mode: 'text/html'}, null, opt_ijData);
       ie_open('h3');
-        itext('[2] Move the add menu into the management toolbar ');
+        itext('[2] Move the search into the management toolbar ');
         ie_void('a', null, null,
             'id', 'step-2');
       ie_close('h3');
@@ -11557,11 +11622,141 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         ie_close('code');
         itext(' section, right after the last of the ');
         ie_open('code');
-          itext('liferay-frontend-management-bar-buttons');
+          itext('liferay-frontend-management-bar-filters');
         ie_close('code');
-        itext(' item like it\'s shown in the following snippet.');
+        itext(' item like it\'s shown in the following snippet. Notice how the usage of ');
+        ie_open('code');
+          itext('aui:nav-bar-search');
+        ie_close('code');
+        itext(' from the original snippet is no longer necessary, but an additional ');
+        ie_open('code');
+          itext('<li>');
+        ie_close('code');
+        itext(' item needs to be added.');
       ie_close('p');
-      $templateAlias2({code: '<liferay-frontend:management-bar-buttons>\n    ...\n\n    <c:if test="<%= fragmentDisplayContext.isShowAddButton(FragmentActionKeys.ADD_FRAGMENT_COLLECTION) %>">\n        <portlet:renderURL var="addFragmentCollectionURL">\n            <portlet:param name="mvcRenderCommandName" value="/fragment/edit_fragment_collection" />\n        </portlet:renderURL>\n\n        <liferay-frontend:add-menu inline="<%= true %>">\n            <liferay-frontend:add-menu-item title=\'<%= LanguageUtil.get(request, "add-collection") %>\' url="<%= addFragmentCollectionURL.toString() %>" />\n        </liferay-frontend:add-menu>\n    </c:if>\n</liferay-frontend:management-bar-buttons>', mode: 'text/html'}, null, opt_ijData);
+      $templateAlias2({code: '<liferay-frontend:management-bar-filters>\n    ...\n\n    <li>\n        <aui:form action="<%= portletURL.toString() %>" name="searchFm">\n            <liferay-ui:input-search markupView="lexicon" />\n        </aui:form>\n    </li>\n</liferay-frontend:management-bar-filters>', mode: 'text/html'}, null, opt_ijData);
+      ie_open('h3');
+        itext('[3] Use ');
+        ie_open('code');
+          itext('clay:navigation-bar');
+        ie_close('code');
+        itext(' instead of the old ');
+        ie_open('code');
+          itext('aui:navbar');
+        ie_close('code');
+        itext(' tag ');
+        ie_void('a', null, null,
+            'id', 'step-3');
+      ie_close('h3');
+      ie_open('p');
+        itext('Start by adding the following imports to the imports section of your ');
+        ie_open('code');
+          itext('init.jsp');
+        ie_close('code');
+        itext(' file:');
+      ie_close('p');
+      $templateAlias2({code: '// Import the clay tld file to be able to use the new tag\n<%@ taglib uri="http://liferay.com/tld/clay" prefix="clay" %>\n\n// Import the NavigationItem utility class to create the items model\n<%@ page import="com.liferay.frontend.taglib.clay.servlet.taglib.util.NavigationItem" %>\n<%@ page import="com.liferay.frontend.taglib.clay.servlet.taglib.util.JSPNavigationItemList" %>', mode: 'text/html'}, null, opt_ijData);
+      ie_open('p');
+        itext('Don\'t forget to add the dependencies with to the ');
+        ie_open('code');
+          itext('frontend-taglib-clay');
+        ie_close('code');
+        itext(' and ');
+        ie_open('code');
+          itext('fronteng.taglib.soy');
+        ie_close('code');
+        itext(' module in your ');
+        ie_open('code');
+          itext('build.gradle');
+        ie_close('code');
+        itext(' file:');
+      ie_close('p');
+      $templateAlias2({code: 'provided group: "com.liferay", name: "com.liferay.frontend.taglib.soy", version: "1.0.0"\n\nprovided project(":apps:foundation:frontend-taglib:frontend-taglib-clay")', mode: 'text/html'}, null, opt_ijData);
+      ie_open('p');
+        itext('Model your entries using the ');
+        ie_open('code');
+          itext('NavigationItem');
+        ie_close('code');
+        itext(' class and pass it down to the tag instance.');
+      ie_close('p');
+      ie_open('div', null, null,
+          'class', 'alert alert-warning');
+        itext('The `inverted` attribute is set to true in all admin portlets. Instances in applications for live  sites only can be left to false (default)');
+      ie_close('div');
+      $templateAlias2({code: '<clay:navigation-bar\n    inverted="<%= true %>"\n    items="<%=\n        new JSPNavigationItemList(pageContext) {\n            {\n                List<String> configurationCategories = (List<String>)request.getAttribute(ConfigurationAdminWebKeys.CONFIGURATION_CATEGORIES);\n\n                if (configurationCategories != null) {\n                    for (String curConfigurationCategory : configurationCategories) {\n                        add(\n                            navigationItem -> {\n                                navigationItem.setActive(curConfigurationCategory.equals(configurationCategory));\n                                navigationItem.setHref(renderResponse.createRenderURL(), "configurationCategory", "curConfigurationCategory");\n                                navigationItem.setLabel(LanguageUtil.get(request, curConfigurationCategory));\n                            }\n                        );\n                    }\n                }\n            }\n        }\n    %>"\n/>', mode: 'text/html'}, null, opt_ijData);
+      ie_open('p');
+        itext('Check out the following ');
+        ie_open('a', null, null,
+            'href', 'https://github.com/liferay/liferay-portal/commit/1ab9c006c750052f5c1c7df7072aab961b89966c');
+          itext('Sample usage of JSPNavigationItemList');
+        ie_close('a');
+        itext(' for more information about it.');
+      ie_close('p');
+      ie_open('h3');
+        itext('[4] Extract application sections from the Actions Menu ');
+        ie_void('a', null, null,
+            'id', 'step-4');
+      ie_close('h3');
+      ie_open('div', null, null,
+          'class', 'alert alert-info');
+        itext('This step is ');
+        ie_open('em');
+          itext('optional');
+        ie_close('em');
+        itext(' but ');
+        ie_open('strong');
+          itext('recommended');
+        ie_close('strong');
+      ie_close('div');
+      ie_open('p');
+        itext('All Application Sections should be clearly visible in the Navigation Bar. Consider exploring what options your application currently has in the Actions Menu (find instances of ');
+        ie_open('code');
+          itext('*PortletConfigurationIcon');
+        ie_close('code');
+        itext(') to find section candidates.');
+      ie_close('p');
+      ie_open('p');
+        ie_open('img', null, null,
+            'class', 'img img-thumbnail',
+            'src', '/images/lexiconMigration/navigation_bar_application_sections.png');
+        ie_close('img');
+      ie_close('p');
+      ie_open('h3');
+        itext('[5] Move the navigation items definition into a Display Context ');
+        ie_void('a', null, null,
+            'id', 'step-5');
+      ie_close('h3');
+      ie_open('div', null, null,
+          'class', 'alert alert-info');
+        itext('This step is ');
+        ie_open('em');
+          itext('optional');
+        ie_close('em');
+        itext(' but ');
+        ie_open('strong');
+          itext('recommended');
+        ie_close('strong');
+      ie_close('div');
+      ie_open('p');
+        itext('If your application already supports it (or even if it doesn\'t), consider moving the ');
+        ie_open('code');
+          itext('Java');
+        ie_close('code');
+        itext(' portion that generates the navigation items model into a ');
+        ie_open('code');
+          itext('*DisplayContext');
+        ie_close('code');
+        itext(' pattern to keep your jsps cleaner and server-free');
+      ie_close('p');
+      $templateAlias2({code: '<clay:navigation-bar\n    inverted="<%= true %>"\n    items="<%= myAppAdminViewDisplayContext.getNavigationItems() %>" />', mode: 'text/html'}, null, opt_ijData);
+      ie_open('p');
+        itext('Check out the following ');
+        ie_open('a', null, null,
+            'href', 'https://github.com/liferay/liferay-portal/commit/14b3bab9d42c19a24a84eac71c0d3658e3f9fc10');
+          itext('Sample usage of NavigationItemList');
+        ie_close('a');
+        itext(' for more information about it.');
+      ie_close('p');
       ie_open('h2');
         itext('Who has done it already?');
       ie_close('h2');
@@ -11583,14 +11778,14 @@ function $render(opt_data, opt_ignored, opt_ijData) {
           ie_open('tr');
             ie_open('td');
               ie_open('a', null, null,
-                  'href', 'https://issues.liferay.com/browse/LPS-77502');
-                itext('LPS-77502');
+                  'href', 'https://issues.liferay.com/browse/LPS-77166');
+                itext('LPS-77166');
               ie_close('a');
             ie_close('td');
             ie_open('td');
               ie_open('a', null, null,
-                  'href', 'https://github.com/brianchandotcom/liferay-portal/pull/54812');
-                itext('https://github.com/brianchandotcom/liferay-portal/pull/54812');
+                  'href', 'https://github.com/brianchandotcom/liferay-portal/pull/54459');
+                itext('https://github.com/brianchandotcom/liferay-portal/pull/54459');
               ie_close('a');
             ie_close('td');
             ie_open('td');
@@ -11609,11 +11804,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param264}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param297}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'YZlIF.render';
+  $render.soyTemplateName = 'mXqeN.render';
 }
 
 exports.render.params = ["page","site"];
@@ -11623,16 +11818,14 @@ return exports;
 
 });
 
-class YZlIF extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(YZlIF, templates);
+class mXqeN extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(mXqeN, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 100 */,
-/* 101 */,
 /* 102 */,
 /* 103 */,
 /* 104 */,
@@ -11668,8 +11861,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(YZlIF, templates);
 /* 134 */,
 /* 135 */,
 /* 136 */,
-/* 137 */,
-/* 138 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11703,9 +11895,9 @@ __webpack_require__(19);
 
 __webpack_require__(20);
 
-var _add_menuSoy = __webpack_require__(99);
+var _navigation_barSoy = __webpack_require__(101);
 
-var _add_menuSoy2 = _interopRequireDefault(_add_menuSoy);
+var _navigation_barSoy2 = _interopRequireDefault(_navigation_barSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -11715,23 +11907,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var YZlIF = function (_Component) {
-  _inherits(YZlIF, _Component);
+var mXqeN = function (_Component) {
+  _inherits(mXqeN, _Component);
 
-  function YZlIF() {
-    _classCallCheck(this, YZlIF);
+  function mXqeN() {
+    _classCallCheck(this, mXqeN);
 
-    return _possibleConstructorReturn(this, (YZlIF.__proto__ || Object.getPrototypeOf(YZlIF)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (mXqeN.__proto__ || Object.getPrototypeOf(mXqeN)).apply(this, arguments));
   }
 
-  return YZlIF;
+  return mXqeN;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(YZlIF, _add_menuSoy2.default);
+_metalSoy2.default.register(mXqeN, _navigation_barSoy2.default);
 
-exports.default = YZlIF;
+exports.default = mXqeN;
 
 /***/ })
-],[138]);
+],[137]);

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([0,7,8],[
+webpackJsonppageComponent([4,7,8],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
@@ -11359,16 +11359,12 @@ exports.default = parseFromAnchor;
 /* 94 */,
 /* 95 */,
 /* 96 */,
-/* 97 */,
-/* 98 */,
-/* 99 */,
-/* 100 */,
-/* 101 */
+/* 97 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UbXnz", function() { return UbXnz; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "iuRkI", function() { return iuRkI; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -11380,15 +11376,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from navigation_bar.soy.
+// This file was automatically generated from jQuery.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace UbXnz.
+ * @fileoverview Templates in namespace iuRkI.
  * @public
  */
 
-goog.module('UbXnz.incrementaldom');
+goog.module('iuRkI.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -11411,7 +11407,7 @@ var iattr = IncrementalDom.attr;
 
 var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('lexiconMigration.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('othersGuide.incrementaldom', 'render');
 
 
 /**
@@ -11422,362 +11418,425 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param297 = function() {
+  var param202 = function() {
+    ie_open('article', null, null,
+        'class', 'my-5 alert alert-warning');
+      itext('AUI.$ returns a jQuery nodeList with many methods available. Replacing it with `document.querySelector` or `document.querySelectorAll` we lose all that methods.');
+    ie_close('article');
     ie_open('article', null, null,
         'class', 'my-5');
       ie_open('h2');
-        itext('How does it look like now (7.0)');
+        itext('How to migrate:');
       ie_close('h2');
-      ie_open('p');
-        ie_open('img', null, null,
-            'class', 'img img-thumbnail',
-            'src', '/images/lexiconMigration/navigation_bar_old.png');
-        ie_close('img');
-      ie_close('p');
-      ie_open('h2');
-        itext('Changes for Lexicon 2.0 (7.1)');
-      ie_close('h2');
-      ie_open('p');
-        ie_open('img', null, null,
-            'class', 'img img-thumbnail',
-            'src', '/images/lexiconMigration/navigation_bar_new.png');
-        ie_close('img');
-      ie_close('p');
-      ie_open('table');
-        ie_open('thead');
-          ie_open('tr');
-            ie_open('th');
-              itext('Change');
-            ie_close('th');
-            ie_open('th');
-              itext('Reason');
-            ie_close('th');
-          ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-          ie_open('tr');
-            ie_open('td');
-              itext('\u2460 The ');
-              ie_open('strong');
-                itext('Navigation Bar is dark');
-              ie_close('strong');
-              itext(' in admin applications (and light outside of admin contexts)');
-            ie_close('td');
-            ie_open('td');
-              itext('The Navigation Bar reflects Application Sections and the color helps make this connection');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              itext('\u2461 The ');
-              ie_open('strong');
-                itext('general search is moved out of the Navigation Bar');
-              ie_close('strong');
-              itext(' and into the Management Toolbar');
-            ie_close('td');
-            ie_open('td');
-              itext('Search applies to the current Application data set and not the application itself');
-            ie_close('td');
-          ie_close('tr');
-        ie_close('tbody');
-      ie_close('table');
-      ie_open('h2');
-        itext('How to apply it?');
-      ie_close('h2');
-      ie_open('table');
-        ie_open('thead');
-          ie_open('tr');
-            ie_open('th');
-              itext('_');
-            ie_close('th');
-            ie_open('th');
-              itext('Action');
-            ie_close('th');
-            ie_open('th');
-              itext('Mandatory');
-            ie_close('th');
-          ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('a', null, null,
-                  'href', '#step-1');
-                itext('1');
-              ie_close('a');
-            ie_close('td');
-            ie_open('td');
-              itext('Locate the code in your application');
-            ie_close('td');
-            ie_open('td');
-              itext('\u2714');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('a', null, null,
-                  'href', '#step-2');
-                itext('2');
-              ie_close('a');
-            ie_close('td');
-            ie_open('td');
-              itext('Move the search into the management toolbar');
-            ie_close('td');
-            ie_open('td');
-              itext('\u2714');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('a', null, null,
-                  'href', '#step-3');
-                itext('3');
-              ie_close('a');
-            ie_close('td');
-            ie_open('td');
-              itext('Use ');
-              ie_open('code');
-                itext('clay:navigation-bar');
-              ie_close('code');
-              itext(' instead of the old ');
-              ie_open('code');
-                itext('aui:navbar');
-              ie_close('code');
-              itext(' tag');
-            ie_close('td');
-            ie_open('td');
-              itext('\u2714');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('a', null, null,
-                  'href', '#step-4');
-                itext('4');
-              ie_close('a');
-            ie_close('td');
-            ie_open('td');
-              itext('Extract application sections from the Actions Menu');
-            ie_close('td');
-            ie_open('td');
-              itext('\u2718');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('a', null, null,
-                  'href', '#step-5');
-                itext('5');
-              ie_close('a');
-            ie_close('td');
-            ie_open('td');
-              itext('Move the navigation items definition into a Display Context');
-            ie_close('td');
-            ie_open('td');
-              itext('\u2718');
-            ie_close('td');
-          ie_close('tr');
-        ie_close('tbody');
-      ie_close('table');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('p');
+            itext('Replace ');
+            ie_open('code');
+              itext('AUI.$(selector)');
+            ie_close('code');
+            itext(' with ');
+            ie_open('code');
+              itext('document.querySelector(selector)');
+            ie_close('code');
+            itext(' if expected result is one node.');
+          ie_close('p');
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            itext('Replace ');
+            ie_open('code');
+              itext('AUI.$(selector)');
+            ie_close('code');
+            itext(' with ');
+            ie_open('code');
+              itext('document.querySelectorAll(selector)');
+            ie_close('code');
+            itext(' if expected result is more than one node. In this case you will have to iterate over the array to execute methods on each node if needed.');
+          ie_close('p');
+        ie_close('li');
+      ie_close('ul');
       ie_open('h3');
-        itext('[1] Locate the code in your application ');
-        ie_void('a', null, null,
-            'id', 'step-1');
-      ie_close('h3');
-      ie_open('p');
-        itext('Locate the code responsible for rendering the ');
-        ie_open('strong');
-          itext('navigation');
-        ie_close('strong');
-        itext(' in your application. It should resemble something like the following snippet found in ');
-        ie_open('a', null, null,
-            'href', 'https://github.com/liferay/liferay-portal/blob/master/modules/apps/collaboration/blogs/blogs-web/src/main/resources/META-INF/resources/blogs_admin/view.jsp#L28-L54');
-          itext('blogs-web/blogs-admin/view.jsp');
-        ie_close('a');
-        itext(':');
-      ie_close('p');
-      $templateAlias2({code: '<aui:nav-bar cssClass="collapse-basic-search" markupView="lexicon">\n    <aui:nav cssClass="navbar-nav">\n        <portlet:renderURL var="viewEntriesURL" />\n\n        <aui:nav-item\n            href="<%= viewEntriesURL %>"\n            label="entries"\n            selected=\'<%= navigation.equals("entries") %>\'\n        />\n    </aui:nav>\n\n    <aui:form action="<%= portletURL.toString() %>" name="searchFm">\n        <aui:nav-bar-search>\n            <liferay-ui:input-search markupView="lexicon" />\n        </aui:nav-bar-search>\n    </aui:form>\n</aui:nav-bar>', mode: 'text/html'}, null, opt_ijData);
-      ie_open('p');
-        itext('Locate the code responsible for rendering the ');
-        ie_open('strong');
-          itext('management toolbar');
-        ie_close('strong');
-        itext(' in your application. It should resemble something like the following snippet found in ');
-        ie_open('a', null, null,
-            'href', 'https://github.com/liferay/liferay-portal/blob/master/modules/apps/collaboration/blogs/blogs-web/src/main/resources/META-INF/resources/blogs_admin/view_entries.jsp#L149-L153');
-          itext('blogs-web/blogs-admin/view_entries.jsp');
-        ie_close('a');
-        itext(':');
-      ie_close('p');
-      $templateAlias2({code: '<liferay-frontend:management-bar\n    disabled="<%= entriesSearchContainer.getTotal() <= 0 %>"\n    includeCheckBox="<%= true %>"\n    searchContainerId="blogEntries"\n>\n    ...\n</liferay-frontend:management-bar>', mode: 'text/html'}, null, opt_ijData);
-      ie_open('h3');
-        itext('[2] Move the search into the management toolbar ');
-        ie_void('a', null, null,
-            'id', 'step-2');
-      ie_close('h3');
-      ie_open('p');
-        itext('Move the part in charge of the search into the ');
-        ie_open('code');
-          itext('liferay-frontend:management-bar');
-        ie_close('code');
-        itext(' section, right after the last of the ');
-        ie_open('code');
-          itext('liferay-frontend-management-bar-filters');
-        ie_close('code');
-        itext(' item like it\'s shown in the following snippet. Notice how the usage of ');
-        ie_open('code');
-          itext('aui:nav-bar-search');
-        ie_close('code');
-        itext(' from the original snippet is no longer necessary, but an additional ');
-        ie_open('code');
-          itext('<li>');
-        ie_close('code');
-        itext(' item needs to be added.');
-      ie_close('p');
-      $templateAlias2({code: '<liferay-frontend:management-bar-filters>\n    ...\n\n    <li>\n        <aui:form action="<%= portletURL.toString() %>" name="searchFm">\n            <liferay-ui:input-search markupView="lexicon" />\n        </aui:form>\n    </li>\n</liferay-frontend:management-bar-filters>', mode: 'text/html'}, null, opt_ijData);
-      ie_open('h3');
-        itext('[3] Use ');
-        ie_open('code');
-          itext('clay:navigation-bar');
-        ie_close('code');
-        itext(' instead of the old ');
-        ie_open('code');
-          itext('aui:navbar');
-        ie_close('code');
-        itext(' tag ');
-        ie_void('a', null, null,
-            'id', 'step-3');
-      ie_close('h3');
-      ie_open('p');
-        itext('Start by adding the following imports to the imports section of your ');
-        ie_open('code');
-          itext('init.jsp');
-        ie_close('code');
-        itext(' file:');
-      ie_close('p');
-      $templateAlias2({code: '// Import the clay tld file to be able to use the new tag\n<%@ taglib uri="http://liferay.com/tld/clay" prefix="clay" %>\n\n// Import the NavigationItem utility class to create the items model\n<%@ page import="com.liferay.frontend.taglib.clay.servlet.taglib.util.NavigationItem" %>', mode: 'text/html'}, null, opt_ijData);
-      ie_open('p');
-        itext('Don\'t forget to add the dependencies with to the ');
-        ie_open('code');
-          itext('frontend-taglib-clay');
-        ie_close('code');
-        itext(' and ');
-        ie_open('code');
-          itext('fronteng.taglib.soy');
-        ie_close('code');
-        itext(' module in your ');
-        ie_open('code');
-          itext('build.gradle');
-        ie_close('code');
-        itext(' file:');
-      ie_close('p');
-      $templateAlias2({code: 'provided group: "com.liferay", name: "com.liferay.frontend.taglib.soy", version: "1.0.0"\n\nprovided project(":apps:foundation:frontend-taglib:frontend-taglib-clay")', mode: 'text/html'}, null, opt_ijData);
-      ie_open('p');
-        itext('Model your entries using the ');
-        ie_open('code');
-          itext('NavigationItem');
-        ie_close('code');
-        itext(' class and pass it down to the tag instance.');
-      ie_close('p');
-      ie_open('div', null, null,
-          'class', 'alert alert-warning');
-        itext('The `inverted` attribute is set to true in all admin portlets. Instances in applications for live  sites only can be left to false (default)');
-      ie_close('div');
-      $templateAlias2({code: '<%\nList<NavigationItem> navigationItems = new ArrayList<>();\n\nNavigationItem entriesNavigationItem = new NavigationItem();\n\nentriesNavigationItem.setActive(navigation.equals("entries"));\nentriesNavigationItem.setHref(viewEntriesURL);\nentriesNavigationItem.setLabel("Entries");\n\nnavigationItems.add(entriesNavigationItem);\n%>\n\n<clay:navigation-bar\n    inverted="<%= true %>"\n    items="<%= navigationItems %>" />', mode: 'text/html'}, null, opt_ijData);
-      ie_open('h3');
-        itext('[4] Extract application sections from the Actions Menu ');
-        ie_void('a', null, null,
-            'id', 'step-4');
+        itext('Migrate methods:');
       ie_close('h3');
       ie_open('div', null, null,
           'class', 'alert alert-info');
-        itext('This step is ');
-        ie_open('em');
-          itext('optional');
-        ie_close('em');
-        itext(' but ');
-        ie_open('strong');
-          itext('recommended');
-        ie_close('strong');
+        itext('Some methods can\'t be directly replaced with native implementations so we may need to use some utilities from metal like `metal-dom`. To do it we need to import the module in the jsp in the following way');
       ie_close('div');
-      ie_open('p');
-        itext('All Application Sections should be clearly visible in the Navigation Bar. Consider exploring what options your application currently has in the Actions Menu (find instances of ');
-        ie_open('code');
-          itext('*PortletConfigurationIcon');
-        ie_close('code');
-        itext(') to find section candidates.');
-      ie_close('p');
-      ie_open('p');
-        ie_open('img', null, null,
-            'class', 'img img-thumbnail',
-            'src', '/images/lexiconMigration/navigation_bar_application_sections.png');
-        ie_close('img');
-      ie_close('p');
+      $templateAlias2({code: '<aui:script require="metal-dom/src/dom">\n  let dom = metalDomSrcDom.default;\n  ...\n</aui:script>', mode: 'htmlmixed'}, null, opt_ijData);
+      $templateAlias2({code: '<aui:script require="metal-dom/src/domData">\n  let domData = metalDomSrcDomData.default;\n  ...\n</aui:script>', mode: 'htmlmixed'}, null, opt_ijData);
       ie_open('h3');
-        itext('[5] Move the navigation items definition into a Display Context ');
-        ie_void('a', null, null,
-            'id', 'step-5');
+        itext('Direct replacements');
       ie_close('h3');
-      ie_open('div', null, null,
-          'class', 'alert alert-info');
-        itext('This step is ');
-        ie_open('em');
-          itext('optional');
-        ie_close('em');
-        itext(' but ');
-        ie_open('strong');
-          itext('recommended');
-        ie_close('strong');
-      ie_close('div');
-      ie_open('p');
-        itext('If your application already supports it (or even if it doesn\'t), consider moving the ');
-        ie_open('code');
-          itext('Java');
-        ie_close('code');
-        itext(' portion that generates the navigation items model into a ');
-        ie_open('code');
-          itext('*DisplayContext');
-        ie_close('code');
-        itext(' pattern to keep your jsps cleaner and server-free');
-      ie_close('p');
-      $templateAlias2({code: '<clay:navigation-bar\n    inverted="<%= true %>"\n    items="<%= myAppAdminViewDisplayContext.getNavigationItems() %>" />', mode: 'text/html'}, null, opt_ijData);
-      ie_open('h2');
-        itext('Who has done it already?');
-      ie_close('h2');
       ie_open('table');
         ie_open('thead');
           ie_open('tr');
             ie_open('th');
-              itext('LPS');
+              itext('jQuery');
             ie_close('th');
             ie_open('th');
-              itext('Pull Request');
-            ie_close('th');
-            ie_open('th');
-              itext('Master');
+              itext('replacement');
             ie_close('th');
           ie_close('tr');
         ie_close('thead');
         ie_open('tbody');
           ie_open('tr');
             ie_open('td');
-              ie_open('a', null, null,
-                  'href', 'https://issues.liferay.com/browse/LPS-77166');
-                itext('LPS-77166');
-              ie_close('a');
+              ie_open('code');
+                itext('.addClass()');
+              ie_close('code');
             ie_close('td');
             ie_open('td');
-              ie_open('a', null, null,
-                  'href', 'https://github.com/brianchandotcom/liferay-portal/pull/54459');
-                itext('https://github.com/brianchandotcom/liferay-portal/pull/54459');
-              ie_close('a');
+              ie_open('code');
+                itext('dom.addClasses(element, classes)');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.append()');
+              ie_close('code');
             ie_close('td');
             ie_open('td');
-              itext('\u2718');
+              ie_open('code');
+                itext('dom.append(parent, child)');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.attr(attribute)');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('.getAttribute(attribute)');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.attr(attribute, value)');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('.setAttribute(attribute, value)');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.closest()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('TODO');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.collapse()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('TODO');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.data()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('domData.get(element, \'propertyName\')');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.data(value)');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('domData.set(element, \'propertyName\', value)');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.each()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('.forEach');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.find()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('.querySelector()');
+              ie_close('code');
+              itext(' or ');
+              ie_open('code');
+                itext('querySelectorAll()');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.formToArray()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('TODO');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.html()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('.innerHTML');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.html(value)');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('.innerHTML = value');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.map()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('[...document.querySelectorAll(selector)].map()');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.on()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('addEventListener()');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.one()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('dom.once(element, eventName, fn)');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.prepend()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('TODO');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.prop(\'property\')');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('element.property');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.prop(\'property\', value)');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('element.property = value');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.ready(fn)');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('document.addEventListener(\'DOMContentLoaded\', fn, false)');
+              ie_close('code');
+              itext(' ');
+              ie_open('br');
+              ie_close('br');
+              itext(' ');
+              ie_open('code');
+                itext('window.addEventListener(\'load\', fn,false)');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.remove()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('dom.exitDocument(element)');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('toggleClass(\'class\')');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('dom.toggleClasses(element, \'class\')');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.tooltip()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              itext('TODO');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.val()');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('.value');
+              ie_close('code');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td');
+              ie_open('code');
+                itext('.val(newValue)');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td');
+              ie_open('code');
+                itext('.value = newValue');
+              ie_close('code');
             ie_close('td');
           ie_close('tr');
         ie_close('tbody');
       ie_close('table');
+      ie_open('h3');
+        itext('Code replacements');
+      ie_close('h3');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('p');
+            itext('Replace ');
+            ie_open('code');
+              itext('.ajaxSubmit()');
+            ie_close('code');
+            itext(' with');
+          ie_close('p');
+          $templateAlias2({code: 'fetch(url, {\n  body: new FormData(form),\n  credentials: \'include\',\n  method: \'POST\',\n  ...\n})\n.then(response => ...);', mode: 'javascript'}, null, opt_ijData);
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            itext('Replace ');
+            ie_open('code');
+              itext('.load()');
+            ie_close('code');
+            itext(' with');
+          ie_close('p');
+          $templateAlias2({code: 'fetch(url, data)\n.then(response => {\n  element.innerHTML = response;\n});', mode: 'javascript'}, null, opt_ijData);
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            itext('Replace ');
+            ie_open('code');
+              itext('.serializeArray()');
+            ie_close('code');
+            itext(' with');
+          ie_close('p');
+          $templateAlias2({code: '  form\n  dom.exitDocument(element)', mode: 'javascript'}, null, opt_ijData);
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            itext('Replace ');
+            ie_open('code');
+              itext('.sideNavigation()');
+            ie_close('code');
+            itext(' TODO.');
+          ie_close('p');
+        ie_close('li');
+        ie_open('li');
+          ie_open('p');
+            itext('Replace ');
+            ie_open('code');
+              itext('.toggle()');
+            ie_close('code');
+            itext(' with');
+          ie_close('p');
+          $templateAlias2({code: 'if (element.style.display === \'none\')\n  element.style.display = \'block\';\nelse\n  element.style.display = \'none\';', mode: 'javascript'}, null, opt_ijData);
+        ie_close('li');
+      ie_close('ul');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -11788,11 +11847,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param297}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param202}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'UbXnz.render';
+  $render.soyTemplateName = 'iuRkI.render';
 }
 
 exports.render.params = ["page","site"];
@@ -11802,14 +11861,18 @@ return exports;
 
 });
 
-class UbXnz extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(UbXnz, templates);
+class iuRkI extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(iuRkI, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 98 */,
+/* 99 */,
+/* 100 */,
+/* 101 */,
 /* 102 */,
 /* 103 */,
 /* 104 */,
@@ -11843,8 +11906,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(UbXnz, templates);
 /* 132 */,
 /* 133 */,
 /* 134 */,
-/* 135 */,
-/* 136 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11878,9 +11940,9 @@ __webpack_require__(19);
 
 __webpack_require__(20);
 
-var _navigation_barSoy = __webpack_require__(101);
+var _jQuerySoy = __webpack_require__(97);
 
-var _navigation_barSoy2 = _interopRequireDefault(_navigation_barSoy);
+var _jQuerySoy2 = _interopRequireDefault(_jQuerySoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -11890,23 +11952,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var UbXnz = function (_Component) {
-  _inherits(UbXnz, _Component);
+var iuRkI = function (_Component) {
+  _inherits(iuRkI, _Component);
 
-  function UbXnz() {
-    _classCallCheck(this, UbXnz);
+  function iuRkI() {
+    _classCallCheck(this, iuRkI);
 
-    return _possibleConstructorReturn(this, (UbXnz.__proto__ || Object.getPrototypeOf(UbXnz)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (iuRkI.__proto__ || Object.getPrototypeOf(iuRkI)).apply(this, arguments));
   }
 
-  return UbXnz;
+  return iuRkI;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(UbXnz, _navigation_barSoy2.default);
+_metalSoy2.default.register(iuRkI, _jQuerySoy2.default);
 
-exports.default = UbXnz;
+exports.default = iuRkI;
 
 /***/ })
-],[136]);
+],[135]);

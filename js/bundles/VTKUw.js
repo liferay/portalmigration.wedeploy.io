@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([4,7,8],[
+webpackJsonppageComponent([5,7,8],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
@@ -11358,13 +11358,12 @@ exports.default = parseFromAnchor;
 /* 93 */,
 /* 94 */,
 /* 95 */,
-/* 96 */,
-/* 97 */
+/* 96 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Sviyg", function() { return Sviyg; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VTKUw", function() { return VTKUw; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -11376,15 +11375,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from jQuery.soy.
+// This file was automatically generated from index.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace Sviyg.
+ * @fileoverview Templates in namespace VTKUw.
  * @public
  */
 
-goog.module('Sviyg.incrementaldom');
+goog.module('VTKUw.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -11405,9 +11404,7 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('othersGuide.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('type.incrementaldom', 'render');
 
 
 /**
@@ -11418,426 +11415,7 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param202 = function() {
-    ie_open('article', null, null,
-        'class', 'my-5 alert alert-warning');
-      itext('AUI.$ returns a jQuery nodeList with many methods available. Replacing it with `document.querySelector` or `document.querySelectorAll` we lose all that methods.');
-    ie_close('article');
-    ie_open('article', null, null,
-        'class', 'my-5');
-      ie_open('h2');
-        itext('How to migrate:');
-      ie_close('h2');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('p');
-            itext('Replace ');
-            ie_open('code');
-              itext('AUI.$(selector)');
-            ie_close('code');
-            itext(' with ');
-            ie_open('code');
-              itext('document.querySelector(selector)');
-            ie_close('code');
-            itext(' if expected result is one node.');
-          ie_close('p');
-        ie_close('li');
-        ie_open('li');
-          ie_open('p');
-            itext('Replace ');
-            ie_open('code');
-              itext('AUI.$(selector)');
-            ie_close('code');
-            itext(' with ');
-            ie_open('code');
-              itext('document.querySelectorAll(selector)');
-            ie_close('code');
-            itext(' if expected result is more than one node. In this case you will have to iterate over the array to execute methods on each node if needed.');
-          ie_close('p');
-        ie_close('li');
-      ie_close('ul');
-      ie_open('h3');
-        itext('Migrate methods:');
-      ie_close('h3');
-      ie_open('div', null, null,
-          'class', 'alert alert-info');
-        itext('Some methods can\'t be directly replaced with native implementations so we may need to use some utilities from metal like `metal-dom`. To do it we need to import the module in the jsp in the following way');
-      ie_close('div');
-      $templateAlias2({code: '<aui:script require="metal-dom/src/dom">\n  let dom = metalDomSrcDom.default;\n  ...\n</aui:script>', mode: 'htmlmixed'}, null, opt_ijData);
-      $templateAlias2({code: '<aui:script require="metal-dom/src/domData">\n  let domData = metalDomSrcDomData.default;\n  ...\n</aui:script>', mode: 'htmlmixed'}, null, opt_ijData);
-      ie_open('h3');
-        itext('Direct replacements');
-      ie_close('h3');
-      ie_open('table');
-        ie_open('thead');
-          ie_open('tr');
-            ie_open('th');
-              itext('jQuery');
-            ie_close('th');
-            ie_open('th');
-              itext('replacement');
-            ie_close('th');
-          ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.addClass()');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              ie_open('code');
-                itext('dom.addClasses(element, classes)');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.append()');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              ie_open('code');
-                itext('dom.append(parent, child)');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.attr(attribute)');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              ie_open('code');
-                itext('.getAttribute(attribute)');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.attr(attribute, value)');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              ie_open('code');
-                itext('.setAttribute(attribute, value)');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.closest()');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              itext('TODO');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.collapse()');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              itext('TODO');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.data()');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              ie_open('code');
-                itext('domData.get(element, \'propertyName\')');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.data(value)');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              ie_open('code');
-                itext('domData.set(element, \'propertyName\', value)');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.each()');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              ie_open('code');
-                itext('.forEach');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.find()');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              ie_open('code');
-                itext('.querySelector()');
-              ie_close('code');
-              itext(' or ');
-              ie_open('code');
-                itext('querySelectorAll()');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.formToArray()');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              itext('TODO');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.html()');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              ie_open('code');
-                itext('.innerHTML');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.html(value)');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              ie_open('code');
-                itext('.innerHTML = value');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.map()');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              ie_open('code');
-                itext('[...document.querySelectorAll(selector)].map()');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.on()');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              ie_open('code');
-                itext('addEventListener()');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.one()');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              ie_open('code');
-                itext('dom.once(element, eventName, fn)');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.prepend()');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              itext('TODO');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.prop(\'property\')');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              ie_open('code');
-                itext('element.property');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.prop(\'property\', value)');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              ie_open('code');
-                itext('element.property = value');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.ready(fn)');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              ie_open('code');
-                itext('document.addEventListener(\'DOMContentLoaded\', fn, false)');
-              ie_close('code');
-              itext(' ');
-              ie_open('br');
-              ie_close('br');
-              itext(' ');
-              ie_open('code');
-                itext('window.addEventListener(\'load\', fn,false)');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.remove()');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              ie_open('code');
-                itext('dom.exitDocument(element)');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('toggleClass(\'class\')');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              ie_open('code');
-                itext('dom.toggleClasses(element, \'class\')');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.tooltip()');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              itext('TODO');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.val()');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              ie_open('code');
-                itext('.value');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td');
-              ie_open('code');
-                itext('.val(newValue)');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td');
-              ie_open('code');
-                itext('.value = newValue');
-              ie_close('code');
-            ie_close('td');
-          ie_close('tr');
-        ie_close('tbody');
-      ie_close('table');
-      ie_open('h3');
-        itext('Code replacements');
-      ie_close('h3');
-      ie_open('ul');
-        ie_open('li');
-          ie_open('p');
-            itext('Replace ');
-            ie_open('code');
-              itext('.ajaxSubmit()');
-            ie_close('code');
-            itext(' with');
-          ie_close('p');
-          $templateAlias2({code: 'fetch(url, {\n  body: new FormData(form),\n  credentials: \'include\',\n  method: \'POST\',\n  ...\n})\n.then(response => ...);', mode: 'javascript'}, null, opt_ijData);
-        ie_close('li');
-        ie_open('li');
-          ie_open('p');
-            itext('Replace ');
-            ie_open('code');
-              itext('.load()');
-            ie_close('code');
-            itext(' with');
-          ie_close('p');
-          $templateAlias2({code: 'fetch(url, data)\n.then(response => {\n  element.innerHTML = response;\n});', mode: 'javascript'}, null, opt_ijData);
-        ie_close('li');
-        ie_open('li');
-          ie_open('p');
-            itext('Replace ');
-            ie_open('code');
-              itext('.serializeArray()');
-            ie_close('code');
-            itext(' with');
-          ie_close('p');
-          $templateAlias2({code: '  form\n  dom.exitDocument(element)', mode: 'javascript'}, null, opt_ijData);
-        ie_close('li');
-        ie_open('li');
-          ie_open('p');
-            itext('Replace ');
-            ie_open('code');
-              itext('.sideNavigation()');
-            ie_close('code');
-            itext(' TODO.');
-          ie_close('p');
-        ie_close('li');
-        ie_open('li');
-          ie_open('p');
-            itext('Replace ');
-            ie_open('code');
-              itext('.toggle()');
-            ie_close('code');
-            itext(' with');
-          ie_close('p');
-          $templateAlias2({code: 'if (element.style.display === \'none\')\n  element.style.display = \'block\';\nelse\n  element.style.display = \'none\';', mode: 'javascript'}, null, opt_ijData);
-        ie_close('li');
-      ie_close('ul');
-    ie_close('article');
+  var param193 = function() {
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -11847,11 +11425,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param202}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param193}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'Sviyg.render';
+  $render.soyTemplateName = 'VTKUw.render';
 }
 
 exports.render.params = ["page","site"];
@@ -11861,14 +11439,15 @@ return exports;
 
 });
 
-class Sviyg extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Sviyg, templates);
+class VTKUw extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(VTKUw, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 97 */,
 /* 98 */,
 /* 99 */,
 /* 100 */,
@@ -11904,7 +11483,8 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Sviyg, templates);
 /* 130 */,
 /* 131 */,
 /* 132 */,
-/* 133 */
+/* 133 */,
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11938,9 +11518,9 @@ __webpack_require__(19);
 
 __webpack_require__(20);
 
-var _jQuerySoy = __webpack_require__(97);
+var _indexSoy = __webpack_require__(96);
 
-var _jQuerySoy2 = _interopRequireDefault(_jQuerySoy);
+var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -11950,23 +11530,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Sviyg = function (_Component) {
-  _inherits(Sviyg, _Component);
+var VTKUw = function (_Component) {
+  _inherits(VTKUw, _Component);
 
-  function Sviyg() {
-    _classCallCheck(this, Sviyg);
+  function VTKUw() {
+    _classCallCheck(this, VTKUw);
 
-    return _possibleConstructorReturn(this, (Sviyg.__proto__ || Object.getPrototypeOf(Sviyg)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (VTKUw.__proto__ || Object.getPrototypeOf(VTKUw)).apply(this, arguments));
   }
 
-  return Sviyg;
+  return VTKUw;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(Sviyg, _jQuerySoy2.default);
+_metalSoy2.default.register(VTKUw, _indexSoy2.default);
 
-exports.default = Sviyg;
+exports.default = VTKUw;
 
 /***/ })
-],[133]);
+],[134]);
