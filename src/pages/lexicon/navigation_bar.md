@@ -96,6 +96,7 @@ Start by adding the following imports to the imports section of your `init.jsp` 
 
 // Import the NavigationItem utility class to create the items model
 <%@ page import="com.liferay.frontend.taglib.clay.servlet.taglib.util.NavigationItem" %>
+<%@ page import="com.liferay.frontend.taglib.clay.servlet.taglib.util.JSPNavigationItemList" %>
 ```
 
 Don't forget to add the dependencies with to the `frontend-taglib-clay` and `fronteng.taglib.soy` module in your `build.gradle` file:
@@ -111,22 +112,31 @@ Model your entries using the `NavigationItem` class and pass it down to the tag 
 <div class="alert alert-warning">The `inverted` attribute is set to true in all admin portlets. Instances in applications for live  sites only can be left to false (default)</div>
 
 ```text/html
-<%
-List<NavigationItem> navigationItems = new ArrayList<>();
-
-NavigationItem entriesNavigationItem = new NavigationItem();
-
-entriesNavigationItem.setActive(navigation.equals("entries"));
-entriesNavigationItem.setHref(viewEntriesURL);
-entriesNavigationItem.setLabel("Entries");
-
-navigationItems.add(entriesNavigationItem);
-%>
-
 <clay:navigation-bar
 	inverted="<%= true %>"
-	items="<%= navigationItems %>" />
+	items="<%=
+		new JSPNavigationItemList(pageContext) {
+			{
+				List<String> configurationCategories = (List<String>)request.getAttribute(ConfigurationAdminWebKeys.CONFIGURATION_CATEGORIES);
+
+				if (configurationCategories != null) {
+					for (String curConfigurationCategory : configurationCategories) {
+						add(
+							navigationItem -> {
+								navigationItem.setActive(curConfigurationCategory.equals(configurationCategory));
+								navigationItem.setHref(renderResponse.createRenderURL(), "configurationCategory", "curConfigurationCategory");
+								navigationItem.setLabel(LanguageUtil.get(request, curConfigurationCategory));
+							}
+						);
+					}
+				}
+			}
+		}
+	%>"
+/>
 ```
+
+Check out the following [Sample usage of JSPNavigationItemList](https://github.com/liferay/liferay-portal/commit/1ab9c006c750052f5c1c7df7072aab961b89966c) for more information about it.
 
 ### [4] Extract application sections from the Actions Menu <a id="step-4"></a>
 
@@ -147,6 +157,8 @@ If your application already supports it (or even if it doesn't), consider moving
 	inverted="<%= true %>"
 	items="<%= myAppAdminViewDisplayContext.getNavigationItems() %>" />
 ```
+
+Check out the following [Sample usage of NavigationItemList](https://github.com/liferay/liferay-portal/commit/14b3bab9d42c19a24a84eac71c0d3658e3f9fc10) for more information about it.
 
 ## Who has done it already?
 
