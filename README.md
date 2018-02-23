@@ -10,13 +10,7 @@
 node -v && npm -v
 ```
 
-2. Install our global dependencies:
-
-```sh
-[sudo] npm i -g electric-cli
-```
-
-3. Install our local dependencies:
+2. Install our local dependencies:
 
 ```sh
 npm i
@@ -27,11 +21,11 @@ npm i
 * Build the site, serve it locally, and watch for any changes:
 
 ```
-electric run
+npm run web
 ```
 
 * Deploy to production (send build files to `wedeploy` branch):
 
 ```
-electric deploy
+npm run deploy
 ```
