@@ -1,21 +1,21 @@
 ---
-title: "Navigation Bar"
+title: Navigation Bar
 description: ""
-layout: "lexiconMigration"
-weight: 1
+layout: "lexiconMigrationGuide"
+weight: 100
 
 clayComponentLink: "https://claycss.com/docs/components/navbar.html"
 lexiconPattern: "Navigation Bar"
 lexiconPatternLink: "https://lexicondesign.io/docs/patterns/Navigation/horizontalNav.html"
 ---
 
-<article class="my-5">
+<article id="before-after">
 
-## How does it look like now (7.0)
+### How does it look like now (7.0)
 
 <img class="img img-thumbnail" src="/images/lexiconMigration/navigation_bar_old.png">
 
-## Changes for Lexicon 2.0 (7.1)
+### Changes for Lexicon 2.0 (7.1)
 
 <img class="img img-thumbnail" src="/images/lexiconMigration/navigation_bar_new.png">
 
@@ -24,8 +24,11 @@ Change | Reason
 ① The **Navigation Bar is dark** in admin applications (and light outside of admin contexts) | The Navigation Bar reflects Application Sections and the color helps make this connection
 ② The **general search is moved out of the Navigation Bar** and into the Management Toolbar | Search applies to the current Application data set and not the application itself
 
-## How to apply it?
+</article>
 
+<article id="steps">
+
+### How to apply it?
 _ | Action | Mandatory
 --- | --- | ---
 [1](#step-1) | Locate the code in your application | ✔
@@ -160,7 +163,11 @@ If your application already supports it (or even if it doesn't), consider moving
 
 Check out the following [Sample usage of NavigationItemList](https://github.com/liferay/liferay-portal/commit/14b3bab9d42c19a24a84eac71c0d3658e3f9fc10) for more information about it.
 
-## Who has done it already?
+</article>
+
+<article id="who-has-it-ready">
+
+### Who has done it already?
 
 LPS | Pull Request | Master
 --- | --- | ---

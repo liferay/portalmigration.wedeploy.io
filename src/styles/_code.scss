@@ -1,6 +1,6 @@
 .code-container {
-	position: relative;
 	margin: calc(1rem * 1.5) 0;
+	position: relative;
 }
 
 .code-container.hide {
@@ -31,10 +31,10 @@
 }
 
 .code-container .CodeMirror-linenumber {
-	color: rgba($white, .40);
+	color: rgba($white, 0.40);
 	font-size: 13px;
-	line-height: 20px;
 	left: 24px !important;
+	line-height: 20px;
 	padding: 0;
 	text-align: left;
 	width: 36px !important;
@@ -49,7 +49,7 @@
 }
 
 .code-container pre {
-	border: 0;
+	border-width: 0;
 	font-size: 14px;
 	line-height: 20px;
 	margin: 0;
@@ -65,9 +65,9 @@
 .code-container .CodeMirror pre {
 	font-size: 13px;
 	line-height: 20px;
+	margin: 0;
 	opacity: 1;
 	padding: 0;
-	margin: 0;
 	z-index: 6;
 }
 
@@ -103,13 +103,15 @@
 }
 
 .nav.nav-tabs.nav-code-tabs {
-	border-width: 0px;
+	border-width: 0;
+	margin-bottom: -20px;
+	margin-top: 32px;
 	padding: 0 24px;
 }
 
 .nav.nav-tabs.nav-code-tabs > li > button {
 	background: transparent;
-	border-width: 0px;
+	border-width: 0;
 	color: rgba($brand-secondary, 0.8);
 	cursor: pointer;
 	font-size: 13px;
@@ -132,10 +134,21 @@
 }
 
 .nav.nav-tabs.nav-code-tabs > li.active > button {
-	border-width: 0px;
+	border-width: 0;
 	color: $brand-dark;
 }
 
-.nav.nav-tabs.nav-code-tabs ~ .code-container {
-	margin: 0 0 calc(1rem * 1.5);
+#clay-custom-controls-stacked, #clay-custom-radio, #clay-custom-checkbox, #clay-select-element, #clay-lexicon-icons, #clay-sticker-position, #clay-stickers-variantions, #clay-sticker-sizes, #clay-sticker-colors, #clay-progress-bar, #clay-modal-configurations, #clay-modal, #clay-management-bar, #clay-list, #clay-list-sections, #clay-labels, #clay-labels-size, #clay-labels-variations, #clay-dropdown, #clay-dropdown-sorting-actions, #clay-alert-embedded, #clay-image-card, #clay-file-card, #clay-user-card, #clay-folder-card, #clay-alert-toast, #clay-alert-stripe, #clay-alert-mixed-html-content, #clay-alert-dismissible, #clay-navbar-navigation-bar, #clay-button, #clay-button-sizes,
+#clay-badges {
+	.nav.nav-tabs.nav-code-tabs  {
+		li:nth-of-type(2) > button {
+			margin-right: -20px;
+			visibility: hidden;
+
+			&:before {
+				content: 'WEB COMPONENTS';
+				visibility: visible;
+			}
+		}
+	}
 }

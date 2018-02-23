@@ -8,16 +8,20 @@
   },
   "scripts": {
     "config": "gulp config",
-    "watch": "concurrent --kill-others \"gulp watch\" \"el run\""
+    "electric": "node_modules/electric-cli/bin/electric.js",
+    "deploy": "npm run electric -- deploy",
+    "watch": "concurrent --kill-others \"gulp watch\" \"el run\"",
+    "web": "npm run electric -- run"
   },
   "dependencies": {
-    "clay": "^2.0.0-alpha.11",
+    "clay": "^2.0.0-rc.2",
     "jquery": "^3.2.1",
     "metal-storage": "^1.1.0"
   },
   "devDependencies": {
     "concurrently": "^3.5.0",
     "countries-list": "^2.0.0",
+    "electric-cli": "^3.0.1",
     "electric-quartz-components": "alpha",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",

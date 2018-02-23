@@ -1,16 +1,16 @@
 ---
-title: "Lodash"
+title: Lodash
 description: ""
-layout: "othersGuide"
-weight: 1
+layout: "guide"
+weight: 100
 clayTaglib: "Vanilla or Metal.js"
 ---
 
-<article class="my-5">
+<article id="how-to-migrate">
 
-## How to migrate:
+### How to migrate:
 
-### Direct replacements
+#### Direct replacements
   lodash | replacement
   --- | ---
   `_.bind` | to native `.bind`.
@@ -24,7 +24,7 @@ clayTaglib: "Vanilla or Metal.js"
   `_.sub` | there's no direct replacement.
   `_.without` | there's no direct replacement.
 
-### Code replacements
+#### Code replacements
 - `_.debounce` to `metal-debounce`.
   ```htmlmixed
   <aui:script require="metal-debounce/src/debounce">

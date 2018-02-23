@@ -1,26 +1,29 @@
-{namespace lexiconMigration}
+{namespace lexiconMigrationGuide}
 
 /**
- * @param page
- * @param site
  */
 {template .render}
+	{@param page: ?}
+	{@param site: ?}
+
 	{call main.render data="all"}
 		{param elementClasses: 'docs' /}
 		{param content kind="html"}
 			{call Sidebar.render data="all"}
-				{param section: $site.index /}
+				{param section: $site.index.children['docs'] /}
 			{/call}
+
 			{call .guide data="all" /}
 		{/param}
 	{/call}
 {/template}
 
 /**
- * @param page
- * @param content
  */
 {template .guide}
+	{@param page: ?}
+	{@param content: ?}
+
 	<div class="sidebar-offset">
 		<header class="text-center">
 			<div class="container-fluid">

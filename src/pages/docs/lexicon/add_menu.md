@@ -1,36 +1,40 @@
 ---
-title: "Add Menu"
+title: Add Menu
 description: ""
-layout: "lexiconMigration"
-weight: 1
+layout: "lexiconMigrationGuide"
+weight: 100
 
 clayComponentLink: "https://claycss.com/docs/components/management_toolbar.html"
 lexiconPattern: "Add Menu"
 lexiconPatternLink: "https://lexicondesign.io/docs/patterns/Toolbars/management_bar.html"
 ---
 
-<article class="my-5">
+<article id="before-after">
 
-## How does it look like now (7.0)
+### How does it look like now (7.0)
 
 <img class="img img-thumbnail" src="/images/lexiconMigration/add_menu_old.png">
 
-## Changes for Lexicon 2.0 (7.1)
+### Changes for Lexicon 2.0 (7.1)
 
 <img class="img img-thumbnail" src="/images/lexiconMigration/add_menu_new.png">
 
 Change | Reason
 --- | ---
-① The **add menu is moved into the Management Toolbar** | as
+① The **add menu is moved into the Management Toolbar** | _
 
-## How to apply it?
+</article>
+
+<article id="steps">
+
+### How to apply it?
 
 _ | Action | Mandatory
 --- | --- | ---
 [1](#step-1) | Locate the code in your application | ✔
 [2](#step-2) | Move the add menu into the management toolbar | ✔
 
-### [1] Locate the code in your application <a id="step-1"></a>
+#### [1] Locate the code in your application <a id="step-1"></a>
 
 Locate the code responsible for rendering the **add menu** in your application. It should resemble something like the following snippet found in [fragment-web/view.jsp](https://github.com/liferay/liferay-portal/blob/master/modules/apps/web-experience/fragment/fragment-web/src/main/resources/META-INF/resources/view.jsp#L119-L127):
 
@@ -58,7 +62,7 @@ Locate the code responsible for rendering the **management toolbar** in your app
 </liferay-frontend:management-bar>
 ```
 
-### [2] Move the add menu into the management toolbar <a id="step-2"></a>
+#### [2] Move the add menu into the management toolbar <a id="step-2"></a>
 
 Move the part in charge of the search into the `liferay-frontend:management-bar` section, right after the last of the `liferay-frontend-management-bar-buttons` item like it's shown in the following snippet.
 
@@ -77,8 +81,11 @@ Move the part in charge of the search into the `liferay-frontend:management-bar`
     </c:if>
 </liferay-frontend:management-bar-buttons>
 ```
+</article>
 
-## Who has done it already?
+<article id="who-has-it-ready">
+
+### Who has done it already?
 
 LPS | Pull Request | Master
 --- | --- | ---
