@@ -98,7 +98,6 @@ Start by adding the following imports to the imports section of your `init.jsp` 
 <%@ taglib uri="http://liferay.com/tld/clay" prefix="clay" %>
 
 // Import the NavigationItem utility class to create the items model
-<%@ page import="com.liferay.frontend.taglib.clay.servlet.taglib.util.NavigationItem" %>
 <%@ page import="com.liferay.frontend.taglib.clay.servlet.taglib.util.JSPNavigationItemList" %>
 ```
 
@@ -110,7 +109,7 @@ provided group: "com.liferay", name: "com.liferay.frontend.taglib.soy", version:
 provided project(":apps:foundation:frontend-taglib:frontend-taglib-clay")
 ```
 
-Model your entries using the `NavigationItem` class and pass it down to the tag instance.
+Model your entries using the `JSPNavigationItemList` class.
 
 <div class="alert alert-warning">The `inverted` attribute is set to true in all admin portlets. Instances in applications for live  sites only can be left to false (default)</div>
 
