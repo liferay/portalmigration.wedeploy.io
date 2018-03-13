@@ -4,9 +4,9 @@ description: ""
 layout: "lexiconMigrationGuide"
 weight: 101
 
-clayComponentLink: "https://claycss.com/docs/components/cards.html"
+clayComponentLink: "https://claycss.com/docs/components/cards.html#clay-image-card"
 lexiconPattern: "Image Card"
-lexiconPatternLink: "https://lexicondesign.io/docs/patterns/cards.html"
+lexiconPatternLink: "https://lexicondesign.io/docs/patterns/cards.html#image-card"
 ---
 
 <article id="before-after">
@@ -65,6 +65,9 @@ Start by adding the following imports to the imports section of your `init.jsp` 
 
 // Import the DropdownItem utility class to create the items model
 <%@ page import="com.liferay.frontend.taglib.clay.servlet.taglib.util.JSPDropdownItemList" %>
+
+// Import the LabelItemList utility class to create the items model
+<%@ page import="com.liferay.frontend.taglib.clay.servlet.taglib.util.JSPLabelItemList" %>
 ```
 
 Don't forget to add the dependencies with to the `frontend-taglib-clay` and `fronteng.taglib.soy` module in your `build.gradle` file:

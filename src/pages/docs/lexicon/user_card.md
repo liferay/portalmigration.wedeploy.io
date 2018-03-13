@@ -4,9 +4,9 @@ description: ""
 layout: "lexiconMigrationGuide"
 weight: 102
 
-clayComponentLink: "https://claycss.com/docs/components/cards.html"
+clayComponentLink: "https://claycss.com/docs/components/cards.html#clay-user-card"
 lexiconPattern: "User Card"
-lexiconPatternLink: "https://lexicondesign.io/docs/patterns/cards.html"
+lexiconPatternLink: "https://lexicondesign.io/docs/patterns/cards.html#user-card"
 ---
 
 <article id="before-after">
@@ -75,9 +75,10 @@ provided group: "com.liferay", name: "com.liferay.frontend.taglib.soy", version:
 provided project(":apps:foundation:frontend-taglib:frontend-taglib-clay")
 ```
 
-- Url param is now href.
-- Text param is now title.
-- Icon is passed now trough icon param instead as a content with `horizontal-card-col` and `horizontal-card-col-icon`
+- `url` param is now `href`.
+- `text` param is now `name`.
+- Icon is passed now trough `icon` param instead as a content with `horizontal-card-col` and `horizontal-card-col-icon`
+- By passing a `userId` param, the `imageSrc`, `initials`, `name`, `subtitle` and `userColor` params will be automatically set.
 - For the actions you need to model them using the `JSPDropdownItemList` class.
 
 ```text/html
@@ -103,16 +104,13 @@ provided project(":apps:foundation:frontend-taglib:frontend-taglib-clay")
 	%>"
 	elementClasses="entry-display-style"
 	href="<%= String.valueOf(rowURL) %>"
-	initials="<%= user2.getInitials() %>"
-	inputValue="<%= user2.getFullName() %>"
-	name="<%= user2.getFullName() %>"
 	resultRow="<%= row %>"
 	rowChecker="<%= rowChecker %>"
-	subtitle="<%= user2.getScreenName() %>"
+	userId="<%= user.getUserId() %>"
 />
 ```
 
-Check out the following [Sample usage of JSPNavigationItemList](https://github.com/liferay/liferay-portal/commit/1ab9c006c750052f5c1c7df7072aab961b89966c) for more information about it.
+Check out the following [Sample usage of JSPDropdownItemList](https://github.com/liferay/liferay-portal/blob/0b7f59aaf151ef546b1078b0b42ec7259989b1c0/modules/apps/foundation/frontend-taglib/frontend-taglib-clay-sample-web/src/main/java/com/liferay/frontend/taglib/clay/sample/web/internal/display/context/DropdownsDisplayContext.java) for more information about it.
 
 ### [3] Move the action items definition into a Display Context <a id="step-3"></a>
 
@@ -125,12 +123,9 @@ If your application already supports it (or even if it doesn't), consider moving
 	actionItems="<%= myAppAdminViewDisplayContext.getActionItems() %>"
 	elementClasses="entry-display-style"
 	href="<%= String.valueOf(rowURL) %>"
-	initials="<%= user2.getInitials() %>"
-	inputValue="<%= user2.getFullName() %>"
-	name="<%= user2.getFullName() %>"
 	resultRow="<%= row %>"
 	rowChecker="<%= rowChecker %>"
-	subtitle="<%= user2.getScreenName() %>"
+	userId="<% user2.getUserId() %>"
 /
 ```
 
