@@ -116,7 +116,7 @@ Model your entries using the `JSPNavigationItemList` class.
 ```text/html
 <clay:navigation-bar
 	inverted="<%= true %>"
-	items="<%=
+	navigationItems="<%=
 		new JSPNavigationItemList(pageContext) {
 			{
 				List<String> configurationCategories = (List<String>)request.getAttribute(ConfigurationAdminWebKeys.CONFIGURATION_CATEGORIES);
@@ -157,7 +157,7 @@ If your application already supports it (or even if it doesn't), consider moving
 ```text/html
 <clay:navigation-bar
 	inverted="<%= true %>"
-	items="<%= myAppAdminViewDisplayContext.getNavigationItems() %>" />
+	navigationItems="<%= myAppAdminViewDisplayContext.getNavigationItems() %>" />
 ```
 
 Check out the following [Sample usage of NavigationItemList](https://github.com/liferay/liferay-portal/commit/14b3bab9d42c19a24a84eac71c0d3658e3f9fc10) for more information about it.

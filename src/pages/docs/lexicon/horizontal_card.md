@@ -80,7 +80,7 @@ provided project(":apps:foundation:frontend-taglib:frontend-taglib-clay")
 
 ```text/html
 <clay:horizontal-card
-	actionItems="<%=
+	actionDropdownItems="<%=
 		new JSPDropdownItemList(pageContext) {
 			{
 				final JournalFolder currentFolder = (JournalFolder)result;
@@ -130,7 +130,7 @@ If your application already supports it (or even if it doesn't), consider moving
 
 ```text/html
 <clay:horizontal-card
-	actionItems="<%= myAppAdminViewDisplayContext.getActionItems() %>"
+	actionDropdownItems="<%= myAppAdminViewDisplayContext.getActionDropdownItems() %>"
 	href="<%= rowURL.toString() %>"
 	icon="folder"
 	title="<%= HtmlUtil.escape(curFolder.getName()) %>"

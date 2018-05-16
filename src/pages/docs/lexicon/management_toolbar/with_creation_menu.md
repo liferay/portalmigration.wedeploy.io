@@ -96,10 +96,10 @@ Parameter | Description | Default
 --- | --- | ---
 `creationMenu` | Is the list of dropdownItems to show in the creation menu. If only one item is present add button will be a link instead a dropdown. | _
 `disabled` | To disable or not the management toolbar. Usually should be disabled when there're no results | _
+`itemsTotal` | Is the total number of items that appears in the dataset to reflect it in the results bar and in the active state. | _
 `namespace` | If passed the params `infoPanelId`, `searchFormName`, `searchInputName` and `searchContainerId` will be automatically namespaced. | _
 `selectable` | To show or not the checkbox to interact with the dataset. Previous `includeCheckBox`. | `true`
 `showCreationMenu` | To show or not the add content button. | If `creationMenu` != null `true` else `false`.
-`totalItems` | Is the total number of items that appears in the dataset to reflect it in the results bar and in the active state. | _
 
 ```text/html
 <clay:management-toolbar
@@ -117,10 +117,10 @@ Parameter | Description | Default
 		}
 	%>"
 	disabled="<%= assetTagsDisplayContext.isDisabledTagsManagementBar() %>"
+	itemsTotal="<%= assetTagsDisplayContext.getItemsTotal() %>"
 	namespace="<%= renderResponse.getNamespace() %>"
 	selectable="<%= false %>"
 	showCreationMenu="<%= assetTagsDisplayContext.isShowAddButton() %>"
-	totalItems="<%= assetTagsDisplayContext.getTotalItems() %>"
 />
 ```
 
@@ -134,10 +134,10 @@ If your application already supports it (or even if it doesn't), consider moving
 <clay:management-toolbar
 	creationMenu="<%= assetTagsDisplayContext.getCreationMenu() %>"
 	disabled="<%= assetTagsDisplayContext.isDisabledTagsManagementBar() %>
+	itemsTotal="<%= assetTagsDisplayContext.getItemsTotal() %>"
 	namespace="<%= renderResponse.getNamespace() %>"
 	selectable="<%= true %>"
 	showCreationMenu="<%= assetTagsDisplayContext.isShowAddButton() %>"
-	totalItems="<%= assetTagsDisplayContext.getTotalItems() %>"
 />
 ```
 </article>
