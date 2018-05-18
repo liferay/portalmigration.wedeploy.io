@@ -89,16 +89,16 @@ compileOnly project(":apps:foundation:frontend-taglib:frontend-taglib-soy")
 
 Parameter | Description | Default
 --- | --- | ---
-`actionItems` | Is the list of dropdownItems to show as actions in the active state. | _
+`actionDropdownItems` | Is the list of dropdownItems to show as actions in the active state. | _
 `disabled` | To disable or not the management toolbar. Usually should be disabled when there're no results | _
+`itemsTotal` | Is the total number of items that appears in the dataset to reflect it in the results bar and in the active state. | _
 `namespace` | If passed the params `infoPanelId`, `searchFormName`, `searchInputName` and `searchContainerId` will be automatically namespaced. | _
 `searchContainerId` | The id of the searchContainer the management toolbar will be connected to. | _
 `selectable` | To show or not the checkbox to interact with the dataset. Previous `includeCheckBox`. | `true`
-`totalItems` | Is the total number of items that appears in the dataset to reflect it in the results bar and in the active state. | _
 
 ```text/html
 <clay:management-toolbar
-	actionItems="<%=
+	actionDropdownItems="<%=
 		new JSPDropdownItemList(pageContext) {
 			{
 				add(
@@ -121,10 +121,10 @@ Parameter | Description | Default
 		}
 	%>"
 	disabled="<%= assetTagsDisplayContext.isDisabledTagsManagementBar() %>"
+	itemsTotal="<%= assetTagsDisplayContext.getItemsTotal() %>"
+	namespace="<%= renderResponse.getNamespace() %>"
 	searchContainerId="assetTags"
 	selectable="<%= true %>"
-	namespace="<%= renderResponse.getNamespace() %>"
-	totalItems="<%= assetTagsDisplayContext.getTotalItems() %>"
 />
 ```
 
@@ -136,12 +136,12 @@ If your application already supports it (or even if it doesn't), consider moving
 
 ```text/html
 <clay:management-toolbar
-	actionItems="<%= assetTagsDisplayContext.getActionItems() %>"
+	actionDropdownItems="<%= assetTagsDisplayContext.getActionDropdownItems() %>"
 	disabled="<%= assetTagsDisplayContext.isDisabledTagsManagementBar() %>"
+	itemsTotal="<%= assetTagsDisplayContext.getTotal() %>"
 	namespace="<%= renderResponse.getNamespace() %>"
 	searchContainerId="<%= assetTagsDisplayContext.getSearchContainerId() %>"
 	selectable="<%= true %>"
-	totalItems="<%= assetTagsDisplayContext.getTotal() %>"
 />
 ```
 </article>

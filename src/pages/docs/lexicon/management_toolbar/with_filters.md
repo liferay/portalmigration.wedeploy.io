@@ -92,17 +92,17 @@ compileOnly project(":apps:foundation:frontend-taglib:frontend-taglib-soy")
 Parameter | Description | Default
 --- | --- | ---
 `disabled` | To disable or not the management toolbar. Usually should be disabled when there're no results | _
-`filterItems` | Is the list of dropdownItems to show in the filters list. This contains both fiter and sorting items. | _
+`filterDropdownItems` | Is the list of dropdownItems to show in the filters list. This contains both fiter and sorting items. | _
+`itemsTotal` | Is the total number of items that appears in the dataset to reflect it in the results bar and in the active state. | _
 `namespace` | If passed the params `infoPanelId`, `searchFormName`, `searchInputName` and `searchContainerId` will be automatically namespaced. | _
 `selectable` | To show or not the checkbox to interact with the dataset. Previous `includeCheckBox`. | `true`
 `sortingOrder` | Current sorting order `asc` or `desc` | `asc`
 `sortingURL` | URL to change sorting order, usually changing `asc` to `desc` and vice versa. | _
-`totalItems` | Is the total number of items that appears in the dataset to reflect it in the results bar and in the active state. | _
 
 ```text/html
 <clay:management-toolbar
     disabled=<%= assetTagsDisplayContext.isDisabledTagsManagementBar() %>
-	filterItems="<%=
+	filterDropdownItems="<%=
         new DropdownItemList(_request) {
 			{
 				addGroup(
@@ -134,11 +134,11 @@ Parameter | Description | Default
 			}
 		}
     %>"
+	itemsTotal="<%= assetTagsDisplayContext.getItemsTotal() %>"
 	namespace="<%= renderResponse.getNamespace() %>"
     selectable="<%= true %>"
 	sortingOrder="<%= ParamUtil.getString(request, "orderByType", "asc") %>"
 	sortingURL="<%= assetTagsDisplayContext.getSortingURL() %>"
-	totalItems="<%= assetTagsDisplayContext.getTotalItems() %>"
 />
 ```
 
@@ -151,12 +151,12 @@ If your application already supports it (or even if it doesn't), consider moving
 ```text/html
 <clay:management-toolbar
     disabled=<%= assetTagsDisplayContext.isDisabledTagsManagementBar() %>
-	filterItems="<%= assetTagsDisplayContext.getFilterItems() %>"
+	filterDropdownItems="<%= assetTagsDisplayContext.getFilterDropdownItems() %>"
+	itemsTotal="<%= assetTagsDisplayContext.getItemsTotal() %>"
 	namespace="<%= renderResponse.getNamespace() %>"
     selectable="<%= true %>"
 	sortingOrder="<%= assetTagsDisplayContext.getSortingOrder() %>"
 	sortingURL="<%= assetTagsDisplayContext.getSortingURL() %>"
-	totalItems="<%= assetTagsDisplayContext.getTotalItems() %>"
 />
 ```
 </article>

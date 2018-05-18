@@ -87,11 +87,11 @@ compileOnly project(":apps:foundation:frontend-taglib:frontend-taglib-soy")
 
 Parameter | Description | Default
 --- | --- | ---
-`actionItems` | Is the list of dropdownItems to show as actions in the active state. | _
+`itemsTotal` | Is the total number of items that appears in the dataset to reflect it in the results bar and in the active state. | _
 `namespace` | If passed the params `infoPanelId`, `searchFormName`, `searchInputName` and `searchContainerId` will be automatically namespaced. | _
 `searchContainerId` | The id of the searchContainer the management toolbar will be connected to. | _
 `selectable` | To show or not the checkbox to interact with the dataset. Previous `includeCheckBox`. | `true`
-`totalItems` | Is the total number of items that appears in the dataset to reflect it in the results bar and in the active state. | _
+`viewTypeItems` | Is the list of dropdownItems to show in the views list. | _
 
 ```text/html
 <clay:management-toolbar
@@ -99,7 +99,7 @@ Parameter | Description | Default
 	namespace="<%= renderResponse.getNamespace() %>"
 	searchContainerId="assetTags"
     selectable="<%= true %>"
-	viewTypes="<%=
+	viewTypeItems="<%=
 		new JSPViewTypeItemList(pageContext, baseURL, selectedType) {
 			{
 				addCardViewTypeItem();
@@ -123,7 +123,7 @@ If your application already supports it (or even if it doesn't), consider moving
 	namespace="<%= renderResponse.getNamespace() %>"
 	searchContainerId="assetTags"
     selectable="<%= true %>"
-	viewTypes="<%= assetTagsDisplayContext.getViewTypes() %>"
+	viewTypeItems="<%= assetTagsDisplayContext.getViewTypeItems() %>"
 />
 ```
 </article>

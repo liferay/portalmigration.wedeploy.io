@@ -74,26 +74,27 @@ Parameter | Description | Default
 --- | --- | ---
 `clearResultsURL` | Is the URL to reset the search. | _
 `disabled` | To disable or not the management toolbar. Usually should be disabled when there're no results | _
+`itemsTotal` | Is the total number of items that appears in the dataset to reflect it in the results bar and in the active state. | _
 `namespace` | If passed the params `infoPanelId`, `searchFormName`, `searchInputName` and `searchContainerId` will be automatically namespaced. | _
 `searchActionURL` | Is the action URL to send the search form. | _
 `searchFormName` | The name of the form. | _
+`searchFormMethod` | The method of the form, `GET` or `POST`. | `POST`
 `searchInputName` | The name of the search input. | `DisplayTerms.KEYWORDS`
 `searchValue` | The value of the search input. | `ParamUtil.getString(request, searchInputName)`
 `selectable` | To show or not the checkbox to interact with the dataset. Previous `includeCheckBox`. | `true`
-`totalItems` | Is the total number of items that appears in the dataset to reflect it in the results bar and in the active state. | _
 
 
 ```text/html
 <clay:management-toolbar
 	clearResultsURL="<%= searchURL %>"
 	disabled="<%= isDisabled %>"
+	itemsTotal="<%= itemsTotal %>"
 	namespace="<%= renderResponse.getNamespace() %>"
 	searchActionURL="<%= searchURL %>"
 	searchFormName="fm"
 	searchInputName="<%= DisplayTerms.KEYWORDS %>"
 	searchValue="<%= ParamUtil.getString(request, searchInputName) %>"
 	selectable="<%= false %>"
-	totalItems="<%= totalItems %>"
 />
 ```
 
@@ -107,13 +108,13 @@ If your application already supports it (or even if it doesn't), consider moving
 <clay:management-toolbar
 	clearResultsURL="<%= myAppDisplayContext.getSearchURL() %>"
     disabled=<%= myAppDisplayContext.isDisabled() %>
+	itemsTotal="<%= myAppDisplayContext.getItemsTotal() %>"
 	namespace="<%= renderResponse.getNamespace() %>"
 	searchActionURL="<%= myAppDisplayContext.getSearchURL() %>"
 	searchFormName="<%= myAppDisplayContext.getFormName %>"
 	searchInputName="<%= myAppDisplayContext.getSearchInputName %>"
 	searchValue="<%= myAppDisplayContext.getSearchValue %>"
 	selectable="<%= myAppDisplayContext.isSelectable() %>"
-	totalItems="<%= myAppDisplayContext.getTotalItems() %>"
 />
 ```
 </article>
