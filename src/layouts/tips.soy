@@ -13,7 +13,7 @@
 				{param section: $site.index.children['docs'] /}
 			{/call}
 
-			{call .guide data="all" /}
+			{call .tips data="all" /}
 		{/param}
 	{/call}
 {/template}
@@ -21,25 +21,19 @@
 /**
  *
  */
-{template .guide}
+{template .tips}
 	{@param page: ?}
 	{@param content: ?}
 
 	<div class="sidebar-offset">
 		<header class="text-center">
 			<div class="container-fluid">
-				<h1 class="py-3">{$page.title} <small>Migration Guide</small></h1>
+				<h1 class="py-3">{$page.title} <small>Tips</small></h1>
 			</div>
 		</header>
 
 		<div class="clay-site-container container-fluid">
 			<div class="row">
-				<div class="col-12 text-center">
-					<code>{$page.title}</code>
-					{sp}to{sp}
-					<code>{$page.clayTaglib}</code>
-				</div>
-
 				<div class="col-12">{$content}</div>
 
 				<nav class="col-md-5 col-md-offset-2 col-xs-12">

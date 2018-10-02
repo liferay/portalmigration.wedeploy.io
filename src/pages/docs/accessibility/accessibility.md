@@ -1,9 +1,7 @@
 ---
 title: Accessibility
-description: ""
-layout: "guide"
+layout: "tips"
 weight: 200
-clayTaglib: "Accessibility"
 ---
 
 # Main Accessibility tips for liferay portal:
