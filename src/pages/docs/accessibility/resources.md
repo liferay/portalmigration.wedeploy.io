@@ -1,11 +1,8 @@
 ---
-title: Resources
-description: "Accessibility resources"
-layout: "guide"
+title: Accessibility Resources
+layout: "tips"
 weight: 200
-clayTaglib: "accessibilityResources"
 ---
-# Accessibility resources:
 
 <article id="accessibilityResources">
 
@@ -13,7 +10,6 @@ clayTaglib: "accessibilityResources"
 
 - [Axe plugin](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd)
 - [Color/contrast validator](https://webaim.org/resources/contrastchecker/)
-
 
 ## Links
 
