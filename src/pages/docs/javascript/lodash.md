@@ -17,12 +17,16 @@ clayTaglib: "Vanilla or Metal.js"
   `_.bindKey` | there's no direct replacement.
   `_.escape` | to `Liferay.Util.escape`.
   `_.groupBy` | to `Lifeay.Util.groupBy`.
-  `_.isEqual` | there's no direct replacement.
+  `_.isEqual` | to `Liferay.Util.isEqual`.
   `_.map` | to native `Array.map`.
   `_.reduce` | to native `Array.reduce`.
   `_.unescape` | to `Liferay.Util.unescape`.
   `_.sub` | to `Liferay.Util.sub`.
   `_.without` | there's no direct replacement.
+
+> Tip: In general, if you need a specific [`lodash`](https://github.com/lodash/lodash) function in your application, you can add it as a dependency via `npm`.
+ Keep in mind that `lodash` exports [all](https://www.npmjs.com/search?q=keywords:lodash-modularized) of it's methods as individual `npm` modules, which avoids bringing the whole `lodash` library
+in your code.
 
 #### Code replacements
 - `_.debounce` to `metal-debounce`.
