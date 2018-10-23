@@ -15,14 +15,18 @@ clayTaglib: "Vanilla or Metal.js"
   --- | ---
   `_.bind` | to native `.bind`.
   `_.bindKey` | there's no direct replacement.
-  `_.escape` | there's no direct replacement.
-  `_.groupBy` | there's no direct replacement.
-  `_.isEqual` | there's no direct replacement.
+  `_.escape` | to `Liferay.Util.escape`.
+  `_.groupBy` | to `Lifeay.Util.groupBy`.
+  `_.isEqual` | to `Liferay.Util.isEqual`.
   `_.map` | to native `Array.map`.
   `_.reduce` | to native `Array.reduce`.
-  `_.unescape` | there's no direct replacement.
-  `_.sub` | there's no direct replacement.
+  `_.unescape` | to `Liferay.Util.unescape`.
+  `_.sub` | to `Liferay.Util.sub`.
   `_.without` | there's no direct replacement.
+
+> Tip: In general, if you need a specific [`lodash`](https://github.com/lodash/lodash) function in your application, you can add it as a dependency via `npm`.
+ Keep in mind that `lodash` exports [all](https://www.npmjs.com/search?q=keywords:lodash-modularized) of it's methods as individual `npm` modules, which avoids bringing the whole `lodash` library
+in your code.
 
 #### Code replacements
 - `_.debounce` to `metal-debounce`.
@@ -40,16 +44,36 @@ clayTaglib: "Vanilla or Metal.js"
   });
 
   let obj = {a:1, b:2, c:3};
-  for(key in obj) {
+  for (key in obj) {
     console.log(item);
   }
   ```
 
 - `_.isFunction` to
   ```javascript
-    function isFunction(fn) {
-      return (!!fn && ("object" == typeof fn || "function" == typeof fn)) && toString.call(fn) == '[object Function]'
-    }
+    var isFunction = function(val) {
+      return typeof val === 'function';
+    };
+
+    var myFunction = function(a, b) {
+      return a + b;
+    };
+
+    console.log(isFunction(myFunction)); // true
   ```
+
+  If you are using ES5 JavaScript
+
+  or
+
+  ```javascript
+  import {core} from 'metal';
+
+  const myFunction = (a, b) => a + b;
+
+  console.log(core.isFunction(myFunction)); // true
+  ```
+
+  If you are using ES6 JavaScript
 
 </article>
