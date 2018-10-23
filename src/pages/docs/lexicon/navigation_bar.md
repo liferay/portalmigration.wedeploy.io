@@ -4,7 +4,7 @@ description: ""
 layout: "lexiconMigrationGuide"
 weight: 100
 
-clayComponentLink: "https://claycss.com/docs/components/navbar.html"
+clayComponentLink: "https://clayui.com/docs/components/navigation/navbar.html"
 lexiconPattern: "Navigation Bar"
 lexiconPatternLink: "https://lexicondesign.io/docs/patterns/Navigation/horizontalNav.html"
 ---

@@ -5,7 +5,7 @@ description: ""
 layout: "lexiconMigrationGuide"
 weight: 100
 
-clayComponentLink: "https://claycss.com/docs//components/management_toolbar.html"
+clayComponentLink: "https://clayui.com/docs/components/toolbars/management-toolbar.html"
 lexiconPattern: "Management Toolbar"
 lexiconPatternLink: "https://lexicondesign.io/docs/patterns/Toolbars/management_bar.html"
 ---
