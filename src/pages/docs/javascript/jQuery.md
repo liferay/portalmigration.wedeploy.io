@@ -50,6 +50,8 @@ jQuery | replacement
 `.formToArray()` | TODO
 `.html()` | `.innerHTML`
 `.html(value)` | `.innerHTML = value`
+`.text()` | `.innerText`
+`.text(value)` | `.innerText = value`
 `.map()` | `[...document.querySelectorAll(selector)].map()`
 `.on()` | `addEventListener()`
 `.one()` | `dom.once(element, eventName, fn)`
@@ -80,6 +82,7 @@ jQuery | replacement
 - Replace `.load()` with:
   ```javascript
   fetch(url, data)
+  .then(response => response.text())
   .then(response => {
     element.innerHTML = response;
   });
@@ -95,9 +98,6 @@ jQuery | replacement
 
 - Replace `.toggle()` with:
   ```javascript
-  if (element.style.display === 'none')
-    element.style.display = 'block';
-  else
-    element.style.display = 'none';
+  element.hidden = !element.hidden;
   ```
 </article>
