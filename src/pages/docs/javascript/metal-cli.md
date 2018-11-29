@@ -55,6 +55,20 @@ You'll also need to specify the required dependencies in your `package.json` fil
 ```
 > **Important**: If you're migrating an existing project make sure to remove the  `liferay-module-config-generator` and `metal-cli` dependencies in `devDependencies` listed in your `package.json` file.
 
+
+### A quick note about `config.js` files:
+
+If the OSGi module you're migrating was previously using `metal-cli` and contains a `config.js` you should probably pay attention to this file:
+
+This file might be used to configure AUI's loader or might be declaring AMD modules:
+
++ If it's related to AUI's loader you should probably ignore this file in your build script (i.e. skip transpiling)
+
++ If it's related to AMD you should remove it, but make sure that nothing is broken: you might have to republish old modules with the [liferay-bridge-generator](https://github.com/liferay/liferay-npm-build-tools/wiki/How-to-use-liferay-npm-bridge-generator), for example.
+
++ Finally, if it's related to both AUI loaded and AMD, you will have to split the file, leave the AUI part untouched and take care of adapting the AMD configuration.
+
+
 You'll also need to define the required `scripts` to build you JavaScript related code.
 
 In this example, we have defined a `build` script that will compile our `.soy` templates to JavaScript files and will transpile our ES6 JavaScript to ES5, additionally we're deleting the generated `.soy.js` files.
@@ -64,7 +78,7 @@ In this example, we have defined a `build` script that will compile our `.soy` t
 ```json
 {
   "scripts": {
-    "build": "metalsoy --soyDeps \"node_modules/+(clay-button|clay-icon|com.liferay.frontend.js.web)/**/*.soy\" && cross-env NODE_ENV=production babel --source-maps -d classes/META-INF/resources src/main/resources/META-INF/resources && liferay-npm-bundler && npm run cleanSoy",
+    "build": "metalsoy --soyDeps \"node_modules/+(clay-*|com.liferay.frontend.js.web)/**/*.soy\" && cross-env NODE_ENV=production babel --source-maps -d classes/META-INF/resources src/main/resources/META-INF/resources && liferay-npm-bundler && npm run cleanSoy",
     "cleanSoy": "rimraf src/**/*.soy.js"
   }
 }
@@ -118,12 +132,17 @@ If you don't want to figure out which imports you should be using, you can use t
 
 We have developed a _preset_ contaning **all** of the exported packages in _liferay-portal_.
 
-To use it, you just need to specify it in your .npmbundlerrc file like this
+To use it, you just need to install it with `npm`
+
+```shell
+npm i -D liferay-npm-bundler-preset-liferay-dev
+```
+
+and specify it in your `.npmbundlerrc` file like this
 
 ```json
 {
-  "output": "classes/META-INF/resources/",
-  "preset": "liferay-npm-bundler-preset-portal"
+  "preset": "liferay-npm-bundler-preset-liferay-dev"
 }
 ```
 
