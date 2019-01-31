@@ -11,9 +11,9 @@ clayTaglib: "Liferay NPM Bundler"
 ### How to migrate your OSGi module from  liferay-module-config-generator and metal-cli to liferay-npm-scripts
 
 This document describes the steps required to use
-the [liferay-npm-scripts](https://github.com/liferay/liferay-npm-tools/tree/master/packages/liferay-npm-scripts) in your OSGi module in [liferay-portal](https://github.com/liferay/liferay-portal).
+the [liferay-npm-scripts](https://github.com/bryceosterhaus/liferay-npm-tools/tree/master/packages/liferay-npm-scripts) in your OSGi module in [liferay-portal](https://github.com/liferay/liferay-portal).
 
-Before going on, we strongly recommend reading [liferay-npm-scripts's README](https://github.com/liferay/liferay-npm-tools/blob/master/packages/liferay-npm-scripts/README.md) to have more information about the scripts as well as understanding what they are used for.
+Before going on, we strongly recommend reading [liferay-npm-scripts's README](https://github.com/bryceosterhaus/liferay-npm-tools/blob/master/packages/liferay-npm-scripts/README.md) to have more information about the scripts as well as understanding what they are used for.
 
 If you previously used the [liferay-module-config-generator](https://github.com/liferay/liferay-module-config-generator) and [metal-cli](https://github.com/metal/metal-cli) tools, you will have to apply some changes to your build process.
 
@@ -103,9 +103,9 @@ gradlew deploy
 
 ## Configuring liferay-npm-scripts
 
-If you want to further configure **liferay-npm-scripts** to further leverage the build process, please reference the [liferay-npm-scripts repo](https://github.com/liferay/liferay-npm-tools/blob/master/packages/liferay-npm-scripts) itself for config information.
+If you want to further configure **liferay-npm-scripts** to further leverage the build process, please reference the [liferay-npm-scripts repo](https://github.com/bryceosterhaus/liferay-npm-tools/blob/master/packages/liferay-npm-scripts) itself for config information.
 
-There are also other scripts available such as `test`, `lint`, `format`, and `eject`. You can learn more about these at the [liferay-npm-scripts repo](https://github.com/liferay/liferay-npm-tools/blob/master/packages/liferay-npm-scripts).
+There are also other scripts available such as `test`, `lint`, `format`, and `eject`. You can learn more about these at the [liferay-npm-scripts repo](https://github.com/bryceosterhaus/liferay-npm-tools/blob/master/packages/liferay-npm-scripts).
 
 Once everything is configured, you can deploy your OSGi module as you would normally do with the following command:
 
